@@ -58,6 +58,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Medium](https://medium.com/medium-eng/the-curious-case-of-disappearing-polish-s-fa398313d4df). Due to a series of unfortunate events, Polish users were unable to use their "Ś" key on Medium.
 
+[Sentry](http://blog.getsentry.com/2015/07/23/transaction-id-wraparound-in-postgres.html). On Monday, July 20th, Sentry was down for most of the US working day due transaction ID Wraparound in Postgres.
+
 Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems! [This](https://plus.google.com/communities/115136140203018391796) is a pretty good resource; other links to collections of post mortems are also appreciated.
 
 ## Contributors
