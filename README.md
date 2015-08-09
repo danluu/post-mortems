@@ -52,16 +52,16 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Amazon](https://aws.amazon.com/message/65648/). Major Amazon EC2/RDS outage in US East Region, April 21 - 24, 2011:
 
-1. Human error during a routine networking upgrade caused a bunch of EBS nodes to become isolated.
-2. When this networking mistake was fixed, the affected nodes tried to remirror their data, consuming all free EBS capacity, leaving many nodes stuck searching for space that wasn't available. About 13% of volumes in the affected zone were stuck at this point.
-3. Space crunch caused create-volume rqeuests to fail, but they were configured to fail slowly, with a long timeout, so the create-vol requests backed up and resulted in thread starvation of the EBS control plane.
-4. The EBS control plane's pool of available threads is regional, not separated by availability zone, so API requests in the other zones started failing.
-5. Making matters worse was a rare crashing bug in the EBS code that started happening frequently due to the remirror storm, creating more stuck volumes and worsening the storm.
-6. This worsening led to further failures of the EBS control plane, affecting all zones.
-7. So they took the crippled zone offline to restore the 3 other zones.
-8. After a few hours this worked and the 3 other zones were functional, so they started deploying code patches to the crippled zone to recover it.
-9. During restoration of the crippled zone, they had to physically relocate excess capacity from other parts of the region into the crippled zone, and then integrate the newly-deployed code patches into that equipment to get it to work.
-10. Ultimately they lost 0.07% of volumes despite having manually snapshotted the affected volumes to S3 as a precaution against data loss.
+   1. Human error during a routine networking upgrade caused a bunch of EBS nodes to become isolated.
+   2. When this networking mistake was fixed, the affected nodes tried to remirror their data, consuming all free EBS capacity, leaving many nodes stuck searching for space that wasn't available. About 13% of volumes in the affected zone were stuck at this point.
+   3. Space crunch caused create-volume rqeuests to fail, but they were configured to fail slowly, with a long timeout, so the create-vol requests backed up and resulted in thread starvation of the EBS control plane.
+   4. The EBS control plane's pool of available threads is regional, not separated by availability zone, so API requests in the other zones started failing.
+   5. Making matters worse was a rare crashing bug in the EBS code that started happening frequently due to the remirror storm, creating more stuck volumes and worsening the storm.
+   6. This worsening led to further failures of the EBS control plane, affecting all zones.
+   7. So they took the crippled zone offline to restore the 3 other zones.
+   8. After a few hours this worked and the 3 other zones were functional, so they started deploying code patches to the crippled zone to recover it.
+   9. During restoration of the crippled zone, they had to physically relocate excess capacity from other parts of the region into the crippled zone, and then integrate the newly-deployed code patches into that equipment to get it to work.
+   10. Ultimately they lost 0.07% of volumes despite having manually snapshotted the affected volumes to S3 as a precaution against data loss.
 
 Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems! [This](https://plus.google.com/communities/115136140203018391796) is a pretty good resource; other links to collections of post mortems are also appreciated.
 
