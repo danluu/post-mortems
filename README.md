@@ -68,6 +68,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Sentry](http://blog.getsentry.com/2015/07/23/transaction-id-wraparound-in-postgres.html). On Monday, July 20th, Sentry was down for most of the US working day due transaction ID Wraparound in Postgres.
 
+[CCP Games](http://community.eveonline.com/news/dev-blogs/about-the-boot.ini-issue/) In 2007, a name conflict and a name conflict caused the installer to sometimes delete the *boot.ini* file on installation of an expansion for *EVE Online* - with [consequences.](https://www.youtube.com/watch?v=msXRFJ2ar_E)
+
 Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.
 
 ## Other lists of postmortems
