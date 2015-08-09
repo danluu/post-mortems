@@ -50,6 +50,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [GoCardless](https://gocardless.com/blog/zero-downtime-postgres-migrations-the-hard-parts/). All queries on a critical PostgreSQL table were blocked by the combination of an extremely fast database migration and a long-running read query, causing 15 seconds of downtime.
 
+[CCP Games](http://community.eveonline.com/news/dev-blogs/behind-the-scenes-of-a-long-eve-online-downtime/). A problematic logging channel results in cluster nodes dying off during the cluster start sequence after rolling out a new game patch, resulting in a day's worth of troubleshooting and extended downtime.
+
 Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems! [This](https://plus.google.com/communities/115136140203018391796) is a pretty good resource; other links to collections of post mortems are also appreciated.
 
 ## Contributors
