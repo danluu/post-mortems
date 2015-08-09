@@ -60,6 +60,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Valve](https://github.com/valvesoftware/steam-for-linux/issues/3671). Steam's desktop client deleted all local files and directories. The thing I find most interesting about this is that, after this blew up on social media, there were widespread reports that this was reported to Vavle months earlier. But Valve doesn't triage most bugs, resulting in an extremely long time-to-mitigate, despite having multiple bugreports on this issue.
 
+[Amazon](https://aws.amazon.com/message/67457/). Bad weather caued power failures throughout AWS US East. A single backup generator failed to deliver stable power when power switched over to backup and the generator was loaded. This is despite having passed a load tests two months earlier, and passing weekly power-on tests.
+
 [Sentry](http://blog.getsentry.com/2015/07/23/transaction-id-wraparound-in-postgres.html). On Monday, July 20th, Sentry was down for most of the US working day due transaction ID Wraparound in Postgres.
 
 Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.
@@ -89,4 +91,5 @@ Unfortunately, most of the interesting post-mortems I know about are locked insi
 * Raul Ochoa
 * John Daily
 * Kunal Mehta
+* Ahmet Alp Balkan
 
