@@ -60,7 +60,15 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Sentry](http://blog.getsentry.com/2015/07/23/transaction-id-wraparound-in-postgres.html). On Monday, July 20th, Sentry was down for most of the US working day due transaction ID Wraparound in Postgres.
 
-Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems! [This](https://plus.google.com/communities/115136140203018391796) is a pretty good resource; other links to collections of post mortems are also appreciated.
+Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.
+
+## Other lists of postmortems
+
+[Ed S's postmortem collection](https://plus.google.com/communities/115136140203018391796).
+
+[John Daily's list of postmortems (in json)](https://github.com/macintux/Service-postmortems).
+
+[Jeff Hammerbacher's list of postmortems](http://www.quora.com/Jeff-Hammerbacher/Post-mortems).
 
 ## Contributors
 
@@ -73,4 +81,5 @@ Unfortunately, most of the interesting post-mortems I know about are locked insi
 * Connor Shea
 * Matt Day
 * Raul Ochoa
+* John Daily
 
