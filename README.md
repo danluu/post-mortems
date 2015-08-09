@@ -46,9 +46,11 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Joyent](https://www.joyent.com/blog/manta-postmortem-7-27-2015). Operations on Manta were blocked because a lock couldn't be obtained on their PostgreSQL metadata servers. This was due to a combination of PostgreSQL's transaction wraparound maintence taking a lock on something, and a Joyent query that unecessarily tried to take a global lock.
 
-[CircleCI](http://status.circleci.com/incidents/hr0mm9xmm3x6). A github outage and recovery caused an unexpectedly large incoming load. For reasons that aren't specified, a large load causes CircleCI's queue system to slow down, in this case to handling one transaction per minute.
+[CircleCI](http://status.circleci.com/incidents/hr0mm9xmm3x6). A GitHub outage and recovery caused an unexpectedly large incoming load. For reasons that aren't specified, a large load causes CircleCI's queue system to slow down, in this case to handling one transaction per minute.
 
 [GoCardless](https://gocardless.com/blog/zero-downtime-postgres-migrations-the-hard-parts/). All queries on a critical PostgreSQL table were blocked by the combination of an extremely fast database migration and a long-running read query, causing 15 seconds of downtime.
+
+[Medium](https://medium.com/medium-eng/the-curious-case-of-disappearing-polish-s-fa398313d4df). Due to a series of unfortunate events, Polish users were unable to use their "Ś" key on Medium.
 
 Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems! [This](https://plus.google.com/communities/115136140203018391796) is a pretty good resource; other links to collections of post mortems are also appreciated.
 
