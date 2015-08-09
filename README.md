@@ -54,6 +54,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [CCP Games](http://community.eveonline.com/news/dev-blogs/behind-the-scenes-of-a-long-eve-online-downtime/). A problematic logging channel results in cluster nodes dying off during the cluster start sequence after rolling out a new game patch, resulting in a day's worth of troubleshooting and extended downtime.
 
+[CCP Games](http://community.eveonline.com/news/dev-blogs/about-the-boot.ini-issue/) In 2007, a name conflict and a name conflict caused the installer to sometimes delete the *boot.ini* file on installation of an expansion for *EVE Online* - with [consequences.](https://www.youtube.com/watch?v=msXRFJ2ar_E)
+
 [Amazon](https://aws.amazon.com/message/65648/). Major Amazon EC2/RDS outage in US East Region, April 21 - 24, 2011. Human error during a routine networking upgrade led to a resource crunch, exacerbated by software bugs, that ultimately resulted in an outage across all US East Availability Zones, affecting many popular websites, as well as a loss of 0.07% of volumes.
 
 [Netflix](http://techblog.netflix.com/2012/10/post-mortem-of-october-222012-aws.html). Netflix's extensive preparations enable them to gracefully handle a degradation of Amazon EBS service.
@@ -67,8 +69,6 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 [Amazon](https://aws.amazon.com/message/67457/). Bad weather caued power failures throughout AWS US East. A single backup generator failed to deliver stable power when power switched over to backup and the generator was loaded. This is despite having passed a load tests two months earlier, and passing weekly power-on tests.
 
 [Sentry](http://blog.getsentry.com/2015/07/23/transaction-id-wraparound-in-postgres.html). On Monday, July 20th, Sentry was down for most of the US working day due transaction ID Wraparound in Postgres.
-
-[CCP Games](http://community.eveonline.com/news/dev-blogs/about-the-boot.ini-issue/) In 2007, a name conflict and a name conflict caused the installer to sometimes delete the *boot.ini* file on installation of an expansion for *EVE Online* - with [consequences.](https://www.youtube.com/watch?v=msXRFJ2ar_E)
 
 Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.
 
