@@ -98,4 +98,5 @@ Unfortunately, most of the interesting post-mortems I know about are locked insi
 * John Daily
 * Kunal Mehta
 * Ahmet Alp Balkan
+* Jason Dusek
 
