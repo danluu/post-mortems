@@ -70,6 +70,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Sentry](http://blog.getsentry.com/2015/07/23/transaction-id-wraparound-in-postgres.html). On Monday, July 20th, Sentry was down for most of the US working day due transaction ID Wraparound in Postgres.
 
+[Spotify](https://labs.spotify.com/2013/06/04/incident-management-at-spotify/). Lack of exponential backoff in a microservice caused a cascading failure, leading to notable service degradation.
+
 [Allegro](http://allegro.tech/allegro-cast-post-mortem.html). On 23rd and 24th October 2014, the [Allegro](http://allegro.pl) platform suffered a failure of a subsystem responsible for asynchronous distributed task processing. The problem affected many areas, e.g. features such as purchasing numerous offers via cart and bulk offer editing (including price list editing) did not work at all. Moreover, it partially failed to send daily newsletter with new offers. Also some parts of internal administration panel were affected.
 
 Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.
@@ -101,4 +103,5 @@ Unfortunately, most of the interesting post-mortems I know about are locked insi
 * Kunal Mehta
 * Ahmet Alp Balkan
 * Jason Dusek
+* Vincent Ambo
 
