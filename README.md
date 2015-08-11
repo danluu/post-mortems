@@ -84,6 +84,7 @@ Unfortunately, most of the interesting post-mortems I know about are locked insi
 
 [Wikimedia's postmortems](https://wikitech.wikimedia.org/wiki/Incident_documentation).
 
+[Availability Digest website](http://www.availabilitydigest.com/articles.htm)
 
 
 ## Contributors
@@ -102,4 +103,5 @@ Unfortunately, most of the interesting post-mortems I know about are locked insi
 * Ahmet Alp Balkan
 * Jason Dusek
 * Vincent Ambo
+* Luan Cestari
 
