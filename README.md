@@ -1,5 +1,9 @@
-A list of post mortems!
+A List of Post-mortems!
+===
 
+<br/><br/>
+
+##Table of Contents
 
 **[Config Errors](#config-errors)**
 
@@ -9,6 +13,8 @@ A list of post mortems!
 
 **[Uncatecorized](#uncategorized)**
 
+**[Contributors](#contributors)**
+<br/><br/>
 
 ## Config Errors
 
@@ -111,24 +117,24 @@ Unfortunately, most of the interesting post-mortems I know about are locked insi
 
 ## Contributors
 
-* Dan Luu
-* Julia Hansbrough
-* Nat Welch
-* James Graham
-* Grey Baker
-* Amber Yust
-* Connor Shea
-* Matt Day
-* Raul Ochoa
-* John Daily
-* Kunal Mehta
 * Ahmet Alp Balkan
-* Jason Dusek
-* Vincent Ambo
-* Luan Cestari
-* David Pate
-* Brock Boland
-* Julian Szulc
-* Siddharth Kannan
-* Samuel Hunter
+* Amber Yust
 * BigEd/Ed S?
+* Brock Boland
+* Connor Shea
+* Dan Luu
+* David Pate
+* Grey Baker
+* James Graham
+* Jason Dusek
+* John Daily
+* Julia Hansbrough
+* Julian Szulc
+* Kunal Mehta
+* Luan Cestari
+* Matt Day
+* Nat Welch
+* Raul Ochoa
+* Samuel Hunter
+* Siddharth Kannan
+* Vincent Ambo
