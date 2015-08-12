@@ -1,5 +1,15 @@
 A list of post mortems!
 
+
+**[Config Errors](#config-errors)**
+
+**[Hardware/Power Failures](#hardwarepower-failures)**
+
+**[Conflicts](#conflicts)**
+
+**[Uncatecorized](#uncategorized)**
+
+
 ## Config Errors
 
 [Cloudflare](https://blog.cloudflare.com/todays-outage-post-mortem-82515/). A bad config (router rule) caused all of their edge routers to crash, taking down all of Cloudflare.
