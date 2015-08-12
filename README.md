@@ -2,7 +2,7 @@ A list of post mortems!
 
 ## Config Errors
 
-[Knight Capital](http://pythonsweetness.tumblr.com/post/64740079543/how-to-lose-172222-a-second-for-45-minutes). A combination of conflicting deployed versions and re-using a previously used bit caused a $460M loss.
+[Etsy](https://codeascraft.com/2012/01/23/solr-bittorrent-index-replication/). Sending multicast traffic without properly configuring switches caused an Etsy global outage.
 
 [Stack Overflow](http://stackstatus.net/post/96025967369/outage-post-mortem-august-25th-2014). A bad firewall config blocked stackexchange/stackoverflow.
 
@@ -32,9 +32,9 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [CCP Games](http://community.eveonline.com/news/dev-blogs/about-the-boot.ini-issue/) A typo and a name conflict caused the installer to sometimes delete the *boot.ini* file on installation of an expansion for *EVE Online* - with [consequences.](https://www.youtube.com/watch?v=msXRFJ2ar_E)
 
-## Uncategorized
+[Knight Capital](http://pythonsweetness.tumblr.com/post/64740079543/how-to-lose-172222-a-second-for-45-minutes). A combination of conflicting deployed versions and re-using a previously used bit caused a $460M loss.
 
-[Etsy](https://codeascraft.com/2012/01/23/solr-bittorrent-index-replication/). Sending multicast traffic without properly configuring switches caused an Etsy global outage.
+## Uncategorized
 
 [Healthcare.gov](https://plus.google.com/+AndreasSchou/posts/FhWtABz7ew9).
 
