@@ -11,7 +11,7 @@ A List of Post-mortems!
 
 **[Conflicts](#conflicts)**
 
-**[Uncatecorized](#uncategorized)**
+**[Uncategorized](#uncategorized)**
 
 **[Other lists of postmortems](#other-lists-of-postmortems)**
 
