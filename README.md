@@ -88,7 +88,7 @@ Unfortunately, most of the interesting post-mortems I know about are locked insi
 
 ## Other lists of postmortems
 
-[Ed S's postmortem collection](https://plus.google.com/communities/115136140203018391796).
+[Postmortems Community on Google+](https://plus.google.com/communities/115136140203018391796).
 
 [John Daily's list of postmortems (in json)](https://github.com/macintux/Service-postmortems).
 
