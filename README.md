@@ -100,7 +100,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Valve](https://github.com/valvesoftware/steam-for-linux/issues/3671). Steam's desktop client deleted all local files and directories. The thing I find most interesting about this is that, after this blew up on social media, there were widespread reports that this was reported to Valve months earlier. But Valve doesn't triage most bugs, resulting in an extremely long time-to-mitigate, despite having multiple bugreports on this issue.
 
-Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.
+*Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.*
 
 ## Other lists of postmortems
 
