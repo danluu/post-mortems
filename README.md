@@ -117,24 +117,32 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 ## Contributors
 
-* Ahmet Alp Balkan
-* Amber Yust
-* BigEd/Ed S?
-* Brock Boland
-* Connor Shea
-* Dan Luu
-* David Pate
-* Grey Baker
-* James Graham
-* Jason Dusek
-* John Daily
-* Julia Hansbrough
-* Julian Szulc
-* Kunal Mehta
+* [Ahmet Alp Balkan](https://github.com/ahmetalpbalkan)
+* [Amber Yust](https://github.com/ayust)
+* [BigEd/Ed S?](https://github.com/BigEd)
+* [Brock Boland](https://github.com/brockboland)
+* [Connor Shea](https://github.com/connorshea)
+* [Dan Luu](https://github.com/danluu)
+* [David Pate](https://github.com/DavidTPate)
+* [Grey Baker](https://github.com/greysteil)
+* [James Graham](https://github.com/wittedhaddock)
+* [Jason Dusek](https://github.com/solidsnack)
+* [John Daily](https://github.com/macintux)
+* [Julia Hansbrough](https://github.com/flowerhack)
+* [Julian Szulc](https://github.com/Havelock-Vetinari)
+* [Kunal Mehta](https://github.com/legoktm)
 * Luan Cestari
-* Matt Day
+* [Matt Day](https://github.com/fjarlq)
 * Nat Welch
-* Raul Ochoa
-* Samuel Hunter
-* Siddharth Kannan
-* Vincent Ambo
+* [Raul Ochoa](https://github.com/rochoa)
+* [Samuel Hunter](https://github.com/mathmaniac0)
+* [Siddharth Kannan](https://github.com/icyflame)
+* [Vincent Ambo](https://github.com/tazjin)
+
+<!--
+    Contributor Notes:
+    
+    Haven't seen any contributions by Julia GitHub recognized the past month by date of commit
+    Couldn't find any GitHub user w/ name of Luan Cestari
+    Couldn't find any GitHub user that made commits w/ name of Nat Welch
+-->
