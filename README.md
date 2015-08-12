@@ -110,3 +110,5 @@ Unfortunately, most of the interesting post-mortems I know about are locked insi
 * Luan Cestari
 * David Pate
 * Brock Boland
+* Julian Szulc
+* Siddharth Kannan
