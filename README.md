@@ -118,6 +118,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Jeff Hammerbacher's list of postmortems](http://www.quora.com/Jeff-Hammerbacher/Post-mortems).
 
+[NASA lessons learned database](http://llis.nasa.gov/).
+
 [Wikimedia's postmortems](https://wikitech.wikimedia.org/wiki/Incident_documentation).
 
 [Availability Digest website](http://www.availabilitydigest.com/articles.htm)
@@ -145,6 +147,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * Mark Dennehy
 * Matt Day
 * Nat Welch
+* Nate Parsons
 * Raul Ochoa
 * Samuel Hunter
 * Siddharth Kannan
