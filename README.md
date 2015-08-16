@@ -125,27 +125,27 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 ## Contributors
 
-* [Ahmet Alp Balkan](https://github.com/ahmetalpbalkan)
-* [Amber Yust](https://github.com/ayust)
-* [BigEd/Ed S?](https://github.com/BigEd)
-* [Brock Boland](https://github.com/brockboland)
-* [Connor Shea](https://github.com/connorshea)
-* [Dan Luu](https://github.com/danluu)
-* [David Pate](https://github.com/DavidTPate)
-* [Florent Genette](https://github.com/Trismegiste)
-* [Grey Baker](https://github.com/greysteil)
-* [James Graham](https://github.com/wittedhaddock)
-* [Jason Dusek](https://github.com/solidsnack)
-* [John Daily](https://github.com/macintux)
-* [jomo](https://github.com/jomo)
-* [Julia Hansbrough](https://github.com/flowerhack)
-* [Julian Szulc](https://github.com/Havelock-Vetinari)
-* [Kunal Mehta](https://github.com/legoktm)
+* Ahmet Alp Balkan
+* Amber Yust
+* BigEd/Ed S?
+* Brock Boland
+* Connor Shea
+* Dan Luu
+* David Pate
+* Florent Genette
+* Grey Baker
+* James Graham
+* Jason Dusek
+* John Daily
+* jomo
+* Julia Hansbrough
+* Julian Szulc
+* Kunal Mehta
 * Luan Cestari
-* [Mark Dennehy](https://github.com/mdennehy)
-* [Matt Day](https://github.com/fjarlq)
+* Mark Dennehy
+* Matt Day
 * Nat Welch
-* [Raul Ochoa](https://github.com/rochoa)
-* [Samuel Hunter](https://github.com/mathmaniac0)
-* [Siddharth Kannan](https://github.com/icyflame)
-* [Vincent Ambo](https://github.com/tazjin)
+* Raul Ochoa
+* Samuel Hunter
+* Siddharth Kannan
+* Vincent Ambo
