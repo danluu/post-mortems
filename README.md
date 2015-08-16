@@ -112,7 +112,9 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 ## Other lists of postmortems
 
-[Postmortems Community on Google+](https://plus.google.com/communities/115136140203018391796).
+[Availability Digest website](http://www.availabilitydigest.com/articles.htm).
+
+[Google+ postmortems community](https://plus.google.com/communities/115136140203018391796).
 
 [John Daily's list of postmortems (in json)](https://github.com/macintux/Service-postmortems).
 
@@ -121,8 +123,6 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 [NASA lessons learned database](http://llis.nasa.gov/).
 
 [Wikimedia's postmortems](https://wikitech.wikimedia.org/wiki/Incident_documentation).
-
-[Availability Digest website](http://www.availabilitydigest.com/articles.htm)
 
 
 ## Contributors
