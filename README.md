@@ -72,6 +72,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Dropbox](https://blogs.dropbox.com/tech/2014/01/outage-post-mortem/). This postmortem is pretty thin and I'm not sure what happened. It sounds like, maybe, a scheduled OS upgrade somehow caused some machines to get wiped out, which took out some databases.
 
+[European Spae Agency](https://en.wikipedia.org/wiki/Cluster_%28spacecraft%29?oldid=217305667). An overflow occured when converting a 16-bit number to a 64-bit numer in the Ariane 5 intertial guidance system, causing the rocket to crash. The actual overflow occured in code that wasn't necessary for operation but was running anyway. According to [one account](http://www.around.com/ariane.html), this caused a diagnostic error message to get printed out, and the diagnostic error message was somehow interpreted as actual valid data. According to [another account](https://en.wikipedia.org/wiki/Cluster_%28spacecraft%29?oldid=217305667), no trap handler was installed for the overflow.
+
 [Etsy](https://blog.etsy.com/news/2012/demystifying-site-outages/). First, a deploy that was supposed to be a small bugfix deploy also caused live databases to get upgraded on running production machines. To make sure that this didn't cause any corruption, Etsy stopped serving traffic to run integrity checks. Second, an overflow in ids (signed 32-bit ints) caused some database operations to fail. Etsy didn't trust that this wouldn't result in data corruption and took down the site while the upgrade got pushed.
 
 [Gitlab](https://docs.google.com/document/d/1ScqXAdb6BjhsDzCo3qdPYbt1uULzgZqPO8zHeHHarS0/preview?sle=true&hl=en&forcehl=1#heading=h.dfbilqgnc5sf). After the primary locked up and was restarted, it was brought back up with the wrong filesystem, causing a global outage.
@@ -130,6 +132,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * [Connor Shea](https://github.com/connorshea)
 * [Dan Luu](https://github.com/danluu)
 * [David Pate](https://github.com/DavidTPate)
+* [Florent Genette](https://github.com/Trismegiste)
 * [Grey Baker](https://github.com/greysteil)
 * [James Graham](https://github.com/wittedhaddock)
 * [Jason Dusek](https://github.com/solidsnack)
@@ -139,6 +142,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * [Julian Szulc](https://github.com/Havelock-Vetinari)
 * [Kunal Mehta](https://github.com/legoktm)
 * Luan Cestari
+* [Mark Dennehy](https://github.com/mdennehy)
 * [Matt Day](https://github.com/fjarlq)
 * Nat Welch
 * [Raul Ochoa](https://github.com/rochoa)
