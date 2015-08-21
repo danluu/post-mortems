@@ -112,6 +112,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Valve](https://github.com/valvesoftware/steam-for-linux/issues/3671). Steam's desktop client deleted all local files and directories. The thing I find most interesting about this is that, after this blew up on social media, there were widespread reports that this was reported to Valve months earlier. But Valve doesn't triage most bugs, resulting in an extremely long time-to-mitigate, despite having multiple bugreports on this issue.
 
+[Yeller](http://yellerapp.com/posts/2014-08-04-postmortem1.html). A network partition in a cluster caused some messages to get delayed, up to 6-7 hours. For reasons that aren't clear, a rolling restart of the cluster healed the partition. There's some suspicious that it was due to cached routes, but there wasn't enough logging information to tell for sure.
+
 *Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.*
 
 ## Other lists of postmortems
@@ -161,4 +163,5 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * Raul Ochoa
 * Samuel Hunter
 * Siddharth Kannan
+* Tom Crayford
 * Vincent Ambo
