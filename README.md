@@ -180,6 +180,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * Raul Ochoa
 * Samuel Hunter
 * Siddharth Kannan
+* Tim Freeman
 * Tom Crayford
 * Vaibhav Bhembre
 * Vincent Ambo
