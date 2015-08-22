@@ -60,6 +60,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Allegro](http://allegro.tech/allegro-cast-post-mortem.html). The [Allegro](http://allegro.pl) platform suffered a failure of a subsystem responsible for asynchronous distributed task processing. The problem affected many areas, e.g. features such as purchasing numerous offers via cart and bulk offer editing (including price list editing) did not work at all. Moreover, it partially failed to send daily newsletter with new offers. Also some parts of internal administration panel were affected.
 
+[Amazon](http://status.aws.amazon.com/s3-20080720.html). Global S3 outage. Message corruption caused the distributed server state function to overwhelm resources on the S3 request processing fleet.
+
 [Amazon](https://aws.amazon.com/message/65648/). Major Amazon EC2/RDS outage in US East Region. Human error during a routine networking upgrade led to a resource crunch, exacerbated by software bugs, that ultimately resulted in an outage across all US East Availability Zones, affecting many popular websites, as well as a loss of 0.07% of volumes.
 
 [Amazon](http://aws.amazon.com/message/680587/). Elastic Load Balancer ran into problems when "a maintenance process that was inadvertently run against the production ELB state data". 
@@ -142,6 +144,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * Amber Yust
 * BigEd/Ed S?
 * Brock Boland
+* Brian Scanlan
 * Connor Shea
 * Dan Luu
 * David Pate
