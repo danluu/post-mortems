@@ -152,13 +152,16 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * Ahmet Alp Balkan
 * Amber Yust
 * BigEd/Ed S?
+* Brian Scanlan
 * Brock Boland
 * Brian Scanlan
+* Chris Higgs
 * Connor Shea
 * Dan Luu
 * David Pate
 * Florent Genette
 * Grey Baker
+* Jacob Kaplan-Moss
 * James Graham
 * Jason Dusek
 * John Daily
@@ -176,4 +179,5 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * Samuel Hunter
 * Siddharth Kannan
 * Tom Crayford
+* Vaibhav Bhembre
 * Vincent Ambo
