@@ -182,6 +182,7 @@ cloud service proving application uptime monitoring and real-time notifications,
 * Nate Parsons
 * Raul Ochoa
 * Samuel Hunter
+* Shriram Rajagopalan
 * Siddharth Kannan
 * Tim Freeman
 * Tom Crayford
