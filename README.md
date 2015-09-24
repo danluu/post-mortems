@@ -71,7 +71,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Amazon](http://aws.amazon.com/message/680587/). Elastic Load Balancer ran into problems when "a maintenance process that was inadvertently run against the production ELB state data". 
 
-[Amazon](https://aws.amazon.com/fr/message/5467D2/). Major Amazon DynamoDB Service Disruption in the US-East Region. 
+[Amazon](https://aws.amazon.com/message/5467D2/). Major Amazon DynamoDB Service Disruption in the US-East Region. 
 
 [AppNexus](http://techblog.appnexus.com/2013/2013-09-17-outage-postmortem/). A double free revealed by a database update caused all "impression bus" servers to crash simultaneously. This wasn't caught in staging and made it into production because a time delay is required to trigger the bug, and the staging period didn't have a built-in delay.
 
