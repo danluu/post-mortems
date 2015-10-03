@@ -69,7 +69,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Amazon](https://aws.amazon.com/message/65648/). Major Amazon EC2/RDS outage in US East Region. Human error during a routine networking upgrade led to a resource crunch, exacerbated by software bugs, that ultimately resulted in an outage across all US East Availability Zones, affecting many popular websites, as well as a loss of 0.07% of volumes.
 
-[Amazon](http://aws.amazon.com/message/680587/). Elastic Load Balancer ran into problems when "a maintenance process that was inadvertently run against the production ELB state data". 
+[Amazon](http://aws.amazon.com/message/680587/). Elastic Load Balancer ran into problems when "a maintenance process that was inadvertently run against the production ELB state data".
 
 [AppNexus](http://techblog.appnexus.com/2013/2013-09-17-outage-postmortem/). A double free revealed by a database update caused all "impression bus" servers to crash simultaneously. This wasn't caught in staging and made it into production because a time delay is required to trigger the bug, and the staging period didn't have a built-in delay.
 
@@ -114,6 +114,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 [Sentry](http://blog.getsentry.com/2015/07/23/transaction-id-wraparound-in-postgres.html). Sentry was down for most of the US working day due transaction ID Wraparound in Postgres.
 
 [Spotify](https://labs.spotify.com/2013/06/04/incident-management-at-spotify/). Lack of exponential backoff in a microservice caused a cascading failure, leading to notable service degradation.
+
+[Stack Exchange](http://stackstatus.net/post/115305251014/outage-postmortem-march-31-2015). Enabling StackEgg for all users resulted in heavy load on load balancers and consequently, a DDoS.
 
 [Strava](http://engineering.strava.com/the-upload-outage-of-july-29-2014/). Hit the signed integer limit on a primary key, causing uploads to fail.
 
