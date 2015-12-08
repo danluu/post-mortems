@@ -32,6 +32,8 @@ A List of Post-mortems!
 
 [Google](https://code.google.com/p/chromium/issues/detail?id=165171#c27). A bad config caused a quota service to fail, which caused multiple services to fail (including gmail).
 
+[Google](https://googleblog.blogspot.com/2009/01/this-site-may-harm-your-computer-on.html). The message *"This site may harm your computer"* accompanied each and every search result because the URL `/` was checked into its blacklist.
+
 [Microsoft](http://azure.microsoft.com/blog/2014/11/19/update-on-azure-storage-service-interruption/). A bad config took down Azure storage.
 
 [Stack Overflow](http://stackstatus.net/post/96025967369/outage-post-mortem-august-25th-2014). A bad firewall config blocked stackexchange/stackoverflow.
