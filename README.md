@@ -149,6 +149,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Wikimedia's postmortems](https://wikitech.wikimedia.org/wiki/Incident_documentation).
 
+[Autopsy.io's list of Startup failures](http://autopsy.io/).
+
 ## Analysis
 
 [How Complex Systems Fail](http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)
