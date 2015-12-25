@@ -32,7 +32,7 @@ A List of Post-mortems!
 
 [Google](https://code.google.com/p/chromium/issues/detail?id=165171#c27). A bad config caused a quota service to fail, which caused multiple services to fail (including gmail).
 
-[Google](https://googleblog.blogspot.com/2009/01/this-site-may-harm-your-computer-on.html). The message *"This site may harm your computer"* accompanied each and every search result because the URL `/` was checked into its blacklist.
+[Google](https://googleblog.blogspot.com/2009/01/this-site-may-harm-your-computer-on.html). `/` was checked into the URL blacklist, causing every URL to show a warning.
 
 [Microsoft](http://azure.microsoft.com/blog/2014/11/19/update-on-azure-storage-service-interruption/). A bad config took down Azure storage.
 
@@ -49,7 +49,7 @@ A List of Post-mortems!
 
 [Amazon](https://aws.amazon.com/message/67457/). Bad weather caued power failures throughout AWS US East. A single backup generator failed to deliver stable power when power switched over to backup and the generator was loaded. This is despite having passed a load tests two months earlier, and passing weekly power-on tests.
 
-[FirstEnergy / General Electric](https://en.wikipedia.org/wiki/Northeast_blackout_of_2003). FirstEnergy had a local failure when some transmission lines hit untrimmed foliage. The normal process is to have an alarm go off, which causes human operators to re-distribute power. But the GE system that was monitoring this had a bug which prevented the alarm from getting triggered, which eventually caused a cascading failure that eventually effected 55 million people.
+[FirstEnergy / General Electric](https://en.wikipedia.org/wiki/Northeast_blackout_of_2003). FirstEnergy had a local failure when some transmission lines hit untrimmed foliage. The normal process is to have an alarm go off, which causes human operators to re-distribute power. But the GE system that was monitoring this had a bug which prevented the alarm from getting triggered, which eventually caused a cascading failure that eventually affected 55 million people.
 
 [Google](https://status.cloud.google.com/incident/compute/15056#5719570367119360). Successive lightning strikes on their European datacenter (europe-west1-b) caused loss of power to Google Compute Engine storage systems within that region. I/O errors were observed on a subset of Standard Persistent Disks (HDDs) and permanent data loss was observed on a small fraction of those.
 
@@ -67,13 +67,13 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Allegro](http://allegro.tech/allegro-cast-post-mortem.html). The [Allegro](http://allegro.pl) platform suffered a failure of a subsystem responsible for asynchronous distributed task processing. The problem affected many areas, e.g. features such as purchasing numerous offers via cart and bulk offer editing (including price list editing) did not work at all. Moreover, it partially failed to send daily newsletter with new offers. Also some parts of internal administration panel were affected.
 
-[Amazon](http://status.aws.amazon.com/s3-20080720.html). Global S3 outage. Message corruption caused the distributed server state function to overwhelm resources on the S3 request processing fleet.
+[Amazon](http://status.aws.amazon.com/s3-20080720.html). Message corruption caused the distributed server state function to overwhelm resources on the S3 request processing fleet.
 
-[Amazon](https://aws.amazon.com/message/65648/). Major Amazon EC2/RDS outage in US East Region. Human error during a routine networking upgrade led to a resource crunch, exacerbated by software bugs, that ultimately resulted in an outage across all US East Availability Zones, affecting many popular websites, as well as a loss of 0.07% of volumes.
+[Amazon](https://aws.amazon.com/message/65648/). Human error during a routine networking upgrade led to a resource crunch, exacerbated by software bugs, that ultimately resulted in an outage across all US East Availability Zones as well as a loss of 0.07% of volumes.
 
 [Amazon](http://aws.amazon.com/message/680587/). Elastic Load Balancer ran into problems when "a maintenance process that was inadvertently run against the production ELB state data".
 
-[Amazon](https://aws.amazon.com/message/5467D2/). Major Amazon DynamoDB Service Disruption in the US-East Region. 
+[Amazon](https://aws.amazon.com/message/5467D2/). A "network disruption" caused metadata services to experience load that caused resposne times to exceed timeout values, causing storage nodes to take themselves down. Nodes that took themselves down continued to retry, ensuring that load on metadata services couldn't decrease.
 
 [AppNexus](http://techblog.appnexus.com/2013/2013-09-17-outage-postmortem/). A double free revealed by a database update caused all "impression bus" servers to crash simultaneously. This wasn't caught in staging and made it into production because a time delay is required to trigger the bug, and the staging period didn't have a built-in delay.
 
@@ -81,7 +81,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [BrowserStack](https://www.browserstack.com/attack-and-downtime-on-9-November). An old prototype machine with the [Shellshock](https://en.wikipedia.org/wiki/Shellshock_(software_bug)) vulnerability still active had secret keys on it which ultimately led to a security breach of the Production system.
 
-[CCP Games](http://community.eveonline.com/news/dev-blogs/behind-the-scenes-of-a-long-eve-online-downtime/). A problematic logging channel results in cluster nodes dying off during the cluster start sequence after rolling out a new game patch, resulting in a day's worth of troubleshooting and extended downtime.
+[CCP Games](http://community.eveonline.com/news/dev-blogs/behind-the-scenes-of-a-long-eve-online-downtime/). A problematic logging channel caused cluster nodes dying off during the cluster start sequence after rolling out a new game patch.
 
 [CircleCI](http://status.circleci.com/incidents/hr0mm9xmm3x6). A GitHub outage and recovery caused an unexpectedly large incoming load. For reasons that aren't specified, a large load causes CircleCI's queue system to slow down, in this case to handling one transaction per minute.
 
@@ -109,13 +109,13 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Kickstarter](https://www.kickstarter.com/backing-and-hacking/the-day-the-replication-died). Primary DB became inconsistent with all replicas, which wasn't detected until a query failed. This was caused by a MySQL bug which sometimes caused `order by` to be ignored.
 
-[Medium](https://medium.com/medium-eng/the-curious-case-of-disappearing-polish-s-fa398313d4df). Due to a series of unfortunate events, Polish users were unable to use their "Ś" key on Medium.
+[Medium](https://medium.com/medium-eng/the-curious-case-of-disappearing-polish-s-fa398313d4df). Polish users were unable to use their "Ś" key on Medium.
 
 [NASA](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter). Use of different units of measurement (metric vs. English) caused Mars Climate Orbiter to fail. This is basically the same issue Sweden ran into in 1628 with its ship.
 
-[Netflix](http://techblog.netflix.com/2012/10/post-mortem-of-october-222012-aws.html). Netflix's extensive preparations enable them to gracefully handle a degradation of Amazon EBS service.
+[Netflix](http://techblog.netflix.com/2012/10/post-mortem-of-october-222012-aws.html). An EBS outage in one availability zone was mitigated by migrating to other availability zones.
 
-[Sentry](http://blog.getsentry.com/2015/07/23/transaction-id-wraparound-in-postgres.html). Sentry was down for most of the US working day due transaction ID Wraparound in Postgres.
+[Sentry](http://blog.getsentry.com/2015/07/23/transaction-id-wraparound-in-postgres.html). Transaction ID Wraparound in Postgres caused Sentry to go down for most of a working day.
 
 [Spotify](https://labs.spotify.com/2013/06/04/incident-management-at-spotify/). Lack of exponential backoff in a microservice caused a cascading failure, leading to notable service degradation.
 
