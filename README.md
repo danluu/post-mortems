@@ -51,6 +51,8 @@ A List of Post-mortems!
 
 [FirstEnergy / General Electric](https://en.wikipedia.org/wiki/Northeast_blackout_of_2003). FirstEnergy had a local failure when some transmission lines hit untrimmed foliage. The normal process is to have an alarm go off, which causes human operators to re-distribute power. But the GE system that was monitoring this had a bug which prevented the alarm from getting triggered, which eventually caused a cascading failure that eventually affected 55 million people.
 
+[GitHub](https://github.com/blog/2106-january-28th-incident-report). On January 28th, 2016 GitHub experienced a disruption in the power at their primary datacenter.
+
 [Google](https://status.cloud.google.com/incident/compute/15056#5719570367119360). Successive lightning strikes on their European datacenter (europe-west1-b) caused loss of power to Google Compute Engine storage systems within that region. I/O errors were observed on a subset of Standard Persistent Disks (HDDs) and permanent data loss was observed on a small fraction of those.
 
 Sun/Oracle. Sun famously didn't include ECC in a couple generations of server parts. This resulted in data corruption and crashing. Following Sun's typical MO, they made customers that reported a bug sign an NDA before explaining the issue.
