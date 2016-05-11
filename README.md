@@ -171,6 +171,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 * Ahmet Alp Balkan
 * Amber Yust
+* Anthony Elizondo
 * Anuj Pahuja
 * Benjamin Gilbert
 * BigEd/Ed S?
