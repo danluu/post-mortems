@@ -113,6 +113,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Medium](https://medium.com/medium-eng/the-curious-case-of-disappearing-polish-s-fa398313d4df). Polish users were unable to use their "Ś" key on Medium.
 
+[NASA](http://www.doneyles.com/LM/Tales.html). A design flaw in the Apollo 11 rendezvous radar produced excess CPU load, causing the spacecraft computer to restart during lunar landing.
+
 [NASA](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter). Use of different units of measurement (metric vs. English) caused Mars Climate Orbiter to fail. This is basically the same issue Sweden ran into in 1628 with its ship.
 
 [Netflix](http://techblog.netflix.com/2012/10/post-mortem-of-october-222012-aws.html). An EBS outage in one availability zone was mitigated by migrating to other availability zones.
@@ -166,6 +168,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * Ahmet Alp Balkan
 * Amber Yust
 * Anuj Pahuja
+* Benjamin Gilbert
 * BigEd/Ed S?
 * Brian Scanlan
 * Brock Boland
