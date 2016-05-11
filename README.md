@@ -125,6 +125,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Sentry](http://blog.getsentry.com/2015/07/23/transaction-id-wraparound-in-postgres.html). Transaction ID Wraparound in Postgres caused Sentry to go down for most of a working day.
 
+[Shapeshift](https://www.scribd.com/doc/309574927/ShapeShift-Post-Mortem-Public). Poor security practices enabled an employee to steal $200,000 in cryptocurrency in 3 separate hacks over a 1 month period. The company's CEO expanded upon the story in a [blog post](http://moneyandstate.com/looting-of-the-fox/).
+
 [Spotify](https://labs.spotify.com/2013/06/04/incident-management-at-spotify/). Lack of exponential backoff in a microservice caused a cascading failure, leading to notable service degradation.
 
 [Stack Exchange](http://stackstatus.net/post/115305251014/outage-postmortem-march-31-2015). Enabling StackEgg for all users resulted in heavy load on load balancers and consequently, a DDoS.
@@ -188,6 +190,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * Grey Baker
 * Jacob Kaplan-Moss
 * James Graham
+* Jameson Lopp
 * Jason Dusek
 * John Daily
 * jomo
