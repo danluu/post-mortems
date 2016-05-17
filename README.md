@@ -196,6 +196,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * Kunal Mehta
 * Luan Cestari
 * Mark Dennehy
+* Massimiliano Arione
 * Matt Day
 * Michael Robinson
 * Nat Welch
