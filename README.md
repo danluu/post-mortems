@@ -5,6 +5,8 @@ A List of Post-mortems!
 
 ##Table of Contents
 
+**[Scope](#scope-of-studying-postmortems)**
+
 **[Config Errors](#config-errors)**
 
 **[Hardware/Power Failures](#hardwarepower-failures)**
@@ -19,6 +21,13 @@ A List of Post-mortems!
 
 **[Contributors](#contributors)**
 <br/><br/>
+
+## Scope of Studying Postmortems
+
+<!--Why Should I care ?-->
+Postmortems case studies should be studied in a positive sense i.e. to improve one's efficiency of operations and
+workload.These illustrated case studies will help you to evolve yourself from mistakes and create better infrastructure
+facilities with better effieciency.
 
 ## Config Errors
 
