@@ -51,6 +51,8 @@ A List of Post-mortems!
 
 [Amazon](https://aws.amazon.com/message/67457/). Bad weather caused power failures throughout AWS US East. A single backup generator failed to deliver stable power when power switched over to backup and the generator was loaded. This is despite having passed a load tests two months earlier, and passing weekly power-on tests.
 
+[Amazon](http://aws.amazon.com/message/4372T8/). At 10:25pm PDT on June 4, loss of power at an AWS Sydney facility resulting from severe weather in that area lead to disruption to a significant number of instances in an Availability Zone. Due to the signature of the power loss, power  isolation breakers did not engage, resulting in backup energy reserves draining into the degraded power grid.
+
 [FirstEnergy / General Electric](https://en.wikipedia.org/wiki/Northeast_blackout_of_2003). FirstEnergy had a local failure when some transmission lines hit untrimmed foliage. The normal process is to have an alarm go off, which causes human operators to re-distribute power. But the GE system that was monitoring this had a bug which prevented the alarm from getting triggered, which eventually caused a cascading failure that eventually affected 55 million people.
 
 [GitHub](https://github.com/blog/2106-january-28th-incident-report). On January 28th, 2016 GitHub experienced a disruption in the power at their primary datacenter.
@@ -169,6 +171,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 ## Contributors
 
+* Aaron Wigley
 * Ahmet Alp Balkan
 * Amber Yust
 * Anthony Elizondo
