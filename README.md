@@ -202,17 +202,20 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * jomo
 * Julia Hansbrough
 * Julian Szulc
+* KS Chan
 * Kunal Mehta
 * Luan Cestari
 * Mark Dennehy
 * Massimiliano Arione
 * Matt Day
 * Michael Robinson
+* Mohit Agarwal
 * Nat Welch
 * Nick Sweeting
 * Nate Parsons
 * Raul Ochoa
 * Samuel Hunter
+* Sean Escriva
 * Siddharth Kannan
 * Tim Freeman
 * Tom Crayford
