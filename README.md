@@ -129,6 +129,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Stack Exchange](http://stackstatus.net/post/115305251014/outage-postmortem-march-31-2015). Enabling StackEgg for all users resulted in heavy load on load balancers and consequently, a DDoS.
 
+[Stack Overflow](http://stackstatus.net/post/147710624694/outage-postmortem-july-20-2016). A malformed post on the homepage  caused one of the regular expressions to consume high CPU on the web servers. The entire site became unavailable.
+
 [Strava](http://engineering.strava.com/the-upload-outage-of-july-29-2014/). Hit the signed integer limit on a primary key, causing uploads to fail.
 
 [Stripe](https://support.stripe.com/questions/outage-postmortem-2015-10-08-utc). Manual operations are regularly executed on production databases. A manual operation was done incorrectly (missing dependency), causing the Stripe API to go down for 90 minutes.
