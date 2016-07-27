@@ -194,6 +194,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 * Dan Luu
 * Dan Nguyen
 * David Pate
+* Dov Murik
 * Florent Genette
 * Franck Arnulfo
 * Grey Baker
