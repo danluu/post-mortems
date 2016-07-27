@@ -125,6 +125,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [NASA](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter). Use of different units of measurement (metric vs. English) caused Mars Climate Orbiter to fail. This is basically the same issue Sweden ran into in 1628 with its ship.
 
+[NASA](http://research.microsoft.com/en-us/um/people/mbj/Mars_Pathfinder/Authoritative_Account.html). NASA's Mars Pathfilder spacecraft experienced system resets a few days after landing on Mars (1997).  Debugging features were remotely enabled until the cause was found: a [priority inversion](https://en.wikipedia.org/wiki/Priority_inversion) problem in the VxWorks operating system.  The OS software was remotely patched (all the way to Mars) to fix the problem by adding priority inheritance to the task scheduler.
+
 [Netflix](http://techblog.netflix.com/2012/10/post-mortem-of-october-222012-aws.html). An EBS outage in one availability zone was mitigated by migrating to other availability zones.
 
 [Salesforce](https://help.salesforce.com/apex/HTViewSolution?urlname=Root-Cause-Message-for-Disruption-of-Service-on-NA14-May-2016&language=en_US) Initial disruption due to power failure in one datacenter led to cascading failures with a database cluster and file discrepancies resulting in cross data center failover issues.
