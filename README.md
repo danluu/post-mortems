@@ -154,6 +154,8 @@ a migration of a critical backend system.
 
 [Sweden](http://www.pri.org/stories/2012-02-23/new-clues-emerge-centuries-old-swedish-shipwreck). Use of different rulers by builders caused the _Vasa_ to be more heavily built on its port side and the ship's designer, not having built a ship with two gun decks before, overbuilt the upper decks, leading to a design that was top heavy. Twenty minutes into its maiden voyage in 1628, the ship heeled to port and sank.
 
+[Tarsnap](http://mail.tarsnap.com/tarsnap-announce/msg00035.html). A batch job which scans for unused blocks in Amazon S3 and marks them to be freed encountered a condition where all retries for freeing certain blocks would fail. The batch job logs its actions to local disk and this log grew without bound. When the filesystem filled, this caused other filesystem writes to fail, and the Tarsnap service stopped. Manually removing the log file restored service.
+
 [Therac-25](http://sunnyday.mit.edu/papers/therac.pdf). The Therac-25 was a radiation therapy machine involved in at least six accidents between 1985 and 1987 in which patients were given massive overdoses of radiation. Because of concurrent programming errors, it sometimes gave its patients radiation doses that were thousands of times greater than normal, resulting in death or serious injury.
 
 [Valve](https://github.com/valvesoftware/steam-for-linux/issues/3671). Steam's desktop client deleted all local files and directories. The thing I find most interesting about this is that, after this blew up on social media, there were widespread reports that this was reported to Valve months earlier. But Valve doesn't triage most bugs, resulting in an extremely long time-to-mitigate, despite having multiple bugreports on this issue.
@@ -197,7 +199,6 @@ a migration of a critical backend system.
 * BigEd/Ed S?
 * Brian Scanlan
 * Brock Boland
-* Brian Scanlan
 * Chris Higgs
 * Connor Shea
 * Dan Luu
@@ -221,10 +222,11 @@ a migration of a critical backend system.
 * Massimiliano Arione
 * Matt Day
 * Michael Robinson
+* Mike Doherty
 * Mohit Agarwal
 * Nat Welch
-* Nick Sweeting
 * Nate Parsons
+* Nick Sweeting
 * Raul Ochoa
 * Samuel Hunter
 * Sean Escriva
