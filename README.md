@@ -133,6 +133,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Netflix](http://techblog.netflix.com/2012/10/post-mortem-of-october-222012-aws.html). An EBS outage in one availability zone was mitigated by migrating to other availability zones.
 
+[Platform.sh](https://medium.com/@florian_7764/technical-post-mortem-of-the-august-incident-82ab4c3d6547). Outage during a scheduled maintenance window because there were too much data for Zookeeper to boot.
+
 [Reddit](https://www.reddit.com/r/announcements/comments/4y0m56/why_reddit_was_down_on_aug_11/)
 experienced an outage for 1.5 hours, followed by another 1.5 hours of
 degraded performance on Thursday August 11 2016. This was due to an error during
