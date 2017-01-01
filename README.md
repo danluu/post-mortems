@@ -44,6 +44,8 @@ A List of Post-mortems!
 
 [TravisCI](https://www.traviscistatus.com/incidents/khzk8bg4p9sy). A configuration issue (incomplete password rotation) led to "leaking" VMs, leading to elevated build queue times.
 
+[TravisCI](https://blog.travis-ci.com/2016-09-30-the-day-we-deleted-our-vm-images/). A configuration issue (automated age-based Google Compute Engine VM image cleanup job) caused stable base VM images to be deleted.
+
 [Valve](https://blog.thousandeyes.com/steam-outage-monitor-data-center-connectivity/). Although there's no official postmortem, it looks like a bad BGP config severed Valve's connection to Level 3, Telia, and Abovenet/Zayo, which resulted in a global Steam outage.
 
 
