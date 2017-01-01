@@ -213,6 +213,7 @@ a migration of a critical backend system.
 * Dov Murik
 * Florent Genette
 * Franck Arnulfo
+* gnomon
 * Grey Baker
 * Jacob Kaplan-Moss
 * James Graham
