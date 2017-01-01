@@ -11,6 +11,8 @@ A List of Post-mortems!
 
 **[Conflicts](#conflicts)**
 
+**[Time](#time)**
+
 **[Uncategorized](#uncategorized)**
 
 **[Other lists of postmortems](#other-lists-of-postmortems)**
@@ -74,6 +76,14 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 [GoCardless](https://gocardless.com/blog/zero-downtime-postgres-migrations-the-hard-parts/). All queries on a critical PostgreSQL table were blocked by the combination of an extremely fast database migration and a long-running read query, causing 15 seconds of downtime.
 
 [Knight Capital](http://pythonsweetness.tumblr.com/post/64740079543/how-to-lose-172222-a-second-for-45-minutes). A combination of conflicting deployed versions and re-using a previously used bit caused a $460M loss.
+
+## Time
+
+[Azure](https://azure.microsoft.com/en-us/blog/summary-of-windows-azure-service-disruption-on-feb-29th-2012/) Certificates that were valid for one year were created. Instead of using an appropriate library, someone wrote code that computed one year to be the current date plus one year. On Februrary 29th 2012, this resulted in the creation of certificates with an expiration date of February 29th 2013, which were rejected because of the invalid date. This caused an Azure global outage that lasted for most of a day.
+
+[Linux](https://lkml.org/lkml/2009/1/2/373) Leap second code was called from the timer interrupt handler, which held `xtime_lock`. That code did a `printk` to log the leap second. `printk` wakes up `klogd`, which can sometimes try to get the time, which waits on `xtime_lock`, causing a deadlock.
+
+[Linux](https://lkml.org/lkml/2012/7/1/203) When a leap second occured, CLOCK_REALTIME was rewound by one second. This was not done via a mechanism that would update hrtimer base.offset (clock_was_set). This meant that when a timer interrupt happened, TIMER_ABSTIME CLOCK_REALTIME timers got expired one second early, including timers set for less than one second. This caused applications that used sleep for less than one second in a loop to spinwait without sleeping, causing high load on many systems. This caused a large number of web services to go down in 2012.
 
 ## Uncategorized
 
