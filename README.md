@@ -85,6 +85,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Linux](https://lkml.org/lkml/2012/7/1/203) When a leap second occured, CLOCK_REALTIME was rewound by one second. This was not done via a mechanism that would update hrtimer base.offset (clock_was_set). This meant that when a timer interrupt happened, TIMER_ABSTIME CLOCK_REALTIME timers got expired one second early, including timers set for less than one second. This caused applications that used sleep for less than one second in a loop to spinwait without sleeping, causing high load on many systems. This caused a large number of web services to go down in 2012.
 
+[Cloudflare](https://blog.cloudflare.com/how-and-why-the-leap-second-affected-cloudflare-dns/) Backwards time flow from tracking [the 27th leap second on 2016-12-31T23:59:60Z](https://hpiers.obspm.fr/iers/bul/bulc/bulletinc.52) caused the weighted round-robin selection of DNS resolvers (RRDNS) to panic and fail on some CNAME lookups.  Go's `time.Now()` was incorrectly assumed to be monotonic; this injected negative values into calls to `rand.Int63n()`, which panics in that case.
+
 ## Uncategorized
 
 [Allegro](http://allegro.tech/allegro-cast-post-mortem.html). The [Allegro](http://allegro.pl) platform suffered a failure of a subsystem responsible for asynchronous distributed task processing. The problem affected many areas, e.g. features such as purchasing numerous offers via cart and bulk offer editing (including price list editing) did not work at all. Moreover, it partially failed to send daily newsletter with new offers. Also some parts of internal administration panel were affected.
