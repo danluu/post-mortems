@@ -166,6 +166,8 @@ a migration of a critical backend system.
 
 [Stack Exchange](http://stackstatus.net/post/147710624694/outage-postmortem-july-20-2016). Backtracking implementation in the underlying regex engine turned out to be very expensive for a particular post leading to health-check failures and eventual outage.
 
+[Stack Exchange](http://meta.stackoverflow.com/q/340960/2422776). Porting old Careers 2.0 code to the new Developer Story caused a leak of users' information.
+
 [Strava](http://engineering.strava.com/the-upload-outage-of-july-29-2014/). Hit the signed integer limit on a primary key, causing uploads to fail.
 
 [Stripe](https://support.stripe.com/questions/outage-postmortem-2015-10-08-utc). Manual operations are regularly executed on production databases. A manual operation was done incorrectly (missing dependency), causing the Stripe API to go down for 90 minutes.
