@@ -101,6 +101,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [AppNexus](http://techblog.appnexus.com/2013/2013-09-17-outage-postmortem/). A double free revealed by a database update caused all "impression bus" servers to crash simultaneously. This wasn't caught in staging and made it into production because a time delay is required to trigger the bug, and the staging period didn't have a built-in delay.
 
+[AT&T](http://users.csc.calpoly.edu/~jdalbey/SWE/Papers/att_collapse.html). A bad line of C code introduced a race hazard which in due course collapsed the phone network. After a planned outage, the quickfire resumption messages triggered the race,  causing more reboots which retriggered the problem. "The problem repeated iteratively throughout the 114 switches in the network, blocking over 50 million calls in the nine hours it took to stabilize the system." From 1990.
+
 [Bitly](http://blog.bitly.com/post/85260908544/more-detail). Hosted source code repo contained credentials granting access to bitly backups, including hashed passwords.
 
 [BrowserStack](https://www.browserstack.com/attack-and-downtime-on-9-November). An old prototype machine with the [Shellshock](https://en.wikipedia.org/wiki/Shellshock_(software_bug)) vulnerability still active had secret keys on it which ultimately led to a security breach of the Production system.
@@ -217,7 +219,6 @@ a migration of a critical backend system.
 * Anthony Elizondo
 * Anuj Pahuja
 * Benjamin Gilbert
-* BigEd/Ed S?
 * Brian Scanlan
 * Brock Boland
 * Chris Higgs
@@ -226,6 +227,7 @@ a migration of a critical backend system.
 * Dan Nguyen
 * David Pate
 * Dov Murik
+* Ed Spittles
 * Florent Genette
 * Franck Arnulfo
 * gnomon
