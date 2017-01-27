@@ -168,6 +168,8 @@ a migration of a critical backend system.
 
 [Stack Exchange](http://meta.stackoverflow.com/q/340960/2422776). Porting old Careers 2.0 code to the new Developer Story caused a leak of users' information.
 
+[Stack Exchange](http://stackstatus.net/post/156407746074/outage-postmortem-january-24-2017). The primary SQL-Server triggered a bugcheck on the SQL Server process, causing the Stack Exchange sites to go into read only mode, and eventually a complete outage.
+
 [Strava](http://engineering.strava.com/the-upload-outage-of-july-29-2014/). Hit the signed integer limit on a primary key, causing uploads to fail.
 
 [Stripe](https://support.stripe.com/questions/outage-postmortem-2015-10-08-utc). Manual operations are regularly executed on production databases. A manual operation was done incorrectly (missing dependency), causing the Stripe API to go down for 90 minutes.
