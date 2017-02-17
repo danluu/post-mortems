@@ -228,6 +228,8 @@ a migration of a critical backend system.
 
 [John Allspaw on Resilience Engineering](http://www.kitchensoap.com/2011/04/07/resilience-engineering-part-i/)
 
+[CCP Games Devblog](https://community.eveonline.com/news/dev-blogs/sleeping-beauty/) documents a Stackless Python memory reuse bug that took years to track down
+
 ## Contributors
 
 * Aaron Wigley
