@@ -121,7 +121,9 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Foursquare](https://news.ycombinator.com/item?id=1769761). MongoDB fell over under load when it ran out of memory. The failure was catastrophic and not graceful due to a a query pattern that involved a read-load with low levels of locality (each user check-in caused a read of all check-ins for the user's history, and records were 300 bytes with no spatial locality, meaning that most of the data pulled in from each page was unecessary). A lack of monitoring on the MongoDB instances caused the high load to go undetected until the load became catastrophic, causing 17 hours of downtime spanning two incidents in two days.
 
-[Gitlab](https://docs.google.com/document/d/1ScqXAdb6BjhsDzCo3qdPYbt1uULzgZqPO8zHeHHarS0/preview?sle=true&hl=en&forcehl=1#heading=h.dfbilqgnc5sf). After the primary locked up and was restarted, it was brought back up with the wrong filesystem, causing a global outage.
+[Gitlab 2014](https://docs.google.com/document/d/1ScqXAdb6BjhsDzCo3qdPYbt1uULzgZqPO8zHeHHarS0/preview?sle=true&hl=en&forcehl=1#heading=h.dfbilqgnc5sf). After the primary locked up and was restarted, it was brought back up with the wrong filesystem, causing a global outage. See also [HN discussion](https://news.ycombinator.com/item?id=8003601).
+
+[Gitlab 2017](https://about.gitlab.com/2017/02/10/postmortem-of-database-outage-of-january-31/). Influx of requests overloaded the database, caused replication to lag, tired admin deleted the wrong directory, six hours of data lost. See also [earlier report](https://about.gitlab.com/2017/02/01/gitlab-dot-com-database-incident) and [HN discussion](https://news.ycombinator.com/item?id=13537052).
 
 [Gliffy](http://support.gliffy.com/entries/98911057--Gliffy-Online-System-Outage). While attempting to resolve an issue with a backup system the production database was accidentally deleted causing a system outage.
 
