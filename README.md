@@ -3,7 +3,7 @@ A List of Post-mortems!
 
 <br/><br/>
 
-##Table of Contents
+## Table of Contents
 
 **[Config Errors](#config-errors)**
 
