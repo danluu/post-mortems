@@ -147,6 +147,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Kickstarter](https://www.kickstarter.com/backing-and-hacking/the-day-the-replication-died). Primary DB became inconsistent with all replicas, which wasn't detected until a query failed. This was caused by a MySQL bug which sometimes caused `order by` to be ignored.
 
+[Kings College London](https://regmedia.co.uk/2017/02/23/kcl_external_review.pdf). 3PAR suffered catastrophic outage which highlighted a failure in internal process. 
+
 [Mailgun](http://status.mailgun.com/incidents/p9nxxql8g9rh). Secondary MongoDB servers became overloaded and while troubleshooting accidentally pushed a change that sent all secondary traffic to the primary MongoDB server, overloading it as well and exacerbating the problem.
 
 [Medium](https://medium.com/medium-eng/the-curious-case-of-disappearing-polish-s-fa398313d4df). Polish users were unable to use their "Ś" key on Medium.
@@ -263,6 +265,7 @@ a migration of a critical backend system.
 * Nate Parsons
 * Nick Sweeting
 * Raul Ochoa
+* Ruairi Carroll
 * Samuel Hunter
 * Sean Escriva
 * Siddharth Kannan
