@@ -231,6 +231,8 @@ a migration of a critical backend system.
 * Anthony Elizondo
 * Anuj Pahuja
 * Benjamin Gilbert
+* Brad Baris
+* Brendan McLoughlin
 * Brian Scanlan
 * Brock Boland
 * Chris Higgs
@@ -253,6 +255,7 @@ a migration of a critical backend system.
 * Julian Szulc
 * Justin Montgomery
 * KS Chan
+* Kevin Brown
 * Kunal Mehta
 * Luan Cestari
 * Mark Dennehy
@@ -272,4 +275,5 @@ a migration of a critical backend system.
 * Tim Freeman
 * Tom Crayford
 * Vaibhav Bhembre
+* Veit Heller
 * Vincent Ambo
