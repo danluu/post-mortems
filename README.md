@@ -147,7 +147,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Kickstarter](https://www.kickstarter.com/backing-and-hacking/the-day-the-replication-died). Primary DB became inconsistent with all replicas, which wasn't detected until a query failed. This was caused by a MySQL bug which sometimes caused `order by` to be ignored.
 
-[Kings College London](https://regmedia.co.uk/2017/02/23/kcl_external_review.pdf). 3PAR suffered catastrophic outage which highlighted a failure in internal process. 
+[Kings College London](https://regmedia.co.uk/2017/02/23/kcl_external_review.pdf). 3PAR suffered catastrophic outage which highlighted a failure in internal process.
 
 [Mailgun](http://status.mailgun.com/incidents/p9nxxql8g9rh). Secondary MongoDB servers became overloaded and while troubleshooting accidentally pushed a change that sent all secondary traffic to the primary MongoDB server, overloading it as well and exacerbating the problem.
 
@@ -171,6 +171,8 @@ a migration of a critical backend system.
 [Salesforce](https://help.salesforce.com/apex/HTViewSolution?urlname=Root-Cause-Message-for-Disruption-of-Service-on-NA14-May-2016&language=en_US) Initial disruption due to power failure in one datacenter led to cascading failures with a database cluster and file discrepancies resulting in cross data center failover issues.
 
 [Sentry](http://blog.getsentry.com/2015/07/23/transaction-id-wraparound-in-postgres.html). Transaction ID Wraparound in Postgres caused Sentry to go down for most of a working day.
+
+[Slack](https://slackhq.com/this-was-not-normal-really-230c2fd23bdc). A combination of factor results in a large number of Slack's users being disconnected to the server. The subsequent massive disconnection-reconnection process exceeded the database capacity and caused cascading connection failures, leading to 5% of Slack's users not being able to connect to the server for up to 2 hours.
 
 [Spotify](https://labs.spotify.com/2013/06/04/incident-management-at-spotify/). Lack of exponential backoff in a microservice caused a cascading failure, leading to notable service degradation.
 
