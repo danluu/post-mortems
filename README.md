@@ -244,6 +244,8 @@ a migration of a critical backend system.
 
 [Autopsy.io's list of Startup failures](http://autopsy.io/).
 
+[SRE Weekly](https://sreweekly.com) usually has an **Outages** section at the end.
+
 ## Analysis
 
 [How Complex Systems Fail](http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)
