@@ -279,6 +279,7 @@ a migration of a critical backend system.
 * Jacob Kaplan-Moss
 * James Graham
 * Jason Dusek
+* Jens Rantil
 * John Daily
 * jomo
 * Julia Hansbrough
