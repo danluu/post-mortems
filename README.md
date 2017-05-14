@@ -38,13 +38,13 @@ A List of Post-mortems!
 
 [Google](https://googleblog.blogspot.com/2009/01/this-site-may-harm-your-computer-on.html). `/` was checked into the URL blacklist, causing every URL to show a warning.
 
-[Google](https://status.cloud.google.com/incident/compute/17007#5659118702428160). A bug in configuration roll-out to a load balancer lead to lead to increased error rates for 22 minutes.
+[Google](https://status.cloud.google.com/incident/compute/17007#5659118702428160). A bug in configuration roll-out to a load balancer lead to increased error rates for 22 minutes.
 
 [Heroku](https://status.heroku.com/incidents/1091). An automated remote configuration change did not propagate fully. Web dynos could not be started.
 
 [Microsoft](http://azure.microsoft.com/blog/2014/11/19/update-on-azure-storage-service-interruption/). A bad config took down Azure storage.
 
-[OWASA](http://www.indyweek.com/news/archives/2017/02/10/human-error-caused-owasa-fluoride-overdose-owasa-very-sorry-about-that). The wrong push of a button lead to a water treatment plant shutting down due to too high levels of flouride.
+[OWASA](http://www.indyweek.com/news/archives/2017/02/10/human-error-caused-owasa-fluoride-overdose-owasa-very-sorry-about-that). The wrong push of a button lead to a water treatment plant shutting down due to too high levels of fluoride.
 
 [Stack Overflow](http://stackstatus.net/post/96025967369/outage-post-mortem-august-25th-2014). A bad firewall config blocked stackexchange/stackoverflow.
 
@@ -83,7 +83,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [GoCardless](https://gocardless.com/blog/zero-downtime-postgres-migrations-the-hard-parts/). All queries on a critical PostgreSQL table were blocked by the combination of an extremely fast database migration and a long-running read query, causing 15 seconds of downtime.
 
-[Google](https://status.cloud.google.com/incident/compute/17003#5660850647990272). Many changes to a rately modified load balancer were applied through a very slow code path. This froze all public addressing changes for ~2 hours.
+[Google](https://status.cloud.google.com/incident/compute/17003#5660850647990272). Many changes to a rarely modified load balancer were applied through a very slow code path. This froze all public addressing changes for ~2 hours.
 
 [Knight Capital](http://pythonsweetness.tumblr.com/post/64740079543/how-to-lose-172222-a-second-for-45-minutes). A combination of conflicting deployed versions and re-using a previously used bit caused a $460M loss.
 
@@ -127,9 +127,9 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [CircleCI](https://circleci.statuspage.io/incidents/hr0mm9xmm3x6). A GitHub outage and recovery caused an unexpectedly large incoming load. For reasons that aren't specified, a large load causes CircleCI's queue system to slow down, in this case to handling one transaction per minute.
 
-[Cloudflare](https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/). An HTML parsing bug lead to unintentional buffer overflow. This made them leak proxied traffix to unintentional end users/HTTP clients
+[Cloudflare](https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/). An HTML parsing bug lead to unintentional buffer overflow. This made them leak proxied traffic to unintended end users/HTTP clients
 
-[Discord](https://status.discordapp.com/incidents/dj3l6lw926kl). A flapping service lead to a thundering herd reconnecting to it once it came up. This lead to a scascading error where fronend services ran out of memory due to internal queues filling up.
+[Discord](https://status.discordapp.com/incidents/dj3l6lw926kl). A flapping service lead to a thundering herd reconnecting to it once it came up. This lead to a cascading error where frontend services ran out of memory due to internal queues filling up.
 
 [Dropbox](https://blogs.dropbox.com/tech/2014/01/outage-post-mortem/). This postmortem is pretty thin and I'm not sure what happened. It sounds like, maybe, a scheduled OS upgrade somehow caused some machines to get wiped out, which took out some databases.
 
@@ -155,7 +155,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Heroku](https://status.heroku.com/incidents/642?postmortem). Having a system that requires scheduled manual updates resulted in an error which caused US customers to be unable to scale, stop or restart dynos, or route HTTP traffic, and also prevented all customers from being able to deploy.
 
-[Heroku](https://status.heroku.com/incidents/1042). An upstream `apt` update broke pinned packages which lead to customers experienced write permission failures to `/dev`.
+[Heroku](https://status.heroku.com/incidents/1042). An upstream `apt` update broke pinned packages which lead to customers experiencing write permission failures to `/dev`.
 
 [Instapaper](https://medium.com/making-instapaper/instapaper-outage-cause-recovery-3c32a7e9cc5f), also [this](http://blog.instapaper.com/post/157027537441). Limits were hit for a hosted database. It took many hours to migrate over to a new database.
 
@@ -179,7 +179,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Netflix](http://techblog.netflix.com/2012/10/post-mortem-of-october-222012-aws.html). An EBS outage in one availability zone was mitigated by migrating to other availability zones.
 
-[PagerDuty](https://status.pagerduty.com/incidents/70m30bh7qfmx). A third party service for sending SMS and making voice calls experienced an outage due AWS having issues in a region.
+[PagerDuty](https://status.pagerduty.com/incidents/70m30bh7qfmx). A third party service for sending SMS and making voice calls experienced an outage due to AWS having issues in a region.
 
 [Platform.sh](https://medium.com/@florian_7764/technical-post-mortem-of-the-august-incident-82ab4c3d6547). Outage during a scheduled maintenance window because there were too much data for Zookeeper to boot.
 
