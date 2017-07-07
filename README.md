@@ -260,6 +260,7 @@ a migration of a critical backend system.
 * Julia Hansbrough
 * Julian Szulc
 * Justin Montgomery
+* KlavierCat
 * KS Chan
 * Kevin Brown
 * Kunal Mehta
@@ -273,6 +274,7 @@ a migration of a critical backend system.
 * Nat Welch
 * Nate Parsons
 * Nick Sweeting
+* Owen Jacobson
 * Raul Ochoa
 * Ruairi Carroll
 * Samuel Hunter
