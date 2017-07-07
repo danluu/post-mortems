@@ -202,6 +202,8 @@ a migration of a critical backend system.
 
 [Yeller](http://yellerapp.com/posts/2014-08-04-postmortem1.html). A network partition in a cluster caused some messages to get delayed, up to 6-7 hours. For reasons that aren't clear, a rolling restart of the cluster healed the partition. There's some suspicious that it was due to cached routes, but there wasn't enough logging information to tell for sure.
 
+[CCP Games Devblog](https://community.eveonline.com/news/dev-blogs/sleeping-beauty/). Documents a Stackless Python memory reuse bug that took years to track down.
+
 *Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.*
 
 ## Other lists of postmortems
@@ -227,8 +229,6 @@ a migration of a critical backend system.
 [How Complex Systems Fail](http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)
 
 [John Allspaw on Resilience Engineering](http://www.kitchensoap.com/2011/04/07/resilience-engineering-part-i/)
-
-[CCP Games Devblog](https://community.eveonline.com/news/dev-blogs/sleeping-beauty/) documents a Stackless Python memory reuse bug that took years to track down
 
 ## Contributors
 
