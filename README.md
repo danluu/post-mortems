@@ -141,6 +141,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Heroku](https://status.heroku.com/incidents/642?postmortem). Having a system that requires scheduled manual updates resulted in an error which caused US customers to be unable to scale, stop or restart dynos, or route HTTP traffic, and also prevented all customers from being able to deploy.
 
+[Heroku](https://engineering.heroku.com/blogs/2017-02-15-filesystem-corruption-on-heroku-dynos/). An upgrade silently disabled a check that was meant to prevent filesystem corruption in running containers. A subsequent deploy caused filesystem corruption in running containers.
+
 [Intel](http://42gems.com/blog/?p=735). A scripting bug caused the generation of the divider logic in the Pentium to very occasionally produce incorrect results. The bug wasn't caught in testing because of an incorrect assumption in a proof of correctness.
 
 [Joyent](https://www.joyent.com/blog/manta-postmortem-7-27-2015). Operations on Manta were blocked because a lock couldn't be obtained on their PostgreSQL metadata servers. This was due to a combination of PostgreSQL's transaction wraparound maintence taking a lock on something, and a Joyent query that unecessarily tried to take a global lock.
