@@ -254,6 +254,7 @@ a migration of a critical backend system.
 * Franck Arnulfo
 * gnomon
 * Grey Baker
+* Isaac Rogers
 * Jacob Kaplan-Moss
 * James Graham
 * Jason Dusek
