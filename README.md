@@ -91,6 +91,16 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 ## Uncategorized
 
+[Pagerduty](https://www.pagerduty.com/blog/outage-post-mortem-april-13-2013/). In April 2013, [Pagerduty](http://www.pagerduty.com), a cloud service proving application uptime monitoring and real-time notifications, suffered an outage when two of its three independent cloud deployments in different data centers began experiencing connectivity issues and high network latency. It was found later that the two independent deployments shared a common peering point which was experiencing network instability.  While the third deployment was still operational, Pagerduty's applications failed to establish quorum due to to high network latency and hence failed in their ability to send notifications.
+
+[Stackdriver](http://www.stackdriver.com/post-mortem-october-23-stackdriver-outage/). In October 2013, [Stackdriver](http://www.stackdriver.com/), experienced an outage, when its Cassandra cluster crashed. Data published by various services into a message bus was being injested into the Cassandra cluster. When the cluster failed, the failure percolated to various producers, that ended up blocking on queue insert operations, eventually leading to the failure of the entire application.
+
+[BBC Online](http://www.bbc.co.uk/blogs/internet/entries/a37b0470-47d4-3991-82bb-a7d5b8803771). In July 2014, BBC Online experienced a very long outage of several of its popular online services including the BBC iPlayer. When the database backend was overloaded, it had started to throttle requests from various services. Services that hadn't cached the database responses locally began timing out and eventually failed completely.
+
+[Chef.io](https://www.chef.io/blog/2014/07/10/supermarket-intermittent-unresponsiveness-postmortem/). The recipe community site Supermarket crashed two hours after launch due to intermittent unresponsiveness and increased latency. One of the main reasons for failure identified in the post mortem was very low health check timeouts.
+
+[Twilio](https://www.twilio.com/blog/2013/07/billing-incident-post-mortem-breakdown-analysis-and-root-cause.html). In 2013, a temporary network partition in the redis cluster used for billing operations, caused a massive resynchronization from slaves. The overloaded master crashed and when it was restarted, it started up in read-only mode. The auto-recharge component in This resulted in failed transactions from Twilio's auto-recharge service, which unfortunately billed the customers before updating their balance internally. So the auto-recharge system contintued to retry the transaction again and again, resulting in multiple charges to customer's credit cards.
+
 [Allegro](http://allegro.tech/allegro-cast-post-mortem.html). The [Allegro](http://allegro.pl) platform suffered a failure of a subsystem responsible for asynchronous distributed task processing. The problem affected many areas, e.g. features such as purchasing numerous offers via cart and bulk offer editing (including price list editing) did not work at all. Moreover, it partially failed to send daily newsletter with new offers. Also some parts of internal administration panel were affected.
 
 [Amazon](https://aws.amazon.com/message/41926/). Human error. On February 28th 2017 9:37AM PST, the Amazon S3 team was debugging a minor issue. Despite using an established playbook, one of the commands intending to remove a small number of servers was issued with a typo, inadvertently causing a larger set of servers to be removed. These servers supported critical S3 systems. As a result, dependent systems required a full restart to correctly operate, and the system underwent widespread outages for US-EAST-1 (Northern Virginia) until final resolution at 1:54PM PST. Since Amazon's own services such as EC2 and EBS rely on S3 as well, it caused a vast cascading failure which affected hundreds of companies.
@@ -263,9 +273,9 @@ a migration of a critical backend system.
 * Julia Hansbrough
 * Julian Szulc
 * Justin Montgomery
-* KlavierCat
 * KS Chan
 * Kevin Brown
+* KlavierCat
 * Kunal Mehta
 * Luan Cestari
 * Mark Dennehy
@@ -282,6 +292,7 @@ a migration of a critical backend system.
 * Ruairi Carroll
 * Samuel Hunter
 * Sean Escriva
+* Shriram Rajagopalan
 * Siddharth Kannan
 * Tim Freeman
 * Tom Crayford
