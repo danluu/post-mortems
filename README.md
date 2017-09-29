@@ -102,7 +102,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Amazon](http://aws.amazon.com/message/680587/). Elastic Load Balancer ran into problems when "a maintenance process that was inadvertently run against the production ELB state data".
 
-[Amazon](https://aws.amazon.com/message/5467D2/). A "network disruption" caused metadata services to experience load that caused resposne times to exceed timeout values, causing storage nodes to take themselves down. Nodes that took themselves down continued to retry, ensuring that load on metadata services couldn't decrease.
+[Amazon](https://aws.amazon.com/message/5467D2/). A "network disruption" caused metadata services to experience load that caused response times to exceed timeout values, causing storage nodes to take themselves down. Nodes that took themselves down continued to retry, ensuring that load on metadata services couldn't decrease.
 
 [AppNexus](http://techblog.appnexus.com/2013/2013-09-17-outage-postmortem/). A double free revealed by a database update caused all "impression bus" servers to crash simultaneously. This wasn't caught in staging and made it into production because a time delay is required to trigger the bug, and the staging period didn't have a built-in delay.
 
@@ -152,7 +152,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Intel](http://42gems.com/blog/?p=735). A scripting bug caused the generation of the divider logic in the Pentium to very occasionally produce incorrect results. The bug wasn't caught in testing because of an incorrect assumption in a proof of correctness.
 
-[Joyent](https://www.joyent.com/blog/manta-postmortem-7-27-2015). Operations on Manta were blocked because a lock couldn't be obtained on their PostgreSQL metadata servers. This was due to a combination of PostgreSQL's transaction wraparound maintence taking a lock on something, and a Joyent query that unecessarily tried to take a global lock.
+[Joyent](https://www.joyent.com/blog/manta-postmortem-7-27-2015). Operations on Manta were blocked because a lock couldn't be obtained on their PostgreSQL metadata servers. This was due to a combination of PostgreSQL's transaction wraparound maintenance taking a lock on something, and a Joyent query that unnecessarily tried to take a global lock.
 
 [Kickstarter](https://www.kickstarter.com/backing-and-hacking/the-day-the-replication-died). Primary DB became inconsistent with all replicas, which wasn't detected until a query failed. This was caused by a MySQL bug which sometimes caused `order by` to be ignored.
 
@@ -211,9 +211,9 @@ a migration of a critical backend system.
 
 [Therac-25](http://sunnyday.mit.edu/papers/therac.pdf). The Therac-25 was a radiation therapy machine involved in at least six accidents between 1985 and 1987 in which patients were given massive overdoses of radiation. Because of concurrent programming errors, it sometimes gave its patients radiation doses that were thousands of times greater than normal, resulting in death or serious injury.
 
-[Twilio](https://www.twilio.com/blog/2013/07/billing-incident-post-mortem-breakdown-analysis-and-root-cause.html). In 2013, a temporary network partition in the redis cluster used for billing operations, caused a massive resynchronization from slaves. The overloaded master crashed and when it was restarted, it started up in read-only mode. The auto-recharge component in This resulted in failed transactions from Twilio's auto-recharge service, which unfortunately billed the customers before updating their balance internally. So the auto-recharge system contintued to retry the transaction again and again, resulting in multiple charges to customer's credit cards.
+[Twilio](https://www.twilio.com/blog/2013/07/billing-incident-post-mortem-breakdown-analysis-and-root-cause.html). In 2013, a temporary network partition in the redis cluster used for billing operations, caused a massive resynchronization from slaves. The overloaded master crashed and when it was restarted, it started up in read-only mode. The auto-recharge component in This resulted in failed transactions from Twilio's auto-recharge service, which unfortunately billed the customers before updating their balance internally. So the auto-recharge system continued to retry the transaction again and again, resulting in multiple charges to customer's credit cards.
 
-[Valve](https://github.com/valvesoftware/steam-for-linux/issues/3671). Steam's desktop client deleted all local files and directories. The thing I find most interesting about this is that, after this blew up on social media, there were widespread reports that this was reported to Valve months earlier. But Valve doesn't triage most bugs, resulting in an extremely long time-to-mitigate, despite having multiple bugreports on this issue.
+[Valve](https://github.com/valvesoftware/steam-for-linux/issues/3671). Steam's desktop client deleted all local files and directories. The thing I find most interesting about this is that, after this blew up on social media, there were widespread reports that this was reported to Valve months earlier. But Valve doesn't triage most bugs, resulting in an extremely long time-to-mitigate, despite having multiple bug reports on this issue.
 
 [Yeller](http://yellerapp.com/posts/2014-08-04-postmortem1.html). A network partition in a cluster caused some messages to get delayed, up to 6-7 hours. For reasons that aren't clear, a rolling restart of the cluster healed the partition. There's some suspicious that it was due to cached routes, but there wasn't enough logging information to tell for sure.
 
