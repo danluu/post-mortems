@@ -183,6 +183,8 @@ a migration of a critical backend system.
 
 [Sentry](http://blog.getsentry.com/2015/07/23/transaction-id-wraparound-in-postgres.html). Transaction ID Wraparound in Postgres caused Sentry to go down for most of a working day.
 
+[Shapeshift](https://www.scribd.com/doc/309574927/ShapeShift-Post-Mortem-Public). Poor security practices enabled an employee to steal $200,000 in cryptocurrency in 3 separate hacks over a 1 month period. The company's CEO expanded upon the story in a [blog post](http://moneyandstate.com/looting-of-the-fox/).
+
 [Slack](https://slackhq.com/this-was-not-normal-really-230c2fd23bdc). A combination of factor results in a large number of Slack's users being disconnected to the server. The subsequent massive disconnection-reconnection process exceeded the database capacity and caused cascading connection failures, leading to 5% of Slack's users not being able to connect to the server for up to 2 hours.
 
 [Spotify](https://labs.spotify.com/2013/06/04/incident-management-at-spotify/). Lack of exponential backoff in a microservice caused a cascading failure, leading to notable service degradation.
@@ -268,6 +270,7 @@ a migration of a critical backend system.
 * Isaac Rogers
 * Jacob Kaplan-Moss
 * James Graham
+* Jameson Lopp
 * Jason Dusek
 * John Daily
 * jomo
