@@ -145,6 +145,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Heroku](https://engineering.heroku.com/blogs/2017-02-15-filesystem-corruption-on-heroku-dynos/). An upgrade silently disabled a check that was meant to prevent filesystem corruption in running containers. A subsequent deploy caused filesystem corruption in running containers.
 
+[Instapaper](https://medium.com/making-instapaper/instapaper-outage-cause-recovery-3c32a7e9cc5f). On Feb 9, 2017 a filesystem-based limitation (2TB file size limit) imposed on AWS RDS instances created before April 2014 resulted in an outage and rendered both production databases and backups useless. Total downtime: 31 hours, limited access: 5 days.
+
 [Intel](http://42gems.com/blog/?p=735). A scripting bug caused the generation of the divider logic in the Pentium to very occasionally produce incorrect results. The bug wasn't caught in testing because of an incorrect assumption in a proof of correctness.
 
 [Joyent](https://www.joyent.com/blog/manta-postmortem-7-27-2015). Operations on Manta were blocked because a lock couldn't be obtained on their PostgreSQL metadata servers. This was due to a combination of PostgreSQL's transaction wraparound maintence taking a lock on something, and a Joyent query that unecessarily tried to take a global lock.
@@ -278,6 +280,7 @@ a migration of a critical backend system.
 * Nate Parsons
 * Nick Sweeting
 * Owen Jacobson
+* Radosław Szalski
 * Raul Ochoa
 * Ruairi Carroll
 * Samuel Hunter
