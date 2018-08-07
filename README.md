@@ -170,6 +170,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Heroku](https://status.heroku.com/incidents/1042). An upstream `apt` update broke pinned packages which lead to customers experiencing write permission failures to `/dev`.
 
+[Homebrew](https://brew.sh/2018/08/05/security-incident-disclosure/). A GitHub personal access token with recently elevated scopes was leaked from Homebrew’s Jenkins that allowed access to `git push` on several Homebrew repositories.
+
 [Instapaper](https://medium.com/making-instapaper/instapaper-outage-cause-recovery-3c32a7e9cc5f), also [this](http://blog.instapaper.com/post/157027537441). Limits were hit for a hosted database. It took many hours to migrate over to a new database.
 
 [Intel](http://42gems.com/blog/?p=735). A scripting bug caused the generation of the divider logic in the Pentium to very occasionally produce incorrect results. The bug wasn't caught in testing because of an incorrect assumption in a proof of correctness.
