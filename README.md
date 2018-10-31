@@ -208,7 +208,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [PagerDuty](https://status.pagerduty.com/incidents/70m30bh7qfmx). A third party service for sending SMS and making voice calls experienced an outage due to AWS having issues in a region.
 
-[Parity](https://blog.ethcore.io/the-multi-sig-hack-a-postmortem/). $30 million of cryptocurrency value was diverted (stolen) with another $150 million diverted to a safe place (rescued), after a 4000-line software change containing a security bug was mistakenly labelled as a UI change, inadequately reviewed, deployed, and used by various unsuspecting third parties. See also [this analysis](http://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/).
+[Parity](https://paritytech.io/the-multi-sig-hack-a-postmortem/). $30 million of cryptocurrency value was diverted (stolen) with another $150 million diverted to a safe place (rescued), after a 4000-line software change containing a security bug was mistakenly labelled as a UI change, inadequately reviewed, deployed, and used by various unsuspecting third parties. See also [this analysis](http://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/).
 
 
 [Platform.sh](https://medium.com/@florian_7764/technical-post-mortem-of-the-august-incident-82ab4c3d6547). Outage during a scheduled maintenance window because there were too much data for Zookeeper to boot.
