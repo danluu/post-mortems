@@ -59,6 +59,8 @@ A List of Post-mortems!
 
 [TravisCI](https://www.traviscistatus.com/incidents/sxrh0l46czqn). A configuration change made builds start to fail. Manual rollback broke.
 
+[TravisCI](https://blog.travis-ci.com/2018-04-03-incident-post-mortem). Accidental environment variable made tests truncate production database.
+
 [Valve](https://blog.thousandeyes.com/steam-outage-monitor-data-center-connectivity/). Although there's no official postmortem, it looks like a bad BGP config severed Valve's connection to Level 3, Telia, and Abovenet/Zayo, which resulted in a global Steam outage.
 
 
@@ -336,6 +338,7 @@ a migration of a critical backend system.
 * Nate Parsons
 * Nick Sweeting
 * Owen Jacobson
+* Peter Demin
 * Raul Ochoa
 * Ruairi Carroll
 * Samuel Hunter
