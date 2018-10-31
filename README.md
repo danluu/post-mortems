@@ -158,8 +158,6 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Gliffy](http://support.gliffy.com/entries/98911057--Gliffy-Online-System-Outage). While attempting to resolve an issue with a backup system the production database was accidentally deleted causing a system outage.
 
-[Google](https://code.google.com/p/nativeclient/issues/detail?id=2508). Checking the vendor string instead of feature flags renders NaCl unusable on otherwise compatible non-mainstream hardware platforms.
-
 [Google](https://gist.github.com/jomo/2bae3821acb433d0446d). A mail system emailed people more than 20 times. This happened because mail was sent with a batch cron job that sent mail to everyone who was marked as waiting for mail. This was a non-atomic operation and the batch job didn't mark people as not waiting until all messages were sent.
 
 [GPS/GLONASS](http://www.gps.gov/governance/advisory/meetings/2014-06/beutler1.pdf). A bad update that caused incorrect orbital mechanics calculations caused GPS satellites that use GLONASS to broadcast incorrect positions for 10 hours. The bug was noticed and rolled back almost immediately due to (?) this didn't fix the issue.
