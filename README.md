@@ -150,6 +150,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Foursquare](https://news.ycombinator.com/item?id=1769761). MongoDB fell over under load when it ran out of memory. The failure was catastrophic and not graceful due to a a query pattern that involved a read-load with low levels of locality (each user check-in caused a read of all check-ins for the user's history, and records were 300 bytes with no spatial locality, meaning that most of the data pulled in from each page was unnecessary). A lack of monitoring on the MongoDB instances caused the high load to go undetected until the load became catastrophic, causing 17 hours of downtime spanning two incidents in two days.
 
+[GitHub](https://blog.github.com/2018-10-30-oct21-post-incident-analysis/). In October 2018, routine maintenance work to replace failing 100G optical equipment resulted in a 43 second loss of connectivity between the US East Coast network hub and primary US East Coast data center.  This brief outage triggered a chain of events that led to 24 hours and 11 minutes of service degradation.
+
 [Gitlab 2014](https://docs.google.com/document/d/1ScqXAdb6BjhsDzCo3qdPYbt1uULzgZqPO8zHeHHarS0/preview?sle=true&hl=en&forcehl=1#heading=h.dfbilqgnc5sf). After the primary locked up and was restarted, it was brought back up with the wrong filesystem, causing a global outage. See also [HN discussion](https://news.ycombinator.com/item?id=8003601).
 
 [Gitlab 2017](https://about.gitlab.com/2017/02/10/postmortem-of-database-outage-of-january-31/). Influx of requests overloaded the database, caused replication to lag, tired admin deleted the wrong directory, six hours of data lost. See also [earlier report](https://about.gitlab.com/2017/02/01/gitlab-dot-com-database-incident) and [HN discussion](https://news.ycombinator.com/item?id=13537052).
@@ -282,6 +284,8 @@ a migration of a critical backend system.
 
 [John Allspaw on Resilience Engineering](http://www.kitchensoap.com/2011/04/07/resilience-engineering-part-i/)
 
+[Will Gallego on Root Cause](https://willgallego.com/2018/04/02/no-seriously-root-cause-is-a-fallacy/)
+
 ## Contributors
 
 * Aaron Wigley
@@ -339,6 +343,7 @@ a migration of a critical backend system.
 * Sean Escriva
 * Shriram Rajagopalan
 * Siddharth Kannan
+* Tanner Lund
 * Tim Freeman
 * Tom Crayford
 * Vaibhav Bhembre
