@@ -59,6 +59,8 @@ A List of Post-mortems!
 
 [TravisCI](https://www.traviscistatus.com/incidents/sxrh0l46czqn). A configuration change made builds start to fail. Manual rollback broke.
 
+[TravisCI](https://blog.travis-ci.com/2018-04-03-incident-post-mortem). Accidental environment variable made tests truncate production database.
+
 [Valve](https://blog.thousandeyes.com/steam-outage-monitor-data-center-connectivity/). Although there's no official postmortem, it looks like a bad BGP config severed Valve's connection to Level 3, Telia, and Abovenet/Zayo, which resulted in a global Steam outage.
 
 
@@ -83,6 +85,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 ## Conflicts
 
 [CCP Games](http://community.eveonline.com/news/dev-blogs/about-the-boot.ini-issue/) A typo and a name conflict caused the installer to sometimes delete the *boot.ini* file on installation of an expansion for *EVE Online* - with [consequences.](https://www.youtube.com/watch?v=msXRFJ2ar_E)
+
+[GitHub](https://blog.github.com/2018-10-30-oct21-post-incident-analysis/) A 43 second network partition during maintenance caused MySQL master failover, but the new master didn't have several seconds of writes propogated to it because of cross-continent latency.  24+ hours of restoration work to maintain data integrity.
 
 [GoCardless](https://gocardless.com/blog/zero-downtime-postgres-migrations-the-hard-parts/). All queries on a critical PostgreSQL table were blocked by the combination of an extremely fast database migration and a long-running read query, causing 15 seconds of downtime.
 
@@ -142,13 +146,21 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [Dropbox](https://blogs.dropbox.com/tech/2014/01/outage-post-mortem/). This postmortem is pretty thin and I'm not sure what happened. It sounds like, maybe, a scheduled OS upgrade somehow caused some machines to get wiped out, which took out some databases.
 
+[Duo](https://status.duo.com/incidents/4w07bmvnt359). Cascading failure due to a request queue overloading the existing, insufficient database capacity. Inadequate capacity planning and monitoring could be attributed as well.  
+
 [Epic Games](https://www.epicgames.com/fortnite/en-US/news/postmortem-of-service-outage-at-3-4m-ccu). Extreme load (a new peak of 3.4 million concurrent users) resulted in a mix of partial and total service disruptions.
 
 [European Space Agency](https://en.wikipedia.org/wiki/Cluster_%28spacecraft%29?oldid=217305667). An overflow occured when converting a 16-bit number to a 64-bit numer in the Ariane 5 intertial guidance system, causing the rocket to crash. The actual overflow occured in code that wasn't necessary for operation but was running anyway. According to [one account](http://www.around.com/ariane.html), this caused a diagnostic error message to get printed out, and the diagnostic error message was somehow interpreted as actual valid data. According to [another account](https://en.wikipedia.org/wiki/Cluster_%28spacecraft%29?oldid=217305667), no trap handler was installed for the overflow.
 
+[ESLint](https://eslint.org/blog/2018/07/postmortem-for-malicious-package-publishes). On July 12th, 2018, an attacker compromised the npm account of an ESLint maintainer and published malicious packages to the npm registry.
+
 [Etsy](https://blog.etsy.com/news/2012/demystifying-site-outages/). First, a deploy that was supposed to be a small bugfix deploy also caused live databases to get upgraded on running production machines. To make sure that this didn't cause any corruption, Etsy stopped serving traffic to run integrity checks. Second, an overflow in ids (signed 32-bit ints) caused some database operations to fail. Etsy didn't trust that this wouldn't result in data corruption and took down the site while the upgrade got pushed.
 
 [Foursquare](https://news.ycombinator.com/item?id=1769761). MongoDB fell over under load when it ran out of memory. The failure was catastrophic and not graceful due to a a query pattern that involved a read-load with low levels of locality (each user check-in caused a read of all check-ins for the user's history, and records were 300 bytes with no spatial locality, meaning that most of the data pulled in from each page was unnecessary). A lack of monitoring on the MongoDB instances caused the high load to go undetected until the load became catastrophic, causing 17 hours of downtime spanning two incidents in two days.
+
+[Gentoo](https://wiki.gentoo.org/wiki/Github/2018-06-28) An entity gained access to the Gentoo GitHub organization, removed access to all developers and started adding commits in various repositories.
+
+[GitHub](https://githubengineering.com/ddos-incident-report/) On February 28th 2018, GitHub experienced a DDoS attack, hitting the website with 1.35Tbps of traffic.
 
 [GitHub](https://blog.github.com/2018-10-30-oct21-post-incident-analysis/). In October 2018, routine maintenance work to replace failing 100G optical equipment resulted in a 43 second loss of connectivity between the US East Coast network hub and primary US East Coast data center.  This brief outage triggered a chain of events that led to 24 hours and 11 minutes of service degradation.
 
@@ -157,8 +169,6 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 [Gitlab 2017](https://about.gitlab.com/2017/02/10/postmortem-of-database-outage-of-january-31/). Influx of requests overloaded the database, caused replication to lag, tired admin deleted the wrong directory, six hours of data lost. See also [earlier report](https://about.gitlab.com/2017/02/01/gitlab-dot-com-database-incident) and [HN discussion](https://news.ycombinator.com/item?id=13537052).
 
 [Gliffy](http://support.gliffy.com/entries/98911057--Gliffy-Online-System-Outage). While attempting to resolve an issue with a backup system the production database was accidentally deleted causing a system outage.
-
-[Google](https://code.google.com/p/nativeclient/issues/detail?id=2508). Checking the vendor string instead of feature flags renders NaCl unusable on otherwise compatible non-mainstream hardware platforms.
 
 [Google](https://gist.github.com/jomo/2bae3821acb433d0446d). A mail system emailed people more than 20 times. This happened because mail was sent with a batch cron job that sent mail to everyone who was marked as waiting for mail. This was a non-atomic operation and the batch job didn't mark people as not waiting until all messages were sent.
 
@@ -171,6 +181,8 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 [Heroku](https://engineering.heroku.com/blogs/2017-02-15-filesystem-corruption-on-heroku-dynos/). An upgrade silently disabled a check that was meant to prevent filesystem corruption in running containers. A subsequent deploy caused filesystem corruption in running containers.
 
 [Heroku](https://status.heroku.com/incidents/1042). An upstream `apt` update broke pinned packages which lead to customers experiencing write permission failures to `/dev`.
+
+[Homebrew](https://brew.sh/2018/08/05/security-incident-disclosure/). A GitHub personal access token with recently elevated scopes was leaked from Homebrew’s Jenkins that allowed access to `git push` on several Homebrew repositories.
 
 [Instapaper](https://medium.com/making-instapaper/instapaper-outage-cause-recovery-3c32a7e9cc5f), also [this](http://blog.instapaper.com/post/157027537441). Limits were hit for a hosted database. It took many hours to migrate over to a new database.
 
@@ -198,7 +210,7 @@ Sun/Oracle. Sun famously didn't include ECC in a couple generations of server pa
 
 [PagerDuty](https://status.pagerduty.com/incidents/70m30bh7qfmx). A third party service for sending SMS and making voice calls experienced an outage due to AWS having issues in a region.
 
-[Parity](https://blog.ethcore.io/the-multi-sig-hack-a-postmortem/). $30 million of cryptocurrency value was diverted (stolen) with another $150 million diverted to a safe place (rescued), after a 4000-line software change containing a security bug was mistakenly labelled as a UI change, inadequately reviewed, deployed, and used by various unsuspecting third parties. See also [this analysis](http://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/).
+[Parity](https://paritytech.io/the-multi-sig-hack-a-postmortem/). $30 million of cryptocurrency value was diverted (stolen) with another $150 million diverted to a safe place (rescued), after a 4000-line software change containing a security bug was mistakenly labelled as a UI change, inadequately reviewed, deployed, and used by various unsuspecting third parties. See also [this analysis](http://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/).
 
 
 [Platform.sh](https://medium.com/@florian_7764/technical-post-mortem-of-the-august-incident-82ab4c3d6547). Outage during a scheduled maintenance window because there were too much data for Zookeeper to boot.
@@ -217,8 +229,6 @@ a migration of a critical backend system.
 [Skyliner](https://blog.skyliner.io/post-mortem-outages-on-1-19-17-and-1-23-17-3f65cc6f693e). A memory leak in a third party library lead to Skyliner being unavailable on two occasions.
 
 [Slack](https://slackhq.com/this-was-not-normal-really-230c2fd23bdc). A combination of factor results in a large number of Slack's users being disconnected to the server. The subsequent massive disconnection-reconnection process exceeded the database capacity and caused cascading connection failures, leading to 5% of Slack's users not being able to connect to the server for up to 2 hours.
-
-[Spotify](https://labs.spotify.com/2013/06/04/incident-management-at-spotify/). Lack of exponential backoff in a microservice caused a cascading failure, leading to notable service degradation.
 
 [Spotify](https://labs.spotify.com/2013/06/04/incident-management-at-spotify/). Lack of exponential backoff in a microservice caused a cascading failure, leading to notable service degradation.
 
@@ -302,6 +312,7 @@ a migration of a critical backend system.
 * Chris Higgs
 * Chris Sinjakli
 * Connor Shea
+* Damien Mathieu
 * Dan Luu
 * Dan Nguyen
 * David Pate
@@ -337,6 +348,7 @@ a migration of a critical backend system.
 * Nate Parsons
 * Nick Sweeting
 * Owen Jacobson
+* Peter Demin
 * Raul Ochoa
 * Ruairi Carroll
 * Samuel Hunter
