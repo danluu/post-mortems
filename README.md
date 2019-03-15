@@ -63,6 +63,8 @@ A List of Post-mortems!
 
 [Valve](https://blog.thousandeyes.com/steam-outage-monitor-data-center-connectivity/). Although there's no official postmortem, it looks like a bad BGP config severed Valve's connection to Level 3, Telia, and Abovenet/Zayo, which resulted in a global Steam outage.
 
+[Google](https://status.cloud.google.com/incident/storage/19002). A configuration change intended to address an uptick in demand for metadata storage, which overloaded part of the blob lookup system, which caused a cascading failure with user-visible service impact to Gmail, Google Photos, Google Drive, and other GCP services dependent on blob storage.
+
 
 ## Hardware/Power Failures
 
