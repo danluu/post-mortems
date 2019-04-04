@@ -185,6 +185,8 @@
 
 [Mailgun](http://status.mailgun.com/incidents/p9nxxql8g9rh). Secondary MongoDB servers became overloaded and while troubleshooting accidentally pushed a change that sent all secondary traffic to the primary MongoDB server, overloading it as well and exacerbating the problem.
 
+[Mandrill](https://mailchimp.com/what-we-learned-from-the-recent-mandrill-outage/). Transaction ID wraparound in Postgres caused a partial outage lasting a day and a half.
+
 [Medium](https://medium.com/medium-eng/the-curious-case-of-disappearing-polish-s-fa398313d4df). Polish users were unable to use their "Ś" key on Medium.
 
 [NASA](http://www.doneyles.com/LM/Tales.html). A design flaw in the Apollo 11 rendezvous radar produced excess CPU load, causing the spacecraft computer to restart during lunar landing.
