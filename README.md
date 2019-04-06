@@ -197,6 +197,8 @@
 
 [Netflix](http://techblog.netflix.com/2012/10/post-mortem-of-october-222012-aws.html). An EBS outage in one availability zone was mitigated by migrating to other availability zones.
 
+[North American Electric Power System](https://www3.epa.gov/region1/npdes/merrimackstation/pdfs/ar/AR-1165.pdf).  A power outage in Ohio around 1600h EDT cascaded up through a web of systemic vulnerabilities and process failures and resulted in an outage in the power grid affecting ~50,000,000 people for ~4 days in some areas, and caused rolling blackouts in Ontario for about a week thereafter.
+
 [Pagerduty](https://www.pagerduty.com/blog/outage-post-mortem-april-13-2013/). In April 2013, [Pagerduty](http://www.pagerduty.com), a cloud service proving application uptime monitoring and real-time notifications, suffered an outage when two of its three independent cloud deployments in different data centers began experiencing connectivity issues and high network latency. It was found later that the two independent deployments shared a common peering point which was experiencing network instability.  While the third deployment was still operational, Pagerduty's applications failed to establish quorum due to to high network latency and hence failed in their ability to send notifications.
 
 [PagerDuty](https://status.pagerduty.com/incidents/70m30bh7qfmx). A third party service for sending SMS and making voice calls experienced an outage due to AWS having issues in a region.
@@ -291,6 +293,7 @@
 * Anthony Elizondo
 * Anuj Pahuja
 * Benjamin Gilbert
+* Ben Zanin
 * Brad Baris
 * Brendan McLoughlin
 * Brian Scanlan
