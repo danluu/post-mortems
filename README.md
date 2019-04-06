@@ -95,7 +95,7 @@
 
 [Linux](https://lkml.org/lkml/2009/1/2/373). Leap second code was called from the timer interrupt handler, which held `xtime_lock`. That code did a `printk` to log the leap second. `printk` wakes up `klogd`, which can sometimes try to get the time, which waits on `xtime_lock`, causing a deadlock.
 
-[Linux](https://lkml.org/lkml/2012/7/1/203). When a leap second occurred, `CLOCK_REALTIME` was rewound by one second. This was not done via a mechanism that would update hrtimer base.offset (clock_was_set). This meant that when a timer interrupt happened, TIMER_ABSTIME CLOCK_REALTIME timers got expired one second early, including timers set for less than one second. This caused applications that used sleep for less than one second in a loop to spinwait without sleeping, causing high load on many systems. This caused a large number of web services to go down in 2012.
+[Linux](https://lkml.org/lkml/2012/7/1/203). When a leap second occurred, `CLOCK_REALTIME` was rewound by one second. This was not done via a mechanism that would update `hrtimer base.offset`. This meant that when a timer interrupt happened, TIMER_ABSTIME CLOCK_REALTIME timers got expired one second early, including timers set for less than one second. This caused applications that used sleep for less than one second in a loop to spinwait without sleeping, causing high load on many systems. This caused a large number of web services to go down in 2012.
 
 ## Uncategorized
 
@@ -163,7 +163,7 @@
 
 [GPS/GLONASS](http://www.gps.gov/governance/advisory/meetings/2014-06/beutler1.pdf). A bad update that caused incorrect orbital mechanics calculations caused GPS satellites that use GLONASS to broadcast incorrect positions for 10 hours. The bug was noticed and rolled back almost immediately due to (?) this didn't fix the issue.
 
-[Healthcare.gov](https://plus.google.com/+AndreasSchou/posts/FhWtABz7ew9).
+[Healthcare.gov](https://plus.google.com/+AndreasSchou/posts/FhWtABz7ew9). A large organizational failure to build a website for United States healthcare.
 
 [Heroku](https://status.heroku.com/incidents/642?postmortem). Having a system that requires scheduled manual updates resulted in an error which caused US customers to be unable to scale, stop or restart dynos, or route HTTP traffic, and also prevented all customers from being able to deploy.
 
