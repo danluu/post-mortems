@@ -89,7 +89,7 @@
 
 ## Time
 
-[Mozilla](https://hacks.mozilla.org/2019/05/technical-details-on-the-recent-firefox-add-on-outage/). Firefox had an incident in which most add-ons stopped working. The certificates used to sign add-on is expired and involved 15000 addons.
+[Mozilla](https://hacks.mozilla.org/2019/05/technical-details-on-the-recent-firefox-add-on-outage/). Most Firefox add-ons stopped working around May 4th 2019 when a certificate expired. Firefox requires a valid certificate chain to prevent malware. About nine hours later, Mozilla pushed a privileged add-on that injected a valid certificate into Firefox's certificate store, creating a valid chain and unblocking add-ons. This disabled effectively all add-ons, about 15,000, and the resolution took approximately 15-21 hours for most users.
 
 [Azure](https://azure.microsoft.com/en-us/blog/summary-of-windows-azure-service-disruption-on-feb-29th-2012/). Certificates that were valid for one year were created. Instead of using an appropriate library, someone wrote code that computed one year to be the current date plus one year. On February 29th 2012, this resulted in the creation of certificates with an expiration date of February 29th 2013, which were rejected because of the invalid date. This caused an Azure global outage that lasted for most of a day.
 
