@@ -1,4 +1,6 @@
 # A List of Post-mortems!
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdanluu%2Fpost-mortems.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdanluu%2Fpost-mortems?ref=badge_shield)
+
 
 ## Table of Contents
 
@@ -349,3 +351,7 @@
 * Vaibhav Bhembre
 * Veit Heller
 * Vincent Ambo
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdanluu%2Fpost-mortems.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdanluu%2Fpost-mortems?ref=badge_large)
