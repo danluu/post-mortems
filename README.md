@@ -35,6 +35,8 @@
 
 [Google](https://status.cloud.google.com/incident/storage/19002). A configuration change intended to address an uptick in demand for metadata storage, which overloaded part of the blob lookup system, which caused a cascading failure with user-visible service impact to Gmail, Google Photos, Google Drive, and other GCP services dependent on blob storage.
 
+[Google](https://status.cloud.google.com/incident/cloud-networking/19009). Two misconfigurations, plus a software bug, caused a massive Google Cloud Network failure on the US East Coast. 
+
 [Heroku](https://status.heroku.com/incidents/1091). An automated remote configuration change did not propagate fully. Web dynos could not be started.
 
 [Microsoft](http://azure.microsoft.com/blog/2014/11/19/update-on-azure-storage-service-interruption/). A bad config took down Azure storage.
