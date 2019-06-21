@@ -262,7 +262,7 @@
 
 [Availability Digest website](http://www.availabilitydigest.com/articles.htm).
 
-[Google+ postmortems community](https://plus.google.com/communities/115136140203018391796).
+[Postmortems community](https://postmortems.info) (with imported archive from the now-dead G+ community).
 
 [John Daily's list of postmortems (in json)](https://github.com/macintux/Service-postmortems).
 
