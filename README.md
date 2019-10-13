@@ -288,6 +288,10 @@
 
 [SRE Weekly](https://sreweekly.com) usually has an **Outages** section at the end.
 
+[Lorin Hochstein's list of major incidents](https://github.com/lorin/major-incidents).
+
+[Awesome Tech Postmortems](https://github.com/snakescott/awesome-tech-postmortems).
+
 ## Analysis
 
 [How Complex Systems Fail](http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)
