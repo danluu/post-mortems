@@ -45,7 +45,7 @@
 
 [Stack Overflow](http://stackstatus.net/post/96025967369/outage-post-mortem-august-25th-2014). A bad firewall config blocked stackexchange/stackoverflow.
 
-[Sentry](http://blog.getsentry.com/2016/06/14/security-incident-june-12-2016.html). Wrong Amazon S3 settings on backups lead to data leak.
+[Sentry](https://blog.sentry.io/2016/06/14/security-incident-june-12-2016). Wrong Amazon S3 settings on backups lead to data leak.
 
 [TravisCI](https://www.traviscistatus.com/incidents/khzk8bg4p9sy). A configuration issue (incomplete password rotation) led to "leaking" VMs, leading to elevated build queue times.
 
@@ -99,11 +99,11 @@
 
 [Linux](https://lkml.org/lkml/2012/7/1/203). When a leap second occurred, `CLOCK_REALTIME` was rewound by one second. This was not done via a mechanism that would update `hrtimer base.offset`. This meant that when a timer interrupt happened, TIMER_ABSTIME CLOCK_REALTIME timers got expired one second early, including timers set for less than one second. This caused applications that used sleep for less than one second in a loop to spinwait without sleeping, causing high load on many systems. This caused a large number of web services to go down in 2012.
 
-[Mozilla](https://hacks.mozilla.org/2019/05/technical-details-on-the-recent-firefox-add-on-outage/). Most Firefox add-ons stopped working around May 4th 2019 when a certificate expired. Firefox requires a valid certificate chain to prevent malware. About nine hours later, Mozilla pushed a privileged add-on that injected a valid certificate into Firefox's certificate store, creating a valid chain and unblocking add-ons. This disabled effectively all add-ons, about 15,000, and the resolution took approximately 15-21 hours for most users.
+[Mozilla](https://hacks.mozilla.org/2019/07/add-ons-outage-post-mortem-result/). Most Firefox add-ons stopped working around May 4th 2019 when a certificate expired. Firefox requires a valid certificate chain to prevent malware. About nine hours later, Mozilla pushed a privileged add-on that injected a valid certificate into Firefox's certificate store, creating a valid chain and unblocking add-ons. This disabled effectively all add-ons, about 15,000, and the resolution took approximately 15-21 hours for most users. Some user data was lost. Previously Mozilla [posted](https://hacks.mozilla.org/2019/05/technical-details-on-the-recent-firefox-add-on-outage) about the technical details.
 
 ## Uncategorized
 
-[Allegro](http://allegro.tech/allegro-cast-post-mortem.html). The [Allegro](http://allegro.pl) platform suffered a failure of a subsystem responsible for asynchronous distributed task processing. The problem affected many areas, e.g. features such as purchasing numerous offers via cart and bulk offer editing (including price list editing) did not work at all. Moreover, it partially failed to send daily newsletter with new offers. Also some parts of internal administration panel were affected.
+[Allegro](https://allegro.tech/2015/01/allegro-cast-post-mortem.html). The [Allegro](https://allegro.pl) platform suffered a failure of a subsystem responsible for asynchronous distributed task processing. The problem affected many areas, e.g. features such as purchasing numerous offers via cart and bulk offer editing (including price list editing) did not work at all. Moreover, it partially failed to send daily newsletter with new offers. Also some parts of internal administration panel were affected.
 
 [Amazon](https://aws.amazon.com/message/41926/). Human error. On February 28th 2017 9:37AM PST, the Amazon S3 team was debugging a minor issue. Despite using an established playbook, one of the commands intending to remove a small number of servers was issued with a typo, inadvertently causing a larger set of servers to be removed. These servers supported critical S3 systems. As a result, dependent systems required a full restart to correctly operate, and the system underwent widespread outages for US-EAST-1 (Northern Virginia) until final resolution at 1:54PM PST. Since Amazon's own services such as EC2 and EBS rely on S3 as well, it caused a vast cascading failure which affected hundreds of companies.
 
@@ -176,6 +176,8 @@
 [Heroku](https://status.heroku.com/incidents/1042). An upstream `apt` update broke pinned packages which lead to customers experiencing write permission failures to `/dev`.
 
 [Homebrew](https://brew.sh/2018/08/05/security-incident-disclosure/). A GitHub personal access token with recently elevated scopes was leaked from Homebrew’s Jenkins that allowed access to `git push` on several Homebrew repositories.
+
+[Indian Electricity Grid](http://cercind.gov.in/2012/orders/Final_Report_Grid_Disturbance.pdf). One night in July 2012, a skewed electricity supply-demand profile developed when the northern grid drew a tremendous amount of power from the western and eastern grids. Following a series of circuit breakers tripping by virtue of under-frequency protection, the entire NEW (northern-eastern-western) grid collapsed due to the absence of islanding mechanisms. While the grid was reactivated after over 8 hours, similar conditions in the following day caused the grid to fail again. However, the restoration effort concluded almost 24 hours after the occurrence of the latter incident.
 
 [Instapaper](https://medium.com/making-instapaper/instapaper-outage-cause-recovery-3c32a7e9cc5f), also [this](http://blog.instapaper.com/post/157027537441). Limits were hit for a hosted database. It took many hours to migrate over to a new database.
 
@@ -284,6 +286,12 @@
 
 [SRE Weekly](https://sreweekly.com) usually has an **Outages** section at the end.
 
+[Lorin Hochstein's list of major incidents](https://github.com/lorin/major-incidents).
+
+[Awesome Tech Postmortems](https://github.com/snakescott/awesome-tech-postmortems).
+
+[Nat Welch's parsed postmortems](https://github.com/icco/postmortems) is an attempt to build a database out of this markdown file.
+
 ## Analysis
 
 [How Complex Systems Fail](http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)
@@ -296,6 +304,7 @@
 * Ahmet Alp Balkan
 * Allon Murienik
 * Amber Yust
+* Anirudh Ramesh
 * Anthony Elizondo
 * Anuj Pahuja
 * Benjamin Gilbert
