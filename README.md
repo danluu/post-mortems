@@ -129,6 +129,8 @@
 
 [CCP Games](http://community.eveonline.com/news/dev-blogs/behind-the-scenes-of-a-long-eve-online-downtime/). A problematic logging channel caused cluster nodes dying off during the cluster start sequence after rolling out a new game patch.
 
+[CCP Games Devblog](https://community.eveonline.com/news/dev-blogs/sleeping-beauty/). Documents a Stackless Python memory reuse bug that took years to track down.
+
 [Chef.io](https://www.chef.io/blog/2014/07/10/supermarket-intermittent-unresponsiveness-postmortem/). The recipe community site Supermarket crashed two hours after launch due to intermittent unresponsiveness and increased latency. One of the main reasons for failure identified in the post mortem was very low health check timeouts.
 
 [CircleCI](https://circleci.statuspage.io/incidents/hr0mm9xmm3x6). A GitHub outage and recovery caused an unexpectedly large incoming load. For reasons that aren't specified, a large load causes CircleCI's queue system to slow down, in this case to handling one transaction per minute.
@@ -262,8 +264,6 @@
 [VZaar](https://vzaar.com/blog/2017/02/22/mondays-outage-what-happened-how-well-prevent-it-from-happening-again/). A release was made from the wrong VCS branch. This lead to database changes being applied which broke production.
 
 [Yeller](http://yellerapp.com/posts/2014-08-04-postmortem1.html). A network partition in a cluster caused some messages to get delayed, up to 6-7 hours. For reasons that aren't clear, a rolling restart of the cluster healed the partition. There's some suspicious that it was due to cached routes, but there wasn't enough logging information to tell for sure.
-
-[CCP Games Devblog](https://community.eveonline.com/news/dev-blogs/sleeping-beauty/). Documents a Stackless Python memory reuse bug that took years to track down.
 
 *Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.*
 
