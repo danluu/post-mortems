@@ -267,6 +267,8 @@
 
 [Zerodha](https://zerodha.com/marketintel/bulletin/229363/post-mortem-of-technical-issue-august-29-2019). The Order Management System (OMS) provided to Zerodha, a stock broker, collapsed when an order for 1M units of a penny stock was divided into more than 0.1M individual trades against the typical few hundreds, triggering a collapse of the OMS, which was not encountered prior by its provider - Refinitiv (formerly Thomson Reuters), a subsidiary of the London Stock Exchange.
 
+[Zerodha](https://zerodha.com/marketintel/bulletin/105569/postmortem-trading-and-hanging-orders-on-12th-april-2018). A failure of the primary leased line to a CTCL between a stock broker and a stock exchange led to the activation of a backup leased line that was operating sporadically over the following hour, affecting bracket and cover orders. Subsequently, the process of placing and validating orders had been modified to incorporate the unreliability of the CTCL's leased lines, but the reliability of the primary and the backup leased lines was not fundamentally improved by the providers.
+
 *Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.*
 
 ## Other lists of postmortems
