@@ -129,7 +129,7 @@
 
 [CCP Games](http://community.eveonline.com/news/dev-blogs/behind-the-scenes-of-a-long-eve-online-downtime/). A problematic logging channel caused cluster nodes dying off during the cluster start sequence after rolling out a new game patch.
 
-[CCP Games Devblog](https://community.eveonline.com/news/dev-blogs/sleeping-beauty/). Documents a Stackless Python memory reuse bug that took years to track down.
+[CCP Games](https://community.eveonline.com/news/dev-blogs/sleeping-beauty/). Documents a Stackless Python memory reuse bug that took years to track down.
 
 [Chef.io](https://www.chef.io/blog/2014/07/10/supermarket-intermittent-unresponsiveness-postmortem/). The recipe community site Supermarket crashed two hours after launch due to intermittent unresponsiveness and increased latency. One of the main reasons for failure identified in the post mortem was very low health check timeouts.
 
