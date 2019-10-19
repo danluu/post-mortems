@@ -265,6 +265,8 @@
 
 [Yeller](http://yellerapp.com/posts/2014-08-04-postmortem1.html). A network partition in a cluster caused some messages to get delayed, up to 6-7 hours. For reasons that aren't clear, a rolling restart of the cluster healed the partition. There's some suspicious that it was due to cached routes, but there wasn't enough logging information to tell for sure.
 
+[Zerodha](https://zerodha.com/marketintel/bulletin/229363/post-mortem-of-technical-issue-august-29-2019). The Order Management System (OMS) provided to Zerodha, a stock broker, collapsed when an order for 1M units of a penny stock was divided into more than 0.1M individual trades against the typical few hundreds, triggering a collapse of the OMS, which was not encountered prior by its provider - Refinitiv (formerly Thomson Reuters), a subsidiary of the London Stock Exchange.
+
 *Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.*
 
 ## Other lists of postmortems
