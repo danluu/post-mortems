@@ -129,6 +129,8 @@
 
 [CCP Games](http://community.eveonline.com/news/dev-blogs/behind-the-scenes-of-a-long-eve-online-downtime/). A problematic logging channel caused cluster nodes dying off during the cluster start sequence after rolling out a new game patch.
 
+[CCP Games](https://community.eveonline.com/news/dev-blogs/sleeping-beauty/). Documents a Stackless Python memory reuse bug that took years to track down.
+
 [Chef.io](https://www.chef.io/blog/2014/07/10/supermarket-intermittent-unresponsiveness-postmortem/). The recipe community site Supermarket crashed two hours after launch due to intermittent unresponsiveness and increased latency. One of the main reasons for failure identified in the post mortem was very low health check timeouts.
 
 [CircleCI](https://circleci.statuspage.io/incidents/hr0mm9xmm3x6). A GitHub outage and recovery caused an unexpectedly large incoming load. For reasons that aren't specified, a large load causes CircleCI's queue system to slow down, in this case to handling one transaction per minute.
@@ -215,7 +217,6 @@
 
 [Parity](https://paritytech.io/the-multi-sig-hack-a-postmortem/). $30 million of cryptocurrency value was diverted (stolen) with another $150 million diverted to a safe place (rescued), after a 4000-line software change containing a security bug was mistakenly labelled as a UI change, inadequately reviewed, deployed, and used by various unsuspecting third parties. See also [this analysis](http://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/).
 
-
 [Platform.sh](https://medium.com/@florian_7764/technical-post-mortem-of-the-august-incident-82ab4c3d6547). Outage during a scheduled maintenance window because there were too much data for Zookeeper to boot.
 
 [Reddit](https://www.reddit.com/r/announcements/comments/4y0m56/why_reddit_was_down_on_aug_11/). Experienced an outage for 1.5 hours, followed by another 1.5 hours of degraded performance on Thursday August 11 2016. This was due to an error during a migration of a critical backend system.
@@ -264,7 +265,9 @@
 
 [Yeller](http://yellerapp.com/posts/2014-08-04-postmortem1.html). A network partition in a cluster caused some messages to get delayed, up to 6-7 hours. For reasons that aren't clear, a rolling restart of the cluster healed the partition. There's some suspicious that it was due to cached routes, but there wasn't enough logging information to tell for sure.
 
-[CCP Games Devblog](https://community.eveonline.com/news/dev-blogs/sleeping-beauty/). Documents a Stackless Python memory reuse bug that took years to track down.
+[Zerodha](https://zerodha.com/marketintel/bulletin/229363/post-mortem-of-technical-issue-august-29-2019). The Order Management System (OMS) provided to Zerodha, a stock broker, collapsed when an order for 1M units of a penny stock was divided into more than 0.1M individual trades against the typical few hundreds, triggering a collapse of the OMS, which was not encountered prior by its provider - Refinitiv (formerly Thomson Reuters), a subsidiary of the London Stock Exchange.
+
+[Zerodha](https://zerodha.com/marketintel/bulletin/105569/postmortem-trading-and-hanging-orders-on-12th-april-2018). A failure of the primary leased line to a CTCL between a stock broker and a stock exchange led to the activation of a backup leased line that was operating sporadically over the following hour, affecting bracket and cover orders. Subsequently, the process of placing and validating orders had been modified to incorporate the unreliability of the CTCL's leased lines, but the reliability of the primary and the backup leased lines was not fundamentally improved by the providers.
 
 *Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.*
 
