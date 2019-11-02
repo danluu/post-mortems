@@ -297,6 +297,8 @@
 
 [Nat Welch's parsed postmortems](https://github.com/icco/postmortems) is an attempt to build a database out of this markdown file.
 
+[Postmortem Templates](https://github.com/dastergon/postmortem-templates) is a collection of postmortem templates from various sources.
+
 ## Analysis
 
 [How Complex Systems Fail](http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)
