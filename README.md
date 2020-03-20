@@ -35,7 +35,7 @@
 
 [Google](https://status.cloud.google.com/incident/storage/19002). A configuration change intended to address an uptick in demand for metadata storage, which overloaded part of the blob lookup system, which caused a cascading failure with user-visible service impact to Gmail, Google Photos, Google Drive, and other GCP services dependent on blob storage.
 
-[Google](https://status.cloud.google.com/incident/cloud-networking/19009). Two misconfigurations, plus a software bug, caused a massive Google Cloud Network failure on the US East Coast. 
+[Google](https://status.cloud.google.com/incident/cloud-networking/19009). Two misconfigurations, plus a software bug, caused a massive Google Cloud Network failure on the US East Coast.
 
 [Heroku](https://status.heroku.com/incidents/1091). An automated remote configuration change did not propagate fully. Web dynos could not be started.
 
@@ -147,7 +147,7 @@
 
 [Dropbox](https://blogs.dropbox.com/tech/2014/01/outage-post-mortem/). This postmortem is pretty thin and I'm not sure what happened. It sounds like, maybe, a scheduled OS upgrade somehow caused some machines to get wiped out, which took out some databases.
 
-[Duo](https://status.duo.com/incidents/4w07bmvnt359). Cascading failure due to a request queue overloading the existing, insufficient database capacity. Inadequate capacity planning and monitoring could be attributed as well.  
+[Duo](https://status.duo.com/incidents/4w07bmvnt359). Cascading failure due to a request queue overloading the existing, insufficient database capacity. Inadequate capacity planning and monitoring could be attributed as well.
 
 [Epic Games](https://www.epicgames.com/fortnite/en-US/news/postmortem-of-service-outage-at-3-4m-ccu). Extreme load (a new peak of 3.4 million concurrent users) resulted in a mix of partial and total service disruptions.
 
