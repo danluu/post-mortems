@@ -153,6 +153,10 @@
 
 [European Space Agency](https://en.wikipedia.org/wiki/Cluster_%28spacecraft%29?oldid=217305667). An overflow occured when converting a 16-bit number to a 64-bit numer in the Ariane 5 intertial guidance system, causing the rocket to crash. The actual overflow occured in code that wasn't necessary for operation but was running anyway. According to [one account](http://www.around.com/ariane.html), this caused a diagnostic error message to get printed out, and the diagnostic error message was somehow interpreted as actual valid data. According to [another account](https://en.wikipedia.org/wiki/Cluster_%28spacecraft%29?oldid=217305667), no trap handler was installed for the overflow.
 
+[Elastic](https://www.elastic.co/blog/elastic-cloud-january-18-2019-incident-report). Elastic Cloud customers with deployments in the AWS eu-west-1 (Ireland) region experienced severely degraded access to their clusters for roughly 3 hours. During this same timeframe, there was an approximately 20 minute period during which all deployments in this region were completely unavailable.
+
+[Elastic](https://www.elastic.co/blog/elastic-cloud-incident-report-feburary-4-2019). Elastic Cloud customers with deployments in the AWS us-east-1 region experienced degraded access to their clusters.
+
 [ESLint](https://eslint.org/blog/2018/07/postmortem-for-malicious-package-publishes). On July 12th, 2018, an attacker compromised the npm account of an ESLint maintainer and published malicious packages to the npm registry.
 
 [Etsy](https://blog.etsy.com/news/2012/demystifying-site-outages/). First, a deploy that was supposed to be a small bugfix deploy also caused live databases to get upgraded on running production machines. To make sure that this didn't cause any corruption, Etsy stopped serving traffic to run integrity checks. Second, an overflow in ids (signed 32-bit ints) caused some database operations to fail. Etsy didn't trust that this wouldn't result in data corruption and took down the site while the upgrade got pushed.
