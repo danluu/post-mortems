@@ -121,6 +121,8 @@
 
 [BBC Online](http://www.bbc.co.uk/blogs/internet/entries/a37b0470-47d4-3991-82bb-a7d5b8803771). In July 2014, BBC Online experienced a very long outage of several of its popular online services including the BBC iPlayer. When the database backend was overloaded, it had started to throttle requests from various services. Services that hadn't cached the database responses locally began timing out and eventually failed completely.
 
+[Bintray](https://status.bintray.com/incidents/w4dfr0rpznkt). In July 2017 several malicious Maven packages were included in JCenter with an impersonation attack. Those packages lived in JCenter for over a year and supposedly affected several Android apps that resulted in having malware code injected by those dependencies from JCenter.
+
 [Bitly](http://blog.bitly.com/post/85260908544/more-detail). Hosted source code repo contained credentials granting access to bitly backups, including hashed passwords.
 
 [BrowserStack](https://www.browserstack.com/attack-and-downtime-on-9-November). An old prototype machine with the [Shellshock](https://en.wikipedia.org/wiki/Shellshock_(software_bug)) vulnerability still active had secret keys on it which ultimately led to a security breach of the Production system.
@@ -364,6 +366,7 @@
 * Nat Welch
 * Nate Parsons
 * Nick Sweeting
+* Nicola Corti
 * Owen Jacobson
 * Peter Demin
 * Raul Ochoa
