@@ -15,6 +15,8 @@
 
 ## Config Errors
 
+[Allegro](https://allegro.tech/2018/08/postmortem-why-allegro-went-down.html). E-commerce site went down after a sudden traffic spike caused by a marketing campaign. The outage was caused by a configuration error in cluster resource management which prevented more service instances from starting even though hardware resources were available.   
+
 [Cloudflare](https://blog.cloudflare.com/todays-outage-post-mortem-82515/). A bad config (router rule) caused all of their edge routers to crash, taking down all of Cloudflare.
 
 [Etsy](https://codeascraft.com/2012/01/23/solr-bittorrent-index-replication/). Sending multicast traffic without properly configuring switches caused an Etsy global outage.
@@ -361,6 +363,7 @@
 * Massimiliano Arione
 * Matt Day
 * Michael Robinson
+* Michał Kosmulski
 * Mike Doherty
 * Mohit Agarwal
 * Nat Welch
