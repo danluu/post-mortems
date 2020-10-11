@@ -321,7 +321,7 @@
 
 ## Analysis
 
-[How Complex Systems Fail](http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)
+[How Complex Systems Fail](https://stuff.mit.edu/afs/athena/course/2/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)
 
 [John Allspaw on Resilience Engineering](http://www.kitchensoap.com/2011/04/07/resilience-engineering-part-i/)
 
