@@ -1,5 +1,8 @@
 # A List of Post-mortems!
 
+> Only a fool learns from his own mistakes. The wise man learns from the mistakes of others.
+> - Otto von Bismarck
+
 ## Table of Contents
 
  - **[Config Errors](#config-errors)**
