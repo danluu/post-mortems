@@ -83,6 +83,8 @@
 
 [PythonAnywhere](https://blog.pythonanywhere.com/189/). A storage volume failure on one of storage servers caused a number of outages, starting with PythonAnywhere site and also with our users’ programs (including websites) that were dependent on that volume, and later spreading to other hosted sites.
 
+[Razorpay](https://razorpay.com/blog/day-of-rds-multi-az-failover/). A RDS hardware failure highlighted an incorrect MySQL configuration which resulted in major data loss in a financial system.
+
 [Sun](https://www.forbes.com/forbes/2000/1113/6613068a.html#6d1bdc036162). Sun famously didn't include ECC in a couple generations of server parts. This resulted in data corruption and crashing. Following Sun's typical MO, they made customers that reported a bug sign an NDA before explaining the issue.
 
 ## Conflicts
