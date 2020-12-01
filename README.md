@@ -70,7 +70,6 @@
 [Valve](https://blog.thousandeyes.com/steam-outage-monitor-data-center-connectivity/). Although there's no official postmortem, it looks like a bad BGP config severed Valve's connection to Level 3, Telia, and Abovenet/Zayo, which resulted in a global Steam outage.
 
 ## Hardware/Power Failures
-[Cloudflare](https://blog.cloudflare.com/a-byzantine-failure-in-the-real-world/). A partial switch misbehavior caused a cascading Byzantine failure which impacted the availability of the API and dashboard for six hours and 33 minutes.
 
 [Amazon](http://aws.amazon.com/message/2329B7/). An unknown event caused a transformer to fail. One of the PLCs that checks that generator power is in phase failed for an unknown reason, which prevented a set of backup generators from coming online. This affected EC2, EBS, and RDS in EU West.
 
@@ -79,6 +78,8 @@
 [Amazon](http://aws.amazon.com/message/4372T8/). At 10:25pm PDT on June 4, loss of power at an AWS Sydney facility resulting from severe weather in that area lead to disruption to a significant number of instances in an Availability Zone. Due to the signature of the power loss, power  isolation breakers did not engage, resulting in backup energy reserves draining into the degraded power grid.
 
 [ARPANET](http://www.faqs.org/rfcs/rfc789.html). A malfunctioning IMP ([Interface Message Processor](https://en.wikipedia.org/wiki/Interface_Message_Processor)) corrupted routing data, software recomputed checksums propagating bad data with good checksums, incorrect sequence numbers caused buffers to fill, full buffers caused loss of keepalive packets and nodes took themselves off the network. From 1980.
+
+[Cloudflare](https://blog.cloudflare.com/a-byzantine-failure-in-the-real-world/). A partial switch misbehavior caused a cascading Byzantine failure which impacted the availability of the API and dashboard for six hours and 33 minutes.
 
 [FirstEnergy / General Electric](https://en.wikipedia.org/wiki/Northeast_blackout_of_2003). FirstEnergy had a local failure when some transmission lines hit untrimmed foliage. The normal process is to have an alarm go off, which causes human operators to re-distribute power. But the GE system that was monitoring this had a bug which prevented the alarm from getting triggered, which eventually caused a cascading failure that eventually affected 55 million people.
 
@@ -400,9 +401,9 @@
 * Sean Escriva
 * Shriram Rajagopalan
 * Siddharth Kannan
+* Tamir Dresher
 * Tim Freeman
 * Tom Crayford
 * Vaibhav Bhembre
 * Veit Heller
 * Vincent Ambo
-* Tamir Dresher
