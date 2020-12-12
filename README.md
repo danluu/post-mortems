@@ -79,6 +79,8 @@
 
 [ARPANET](http://www.faqs.org/rfcs/rfc789.html). A malfunctioning IMP ([Interface Message Processor](https://en.wikipedia.org/wiki/Interface_Message_Processor)) corrupted routing data, software recomputed checksums propagating bad data with good checksums, incorrect sequence numbers caused buffers to fill, full buffers caused loss of keepalive packets and nodes took themselves off the network. From 1980.
 
+[Cloudflare](https://blog.cloudflare.com/a-byzantine-failure-in-the-real-world/). A partial switch misbehavior caused a cascading Byzantine failure which impacted the availability of the API and dashboard for six hours and 33 minutes.
+
 [FirstEnergy / General Electric](https://en.wikipedia.org/wiki/Northeast_blackout_of_2003). FirstEnergy had a local failure when some transmission lines hit untrimmed foliage. The normal process is to have an alarm go off, which causes human operators to re-distribute power. But the GE system that was monitoring this had a bug which prevented the alarm from getting triggered, which eventually caused a cascading failure that eventually affected 55 million people.
 
 [GitHub](https://github.com/blog/2106-january-28th-incident-report). On January 28th, 2016 GitHub experienced a disruption in the power at their primary datacenter.
@@ -399,6 +401,7 @@
 * Sean Escriva
 * Shriram Rajagopalan
 * Siddharth Kannan
+* Tamir Dresher
 * Tim Freeman
 * Tom Crayford
 * Vaibhav Bhembre
