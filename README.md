@@ -69,6 +69,8 @@
 
 [Valve](https://blog.thousandeyes.com/steam-outage-monitor-data-center-connectivity/). Although there's no official postmortem, it looks like a bad BGP config severed Valve's connection to Level 3, Telia, and Abovenet/Zayo, which resulted in a global Steam outage.
 
+[TUI](https://assets.publishing.service.gov.uk/media/604f423be90e077fdf88493f/Boeing_737-8K5_G-TAWG_04-21.pdf) Prior to the incident flight the reservation system from which the load sheet was produced had been upgraded. A fault in the system caused female passengers checked in with title ‘Miss’ to be counted as childen. The system allocated them a child’s standard weight of 35 kg as opposed to the correct female standard weight of 69 kg. Consequently, with 38 females checked in incorrectly and misidentified as children, the G-TAWG takeoff mass from the load sheet was 1,244 kg below the actual mass of the aircraft.
+
 ## Hardware/Power Failures
 
 [Amazon](http://aws.amazon.com/message/2329B7/). An unknown event caused a transformer to fail. One of the PLCs that checks that generator power is in phase failed for an unknown reason, which prevented a set of backup generators from coming online. This affected EC2, EBS, and RDS in EU West.
