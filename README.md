@@ -79,7 +79,7 @@
 
 [Amazon](https://aws.amazon.com/message/4372T8/). At 10:25pm PDT on June 4, loss of power at an AWS Sydney facility resulting from severe weather in that area lead to disruption to a significant number of instances in an Availability Zone. Due to the signature of the power loss, power  isolation breakers did not engage, resulting in backup energy reserves draining into the degraded power grid.
 
-[ARPANET](https://www.faqs.org/rfcs/rfc789.html). A malfunctioning IMP ([Interface Message Processor](https://en.wikipedia.org/wiki/Interface_Message_Processor)) corrupted routing data, software recomputed checksums propagating bad data with good checksums, incorrect sequence numbers caused buffers to fill, full buffers caused loss of keepalive packets and nodes took themselves off the network. From 1980.
+[ARPANET](https://datatracker.ietf.org/doc/html/rfc789.html). A malfunctioning IMP ([Interface Message Processor](https://en.wikipedia.org/wiki/Interface_Message_Processor)) corrupted routing data, software recomputed checksums propagating bad data with good checksums, incorrect sequence numbers caused buffers to fill, full buffers caused loss of keepalive packets and nodes took themselves off the network. From 1980.
 
 [Cloudflare](https://blog.cloudflare.com/a-byzantine-failure-in-the-real-world/). A partial switch misbehavior caused a cascading Byzantine failure which impacted the availability of the API and dashboard for six hours and 33 minutes.
 
@@ -113,9 +113,9 @@
 
 [Cloudflare](https://blog.cloudflare.com/how-and-why-the-leap-second-affected-cloudflare-dns/). Backwards time flow from tracking [the 27th leap second on 2016-12-31T23:59:60Z](https://hpiers.obspm.fr/iers/bul/bulc/bulletinc.52) caused the weighted round-robin selection of DNS resolvers (RRDNS) to panic and fail on some CNAME lookups.  Go's `time.Now()` was incorrectly assumed to be monotonic; this injected negative values into calls to `rand.Int63n()`, which panics in that case.
 
-[Linux](https://lkml.org/lkml/2009/1/2/373). Leap second code was called from the timer interrupt handler, which held `xtime_lock`. That code did a `printk` to log the leap second. `printk` wakes up `klogd`, which can sometimes try to get the time, which waits on `xtime_lock`, causing a deadlock.
+[Linux](http://lkml.org/lkml/2009/1/2/373). Leap second code was called from the timer interrupt handler, which held `xtime_lock`. That code did a `printk` to log the leap second. `printk` wakes up `klogd`, which can sometimes try to get the time, which waits on `xtime_lock`, causing a deadlock.
 
-[Linux](https://lkml.org/lkml/2012/7/1/203). When a leap second occurred, `CLOCK_REALTIME` was rewound by one second. This was not done via a mechanism that would update `hrtimer base.offset`. This meant that when a timer interrupt happened, TIMER_ABSTIME CLOCK_REALTIME timers got expired one second early, including timers set for less than one second. This caused applications that used sleep for less than one second in a loop to spinwait without sleeping, causing high load on many systems. This caused a large number of web services to go down in 2012.
+[Linux](http://lkml.org/lkml/2012/7/1/203). When a leap second occurred, `CLOCK_REALTIME` was rewound by one second. This was not done via a mechanism that would update `hrtimer base.offset`. This meant that when a timer interrupt happened, TIMER_ABSTIME CLOCK_REALTIME timers got expired one second early, including timers set for less than one second. This caused applications that used sleep for less than one second in a loop to spinwait without sleeping, causing high load on many systems. This caused a large number of web services to go down in 2012.
 
 [Mozilla](https://hacks.mozilla.org/2019/07/add-ons-outage-post-mortem-result/). Most Firefox add-ons stopped working around May 4th 2019 when a certificate expired. Firefox requires a valid certificate chain to prevent malware. About nine hours later, Mozilla pushed a privileged add-on that injected a valid certificate into Firefox's certificate store, creating a valid chain and unblocking add-ons. This disabled effectively all add-ons, about 15,000, and the resolution took approximately 15-21 hours for most users. Some user data was lost. Previously Mozilla [posted](https://hacks.mozilla.org/2019/05/technical-details-on-the-recent-firefox-add-on-outage) about the technical details.
 
@@ -241,7 +241,7 @@
 
 [NASA](https://web.archive.org/web/20161230103247/https://research.microsoft.com/en-us/um/people/mbj/Mars_Pathfinder/Authoritative_Account.html). NASA's Mars Pathfinder spacecraft experienced system resets a few days after landing on Mars (1997).  Debugging features were remotely enabled until the cause was found: a [priority inversion](https://en.wikipedia.org/wiki/Priority_inversion) problem in the VxWorks operating system.  The OS software was remotely patched (all the way to Mars) to fix the problem by adding priority inheritance to the task scheduler.
 
-[Netflix](https://techblog.netflix.com/2012/10/post-mortem-of-october-222012-aws.html). An EBS outage in one availability zone was mitigated by migrating to other availability zones.
+[Netflix](https://netflixtechblog.com/post-mortem-of-october-22-2012-aws-degradation-efcee3ab40d5). An EBS outage in one availability zone was mitigated by migrating to other availability zones.
 
 [North American Electric Power System](https://www3.epa.gov/region1/npdes/merrimackstation/pdfs/ar/AR-1165.pdf).  A power outage in Ohio around 1600h EDT cascaded up through a web of systemic vulnerabilities and process failures and resulted in an outage in the power grid affecting ~50,000,000 people for ~4 days in some areas, and caused rolling blackouts in Ontario for about a week thereafter.
 
@@ -291,7 +291,7 @@
 
 [Telstra](https://www.businessinsider.com.au/a-fire-in-a-telstra-exchange-is-causing-flight-delays-and-network-outages-2017-2). A fire in a datacenter caused SMS text messages to be sent to random destinations. Corrupt messages were also experienced by customers.
 
-[Therac-25](https://sunnyday.mit.edu/papers/therac.pdf). The Therac-25 was a radiation therapy machine involved in at least six accidents between 1985 and 1987 in which patients were given massive overdoses of radiation. Because of concurrent programming errors, it sometimes gave its patients radiation doses that were thousands of times greater than normal, resulting in death or serious injury.
+[Therac-25](http://sunnyday.mit.edu/papers/therac.pdf). The Therac-25 was a radiation therapy machine involved in at least six accidents between 1985 and 1987 in which patients were given massive overdoses of radiation. Because of concurrent programming errors, it sometimes gave its patients radiation doses that were thousands of times greater than normal, resulting in death or serious injury.
 
 [Twilio](https://www.twilio.com/blog/2013/07/billing-incident-post-mortem-breakdown-analysis-and-root-cause.html). In 2013, a temporary network partition in the redis cluster used for billing operations, caused a massive resynchronization from slaves. The overloaded master crashed and when it was restarted, it started up in read-only mode. The auto-recharge component in This resulted in failed transactions from Twilio's auto-recharge service, which unfortunately billed the customers before updating their balance internally. So the auto-recharge system continued to retry the transaction again and again, resulting in multiple charges to customer's credit cards.
 
@@ -323,7 +323,7 @@
 
 [Wikimedia's postmortems](https://wikitech.wikimedia.org/wiki/Incident_documentation).
 
-[Autopsy.io's list of Startup failures](https://autopsy.io/).
+[Autopsy.io's list of Startup failures](https://web.archive.org/web/20190101075846/http://autopsy.io/).
 
 [SRE Weekly](https://sreweekly.com) usually has an **Outages** section at the end.
 
