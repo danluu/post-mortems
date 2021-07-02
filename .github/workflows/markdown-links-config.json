@@ -1,0 +1,7 @@
+{
+  "ignorePatterns": [
+    { "pattern": "^https://blog.cloudflare.com" },
+    { "pattern": "^https://allegro.pl" },
+    { "pattern": "^https://www.pagerduty.com" }
+  ]
+}
