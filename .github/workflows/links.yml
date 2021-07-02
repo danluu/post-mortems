@@ -11,7 +11,5 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
-
-    - name: Force job success
-      if: ${{ always() }}
-      run: echo We always succeed because some links block us as a scraper.
+      with:
+        config-file: .github/workflows/markdown-links-config.json
