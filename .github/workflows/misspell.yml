@@ -1,5 +1,10 @@
 name: Check spelling errors
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [assigned, opened, synchronize, reopened]
 jobs:
   misspell:
     name: runner / misspell
