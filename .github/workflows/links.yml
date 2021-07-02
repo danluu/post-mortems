@@ -12,6 +12,6 @@ jobs:
     - uses: actions/checkout@master
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
 
-    # We always succeed because some links block us as a scraper.
     - name: Force job success
       if: ${{ always() }}
+      run: echo We always succeed because some links block us as a scraper.
