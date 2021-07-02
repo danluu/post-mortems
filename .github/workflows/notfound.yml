@@ -1,0 +1,13 @@
+name: Replace old links with archived links
+on:
+  schedule:
+    - cron: "12 4 * * *"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Fix links
+        uses: tmcw/notfoundbot@v2
