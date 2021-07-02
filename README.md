@@ -237,7 +237,7 @@
 
 [NASA](https://www.doneyles.com/LM/Tales.html). A design flaw in the Apollo 11 rendezvous radar produced excess CPU load, causing the spacecraft computer to restart during lunar landing.
 
-[NASA](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter). Use of different units of measurement (metric vs. English) caused Mars Climate Orbiter to fail. There were also organisational and procedural failures[[ref](https://space.stackexchange.com/a/20241)] and defects in the navigation software[[ref](https://spectrum.ieee.org/aerospace/robotic-exploration/why-the-mars-probe-went-off-course)].
+[NASA](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter). Use of different units of measurement (metric vs. English) caused Mars Climate Orbiter to fail. There were also organizational and procedural failures[[ref](https://space.stackexchange.com/a/20241)] and defects in the navigation software[[ref](https://spectrum.ieee.org/aerospace/robotic-exploration/why-the-mars-probe-went-off-course)].
 
 [NASA](https://web.archive.org/web/20161230103247/https://research.microsoft.com/en-us/um/people/mbj/Mars_Pathfinder/Authoritative_Account.html). NASA's Mars Pathfinder spacecraft experienced system resets a few days after landing on Mars (1997).  Debugging features were remotely enabled until the cause was found: a [priority inversion](https://en.wikipedia.org/wiki/Priority_inversion) problem in the VxWorks operating system.  The OS software was remotely patched (all the way to Mars) to fix the problem by adding priority inheritance to the task scheduler.
 
@@ -249,7 +249,7 @@
 
 [PagerDuty](https://status.pagerduty.com/incidents/70m30bh7qfmx). A third party service for sending SMS and making voice calls experienced an outage due to AWS having issues in a region.
 
-[Parity](https://paritytech.io/the-multi-sig-hack-a-postmortem/). $30 million of cryptocurrency value was diverted (stolen) with another $150 million diverted to a safe place (rescued), after a 4000-line software change containing a security bug was mistakenly labelled as a UI change, inadequately reviewed, deployed, and used by various unsuspecting third parties. See also [this analysis](https://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/).
+[Parity](https://paritytech.io/the-multi-sig-hack-a-postmortem/). $30 million of cryptocurrency value was diverted (stolen) with another $150 million diverted to a safe place (rescued), after a 4000-line software change containing a security bug was mistakenly labeled as a UI change, inadequately reviewed, deployed, and used by various unsuspecting third parties. See also [this analysis](https://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/).
 
 [Platform.sh](https://medium.com/@florian_7764/technical-post-mortem-of-the-august-incident-82ab4c3d6547). Outage during a scheduled maintenance window because there were too much data for Zookeeper to boot.
 
