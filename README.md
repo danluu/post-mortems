@@ -2,14 +2,14 @@
 
 ## Table of Contents
 
- - **[Config Errors](#config-errors)**
- - **[Hardware/Power Failures](#hardwarepower-failures)**
- - **[Conflicts](#conflicts)**
- - **[Time](#time)**
- - **[Uncategorized](#uncategorized)**
- - **[Other lists of postmortems](#other-lists-of-postmortems)**
- - **[Analysis](#analysis)**
- - **[Contributors](#contributors)**
+- **[Config Errors](#config-errors)**
+- **[Hardware/Power Failures](#hardwarepower-failures)**
+- **[Conflicts](#conflicts)**
+- **[Time](#time)**
+- **[Uncategorized](#uncategorized)**
+- **[Other lists of postmortems](#other-lists-of-postmortems)**
+- **[Analysis](#analysis)**
+- **[Contributors](#contributors)**
 
 <br/><br/>
 
@@ -24,6 +24,8 @@
 [DataDog](https://www.datadoghq.com/blog/2020-09-25-infrastructure-connectivity-issue/). A bad service discovery config in one of the clients brought down service discovery globally when a dependent client went down.
 
 [Etsy](https://codeascraft.com/2012/01/23/solr-bittorrent-index-replication/). Sending multicast traffic without properly configuring switches caused an Etsy global outage.
+
+[Facebook](https://engineering.fb.com/2021/10/04/networking-traffic/outage/). October 4th 2021 global outage - Configuration changes on the backbone routers.
 
 [Facebook](https://blog.thousandeyes.com/facebook-outage-deep-dive/). A bad config took down both Facebook and Instagram.
 
@@ -386,6 +388,7 @@
 * KlavierCat
 * Kunal Mehta
 * Luan Cestari
+* Marcin Wasiluk
 * Mark Dennehy
 * Massimiliano Arione
 * Matt Day
