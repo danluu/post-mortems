@@ -2,14 +2,14 @@
 
 ## Table of Contents
 
-- **[Config Errors](#config-errors)**
-- **[Hardware/Power Failures](#hardwarepower-failures)**
-- **[Conflicts](#conflicts)**
-- **[Time](#time)**
-- **[Uncategorized](#uncategorized)**
-- **[Other lists of postmortems](#other-lists-of-postmortems)**
-- **[Analysis](#analysis)**
-- **[Contributors](#contributors)**
+ - **[Config Errors](#config-errors)**
+ - **[Hardware/Power Failures](#hardwarepower-failures)**
+ - **[Conflicts](#conflicts)**
+ - **[Time](#time)**
+ - **[Uncategorized](#uncategorized)**
+ - **[Other lists of postmortems](#other-lists-of-postmortems)**
+ - **[Analysis](#analysis)**
+ - **[Contributors](#contributors)**
 
 <br/><br/>
 
@@ -25,7 +25,7 @@
 
 [Etsy](https://codeascraft.com/2012/01/23/solr-bittorrent-index-replication/). Sending multicast traffic without properly configuring switches caused an Etsy global outage.
 
-[Facebook](https://engineering.fb.com/2021/10/04/networking-traffic/outage/). October 4th 2021 global outage - Configuration changes on the backbone routers.
+[Facebook](https://engineering.fb.com/2021/10/04/networking-traffic/outage/). October 4th 2021 - Configuration changes on the backbone routers caused global outage of Facebook, WhatsApp and Instagram.
 
 [Facebook](https://blog.thousandeyes.com/facebook-outage-deep-dive/). A bad config took down both Facebook and Instagram.
 
