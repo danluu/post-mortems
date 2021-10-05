@@ -25,6 +25,8 @@
 
 [Etsy](https://codeascraft.com/2012/01/23/solr-bittorrent-index-replication/). Sending multicast traffic without properly configuring switches caused an Etsy global outage.
 
+[Facebook](https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/). October 4th 2021 - Configuration changes on the backbone routers caused global outage of Facebook, WhatsApp and Instagram.
+
 [Facebook](https://blog.thousandeyes.com/facebook-outage-deep-dive/). A bad config took down both Facebook and Instagram.
 
 [GoCardless](https://gocardless.com/blog/incident-review-api-and-dashboard-outage-on-10th-october/). A bad config combined with an uncommon set of failures led to an outage of a database cluster, taking the API and Dashboard offline.
@@ -386,6 +388,7 @@
 * KlavierCat
 * Kunal Mehta
 * Luan Cestari
+* Marcin Wasiluk
 * Mark Dennehy
 * Massimiliano Arione
 * Matt Day
