@@ -131,6 +131,8 @@
 
 [Amazon](https://aws.amazon.com/message/65648/). Human error during a routine networking upgrade led to a resource crunch, exacerbated by software bugs, that ultimately resulted in an outage across all US East Availability Zones as well as a loss of 0.07% of volumes.
 
+[Amazon](https://aws.amazon.com/message/680342/). Inability to contact a data collection server triggered a latent memory leak bug in the reporting agent on the storage servers. And there is no graceful degradation handling, thus the reporting agent continuously contacted the collection server in a way that slowly consumed system memory. Also the monitoring system failed to alarm this EBS server's memory leak, also EBS servers generally make very dynamic use of all memory. By Monday morning, the rate of memory loss became quite high and confused enough memory on the affected storage servers which cannot keep with the request handling process. This error got further severed by the inability to do the failover, which resulted in the outage.
+
 [Amazon](https://aws.amazon.com/message/680587/). Elastic Load Balancer ran into problems when "a maintenance process that was inadvertently run against the production ELB state data".
 
 [Amazon](https://aws.amazon.com/message/5467D2/). A "network disruption" caused metadata services to experience load that caused response times to exceed timeout values, causing storage nodes to take themselves down. Nodes that took themselves down continued to retry, ensuring that load on metadata services couldn't decrease.
@@ -402,6 +404,7 @@
 * Peter Demin
 * Raul Ochoa
 * Ruairi Carroll
+* [Rui Chen](https://github.com/chenrui333)
 * Samuel Hunter
 * Sean Escriva
 * Shriram Rajagopalan
