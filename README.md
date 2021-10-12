@@ -53,6 +53,8 @@
 
 [Microsoft](https://azure.microsoft.com/blog/2014/11/19/update-on-azure-storage-service-interruption/). A bad config took down Azure storage.
 
+[NPM](https://blog.npmjs.org/post/74949623024/2014-01-28-outage-postmortem.html). Fastly configuration change caused backend routing issue. To be exact, the issue is that we were setting the req.backend in a vcl_fetch function, and then calling restart to re-parse the rules. However, calling restart will reset the req.backend to the first backed in the list, which in this case happened to be Manta, rather than the load balanced CouchDB servers.
+
 [OWASA](https://www.indyweek.com/news/archives/2017/02/10/human-error-caused-owasa-fluoride-overdose-owasa-very-sorry-about-that). The wrong push of a button lead to a water treatment plant shutting down due to too high levels of fluoride.
 
 [Razorpay](https://razorpay.com/blog/day-of-rds-multi-az-failover/). A RDS hardware failure highlighted an incorrect MySQL configuration which resulted in major data loss in a financial system.
