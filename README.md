@@ -235,6 +235,8 @@
 
 [Kings College London](https://regmedia.co.uk/2017/02/23/kcl_external_review.pdf). 3PAR suffered catastrophic outage which highlighted a failure in internal process.
 
+[Launchdarkly](https://status.launchdarkly.com/incidents/yltrp45vtxm2). Rule attribute selector causing flag targeting web interface to crash.
+
 [Mailgun](https://status.mailgun.com/incidents/p9nxxql8g9rh). Secondary MongoDB servers became overloaded and while troubleshooting accidentally pushed a change that sent all secondary traffic to the primary MongoDB server, overloading it as well and exacerbating the problem.
 
 [Mandrill](https://mailchimp.com/what-we-learned-from-the-recent-mandrill-outage/). Transaction ID wraparound in Postgres caused a partial outage lasting a day and a half.
