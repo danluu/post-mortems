@@ -263,6 +263,8 @@
 
 [Reddit](https://www.reddit.com/r/announcements/comments/4y0m56/why_reddit_was_down_on_aug_11/). Experienced an outage for 1.5 hours, followed by another 1.5 hours of degraded performance on Thursday August 11 2016. This was due to an error during a migration of a critical backend system.
 
+[Roblox](https://blog.roblox.com/2021/10/update-recent-service-outage/). A network outage caused a cascading failure.
+
 [Salesforce](https://help.salesforce.com/apex/HTViewSolution?urlname=Root-Cause-Message-for-Disruption-of-Service-on-NA14-May-2016&language=en_US). Initial disruption due to power failure in one datacenter led to cascading failures with a database cluster and file discrepancies resulting in cross data center failover issues.
 
 [Sentry](https://blog.sentry.io/2015/07/23/transaction-id-wraparound-in-postgres). Transaction ID Wraparound in Postgres caused Sentry to go down for most of a working day.
