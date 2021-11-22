@@ -45,6 +45,8 @@
 
 [Google](https://status.cloud.google.com/incident/cloud-networking/19009). Two misconfigurations, plus a software bug, caused a massive Google Cloud Network failure on the US East Coast.
 
+[Google](https://status.cloud.google.com/incidents/1xkAB1KmLrh5g3v9ZEZ7). Google’s Front End load balancing service experienced failures resulting in impact to several downstream Google Cloud services in Europe. From preliminary analysis, the root cause of the issue was caused by a new infrastructure feature triggering a latent issue within internal network load balancer code.
+
 [Heroku](https://status.heroku.com/incidents/1091). An automated remote configuration change did not propagate fully. Web dynos could not be started.
 
 [Heroku](https://blog.heroku.com/how-i-broke-git-push-heroku-main). An incorrect deployment process caused new config variables not to be used when the code required them.
