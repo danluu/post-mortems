@@ -6,6 +6,7 @@
  - **[Hardware/Power Failures](#hardwarepower-failures)**
  - **[Conflicts](#conflicts)**
  - **[Time](#time)**
+ - **[Database](#database)**
  - **[Uncategorized](#uncategorized)**
  - **[Other lists of postmortems](#other-lists-of-postmortems)**
  - **[Analysis](#analysis)**
@@ -124,6 +125,10 @@
 [Linux](http://lkml.org/lkml/2012/7/1/203). When a leap second occurred, `CLOCK_REALTIME` was rewound by one second. This was not done via a mechanism that would update `hrtimer base.offset`. This meant that when a timer interrupt happened, TIMER_ABSTIME CLOCK_REALTIME timers got expired one second early, including timers set for less than one second. This caused applications that used sleep for less than one second in a loop to spinwait without sleeping, causing high load on many systems. This caused a large number of web services to go down in 2012.
 
 [Mozilla](https://hacks.mozilla.org/2019/07/add-ons-outage-post-mortem-result/). Most Firefox add-ons stopped working around May 4th 2019 when a certificate expired. Firefox requires a valid certificate chain to prevent malware. About nine hours later, Mozilla pushed a privileged add-on that injected a valid certificate into Firefox's certificate store, creating a valid chain and unblocking add-ons. This disabled effectively all add-ons, about 15,000, and the resolution took approximately 15-21 hours for most users. Some user data was lost. Previously Mozilla [posted](https://hacks.mozilla.org/2019/05/technical-details-on-the-recent-firefox-add-on-outage) about the technical details.
+
+## Database
+
+[Github](https://github.blog/2021-12-01-github-availability-report-november-2021/). Github platform encountered a novel failure mode when processing a schema migration on a large MySQL table. Schema migrations are a common task at GitHub and often take weeks to complete. The final step in a migration is to perform a rename to move the updated table into the correct place. During the final step of this migration a significant portion of our MySQL read replicas entered a semaphore deadlock. Our MySQL clusters consist of a primary node for write traffic, multiple read replicas for production traffic, and several replicas that serve internal read traffic for backup and analytics purposes. The read replicas that hit the deadlock entered a crash-recovery state causing an increased load on healthy read replicas. Due to the cascading nature of this scenario, there were not enough active read replicas to handle production requests which impacted the availability of core GitHub services.
 
 ## Uncategorized
 
