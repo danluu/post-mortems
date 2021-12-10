@@ -334,6 +334,8 @@
 
 ## Other lists of postmortems
 
+[AWS Post-Event Summaries](https://aws.amazon.com/premiumsupport/technology/pes/)
+
 [Availability Digest website](https://www.availabilitydigest.com/articles.htm).
 
 [Postmortems community](https://postmortems.info) (with imported archive from the now-dead G+ community).
