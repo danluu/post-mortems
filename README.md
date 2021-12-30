@@ -62,6 +62,8 @@
 
 [OWASA](https://www.indyweek.com/news/archives/2017/02/10/human-error-caused-owasa-fluoride-overdose-owasa-very-sorry-about-that). The wrong push of a button lead to a water treatment plant shutting down due to too high levels of fluoride.
 
+[PagerDuty](https://status.pagerduty.com/incidents/vbp7ht2647l8). On December 15th, 2021 at 00:17 UTC, we deployed a DNS configuration change in PagerDuty’s infrastructure that impacted our container orchestration cluster. The change contained a defect, that we did not detect in our testing environments, which immediately caused all services running in the container orchestration cluster to be unable to resolve DNS.
+
 [Razorpay](https://razorpay.com/blog/day-of-rds-multi-az-failover/). A RDS hardware failure highlighted an incorrect MySQL configuration which resulted in major data loss in a financial system.
 
 [Stack Overflow](https://stackstatus.net/post/96025967369/outage-post-mortem-august-25th-2014). A bad firewall config blocked stackexchange/stackoverflow.
