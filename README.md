@@ -234,7 +234,7 @@
 
 [Heroku](https://status.heroku.com/incidents/1042). An upstream `apt` update broke pinned packages which lead to customers experiencing write permission failures to `/dev`.
 
-[Homebrew](https://brew.sh/2018/08/05/security-incident-disclosure/). A GitHub personal access token with recently elevated scopes was leaked from Homebrew’s Jenkins that allowed access to `git push` on several Homebrew repositories.
+[Homebrew](https://web.archive.org/web/20210813020247/https://brew.sh/2018/08/05/security-incident-disclosure/). A GitHub personal access token with recently elevated scopes was leaked from Homebrew’s Jenkins that allowed access to `git push` on several Homebrew repositories.
 
 [Honeycomb](https://www.honeycomb.io/blog/incident-resolution-september-retrospective/). A tale of multiple incidents, happening mostly due to fast growth.
 
