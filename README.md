@@ -240,7 +240,7 @@
 
 [Indian Electricity Grid](https://cercind.gov.in/2012/orders/Final_Report_Grid_Disturbance.pdf). One night in July 2012, a skewed electricity supply-demand profile developed when the northern grid drew a tremendous amount of power from the western and eastern grids. Following a series of circuit breakers tripping by virtue of under-frequency protection, the entire NEW (northern-eastern-western) grid collapsed due to the absence of islanding mechanisms. While the grid was reactivated after over 8 hours, similar conditions in the following day caused the grid to fail again. However, the restoration effort concluded almost 24 hours after the occurrence of the latter incident.
 
-[Instapaper](https://medium.com/making-instapaper/instapaper-outage-cause-recovery-3c32a7e9cc5f). Also [this](https://blog.instapaper.com/post/157027537441). Limits were hit for a hosted database. It took many hours to migrate over to a new database.
+[Instapaper](https://web.archive.org/web/20211124170124/https://medium.com/making-instapaper/instapaper-outage-cause-recovery-3c32a7e9cc5f). Also [this](https://blog.instapaper.com/post/157027537441). Limits were hit for a hosted database. It took many hours to migrate over to a new database.
 
 [Intel](https://42gems.com/blog/?p=735). A scripting bug caused the generation of the divider logic in the Pentium to very occasionally produce incorrect results. The bug wasn't caught in testing because of an incorrect assumption in a proof of correctness.
 
@@ -258,7 +258,7 @@
 
 [Mandrill](https://mailchimp.com/what-we-learned-from-the-recent-mandrill-outage/). Transaction ID wraparound in Postgres caused a partial outage lasting a day and a half.
 
-[Medium](https://medium.com/medium-eng/the-curious-case-of-disappearing-polish-s-fa398313d4df). Polish users were unable to use their "Ś" key on Medium.
+[Medium](https://web.archive.org/web/20160426163728/https://medium.com/medium-eng/the-curious-case-of-disappearing-polish-s-fa398313d4df). Polish users were unable to use their "Ś" key on Medium.
 
 [NASA](https://www.doneyles.com/LM/Tales.html). A design flaw in the Apollo 11 rendezvous radar produced excess CPU load, causing the spacecraft computer to restart during lunar landing.
 
@@ -276,7 +276,7 @@
 
 [Parity](https://paritytech.io/the-multi-sig-hack-a-postmortem/). $30 million of cryptocurrency value was diverted (stolen) with another $150 million diverted to a safe place (rescued), after a 4000-line software change containing a security bug was mistakenly labeled as a UI change, inadequately reviewed, deployed, and used by various unsuspecting third parties. See also [this analysis](https://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/).
 
-[Platform.sh](https://medium.com/@florian_7764/technical-post-mortem-of-the-august-incident-82ab4c3d6547). Outage during a scheduled maintenance window because there were too much data for Zookeeper to boot.
+[Platform.sh](https://web.archive.org/web/20201202234639/https://medium.com/@florian_7764/technical-post-mortem-of-the-august-incident-82ab4c3d6547). Outage during a scheduled maintenance window because there were too much data for Zookeeper to boot.
 
 [Reddit](https://www.reddit.com/r/announcements/comments/4y0m56/why_reddit_was_down_on_aug_11/). Experienced an outage for 1.5 hours, followed by another 1.5 hours of degraded performance on Thursday August 11 2016. This was due to an error during a migration of a critical backend system.
 
@@ -296,7 +296,7 @@
 
 [Spotify](https://labs.spotify.com/2013/06/04/incident-management-at-spotify/). Lack of exponential backoff in a microservice caused a cascading failure, leading to notable service degradation.
 
-[Square](https://medium.com/square-corner-blog/incident-summary-2017-03-16-2f65be39297). A cascading error from an adjacent service lead to merchant authentication service being overloaded. This impacted merchants for ~2 hours.
+[Square](https://web.archive.org/web/20210818034431/https://medium.com/square-corner-blog/incident-summary-2017-03-16-2f65be39297). A cascading error from an adjacent service lead to merchant authentication service being overloaded. This impacted merchants for ~2 hours.
 
 [Stackdriver](https://www.stackdriver.com/post-mortem-october-23-stackdriver-outage/). In October 2013, [Stackdriver](https://www.stackdriver.com/), experienced an outage, when its Cassandra cluster crashed. Data published by various services into a message bus was being injested into the Cassandra cluster. When the cluster failed, the failure percolated to various producers, that ended up blocking on queue insert operations, eventually leading to the failure of the entire application.
 
