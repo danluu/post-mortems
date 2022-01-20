@@ -360,6 +360,8 @@
 
 [Postmortem Templates](https://github.com/dastergon/postmortem-templates) is a collection of postmortem templates from various sources.
 
+[Squadcast Postmortem Templates](https://support.squadcast.com/docs/postmortem-templates) 
+
 ## Analysis
 
 [How Complex Systems Fail](https://stuff.mit.edu/afs/athena/course/2/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)
@@ -419,6 +421,7 @@
 * Michał Kosmulski
 * Mike Doherty
 * Mohit Agarwal
+* Muthali Ganesh
 * Nat Welch
 * Nate Parsons
 * Nick Sweeting
