@@ -260,6 +260,8 @@
 
 [Medium](https://web.archive.org/web/20160426163728/https://medium.com/medium-eng/the-curious-case-of-disappearing-polish-s-fa398313d4df). Polish users were unable to use their "Ś" key on Medium.
 
+[Mozilla](https://hacks.mozilla.org/2022/02/retrospective-and-technical-details-on-the-recent-firefox-outage/). Retrospective and Technical Details on the HTTP3 Firefox Outage
+
 [NASA](https://www.doneyles.com/LM/Tales.html). A design flaw in the Apollo 11 rendezvous radar produced excess CPU load, causing the spacecraft computer to restart during lunar landing.
 
 [NASA](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter). Use of different units of measurement (metric vs. English) caused Mars Climate Orbiter to fail. There were also organizational and procedural failures[[ref](https://space.stackexchange.com/a/20241)] and defects in the navigation software[[ref](https://spectrum.ieee.org/aerospace/robotic-exploration/why-the-mars-probe-went-off-course)].
