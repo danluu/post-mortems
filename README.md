@@ -294,6 +294,8 @@
 
 [Slack](https://slack.engineering/slacks-outage-on-january-4th-2021/). Network saturation in AWS's traffic gateways caused packet loss. An attempt to scale up caused more issues.
 
+[slack](https://status.slack.com/2022-02/3083852db30af86f). A configuration change inadvertently lead to a sudden increase in activity on our database infrastructure. Due to this increased activity, the affected databases failed to serve incoming requests to connect to Slack. We introduced tighter rate limits on connection requests to reduce the load on the system. This meant that some people could not access Slack at all, but also that Slack would continue working for those who were already connected.
+
 [Spotify](https://labs.spotify.com/2013/06/04/incident-management-at-spotify/). Lack of exponential backoff in a microservice caused a cascading failure, leading to notable service degradation.
 
 [Square](https://web.archive.org/web/20210818034431/https://medium.com/square-corner-blog/incident-summary-2017-03-16-2f65be39297). A cascading error from an adjacent service lead to merchant authentication service being overloaded. This impacted merchants for ~2 hours.
