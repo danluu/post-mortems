@@ -1,5 +1,8 @@
 # A List of Post-mortems!
 
+> This list of post-mortems has been included in the Verica Open Incident
+> Database (https://www.thevoid.community/) if you wish to browse them there.
+
 ## Table of Contents
 
  - **[Config Errors](#config-errors)**
