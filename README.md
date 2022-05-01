@@ -433,7 +433,7 @@
 * Peter Demin
 * Raul Ochoa
 * Ruairi Carroll
-* [Rui Chen](https://web.archive.org/web/20220119195426/https://github.com/chenrui333)
+* Rui Chen
 * Samuel Hunter
 * Sean Escriva
 * Shriram Rajagopalan
