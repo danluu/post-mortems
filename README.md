@@ -64,7 +64,7 @@
 
 [NPM](https://blog.npmjs.org/post/74949623024/2014-01-28-outage-postmortem.html). Fastly configuration change caused backend routing issue. To be exact, the issue is that we were setting the req.backend in a vcl_fetch function, and then calling restart to re-parse the rules. However, calling restart will reset the req.backend to the first backed in the list, which in this case happened to be Manta, rather than the load balanced CouchDB servers.
 
-[OWASA](https://www.indyweek.com/news/archives/2017/02/10/human-error-caused-owasa-fluoride-overdose-owasa-very-sorry-about-that). The wrong push of a button lead to a water treatment plant shutting down due to too high levels of fluoride.
+[OWASA](https://web.archive.org/web/20210226170650/https://indyweek.com/news/archives/human-error-caused-owasa-fluoride-overdose-owasa-sorry/). The wrong push of a button lead to a water treatment plant shutting down due to too high levels of fluoride.
 
 [PagerDuty](https://status.pagerduty.com/incidents/vbp7ht2647l8). On December 15th, 2021 at 00:17 UTC, we deployed a DNS configuration change in PagerDuty’s infrastructure that impacted our container orchestration cluster. The change contained a defect, that we did not detect in our testing environments, which immediately caused all services running in the container orchestration cluster to be unable to resolve DNS.
 
@@ -248,7 +248,7 @@
 
 [Instapaper](https://web.archive.org/web/20211124170124/https://medium.com/making-instapaper/instapaper-outage-cause-recovery-3c32a7e9cc5f). Also [this](https://blog.instapaper.com/post/157027537441). Limits were hit for a hosted database. It took many hours to migrate over to a new database.
 
-[Intel](https://42gems.com/blog/?p=735). A scripting bug caused the generation of the divider logic in the Pentium to very occasionally produce incorrect results. The bug wasn't caught in testing because of an incorrect assumption in a proof of correctness.
+[Intel](https://42gems.com/blog/?p=735). A scripting bug caused the generation of the divider logic in the Pentium to very occasionally produce incorrect results. The bug wasn't caught in testing because of an incorrect assumption in a proof of correctness. (See [the Wikipedia article on 1994 FDIV bug](https://en.wikipedia.org/wiki/Pentium_FDIV_bug) for more information.)
 
 [Joyent](https://www.joyent.com/blog/manta-postmortem-7-27-2015). Operations on Manta were blocked because a lock couldn't be obtained on their PostgreSQL metadata servers. This was due to a combination of PostgreSQL's transaction wraparound maintenance taking a lock on something, and a Joyent query that unnecessarily tried to take a global lock.
 
@@ -298,7 +298,7 @@
 
 [Skyliner](https://blog.skyliner.io/post-mortem-outages-on-1-19-17-and-1-23-17-3f65cc6f693e). A memory leak in a third party library lead to Skyliner being unavailable on two occasions.
 
-[Slack](https://slackhq.com/this-was-not-normal-really-230c2fd23bdc). A combination of factor results in a large number of Slack's users being disconnected to the server. The subsequent massive disconnection-reconnection process exceeded the database capacity and caused cascading connection failures, leading to 5% of Slack's users not being able to connect to the server for up to 2 hours.
+[Slack](https://web.archive.org/web/20181208123409/https://slackhq.com/this-was-not-normal-really). A combination of factor results in a large number of Slack's users being disconnected to the server. The subsequent massive disconnection-reconnection process exceeded the database capacity and caused cascading connection failures, leading to 5% of Slack's users not being able to connect to the server for up to 2 hours.
 
 [Slack](https://slack.engineering/slacks-outage-on-january-4th-2021/). Network saturation in AWS's traffic gateways caused packet loss. An attempt to scale up caused more issues.
 
@@ -326,7 +326,7 @@
 
 [Tarsnap](https://mail.tarsnap.com/tarsnap-announce/msg00035.html). A batch job which scans for unused blocks in Amazon S3 and marks them to be freed encountered a condition where all retries for freeing certain blocks would fail. The batch job logs its actions to local disk and this log grew without bound. When the filesystem filled, this caused other filesystem writes to fail, and the Tarsnap service stopped. Manually removing the log file restored service.
 
-[Telstra](https://www.businessinsider.com.au/a-fire-in-a-telstra-exchange-is-causing-flight-delays-and-network-outages-2017-2). A fire in a datacenter caused SMS text messages to be sent to random destinations. Corrupt messages were also experienced by customers.
+[Telstra](https://web.archive.org/web/20170202055452/https://www.businessinsider.com.au/a-fire-in-a-telstra-exchange-is-causing-flight-delays-and-network-outages-2017-2). A fire in a datacenter caused SMS text messages to be sent to random destinations. Corrupt messages were also experienced by customers.
 
 [Therac-25](http://sunnyday.mit.edu/papers/therac.pdf). The Therac-25 was a radiation therapy machine involved in at least six accidents between 1985 and 1987 in which patients were given massive overdoses of radiation. Because of concurrent programming errors, it sometimes gave its patients radiation doses that were thousands of times greater than normal, resulting in death or serious injury.
 
