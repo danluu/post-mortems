@@ -316,7 +316,7 @@
 
 [Tarsnap](https://mail.tarsnap.com/tarsnap-announce/msg00035.html). A batch job which scans for unused blocks in Amazon S3 and marks them to be freed encountered a condition where all retries for freeing certain blocks would fail. The batch job logs its actions to local disk and this log grew without bound. When the filesystem filled, this caused other filesystem writes to fail, and the Tarsnap service stopped. Manually removing the log file restored service.
 
-[Telstra](https://www.businessinsider.com.au/a-fire-in-a-telstra-exchange-is-causing-flight-delays-and-network-outages-2017-2). A fire in a datacenter caused SMS text messages to be sent to random destinations. Corrupt messages were also experienced by customers.
+[Telstra](https://web.archive.org/web/20170202055452/https://www.businessinsider.com.au/a-fire-in-a-telstra-exchange-is-causing-flight-delays-and-network-outages-2017-2). A fire in a datacenter caused SMS text messages to be sent to random destinations. Corrupt messages were also experienced by customers.
 
 [Therac-25](http://sunnyday.mit.edu/papers/therac.pdf). The Therac-25 was a radiation therapy machine involved in at least six accidents between 1985 and 1987 in which patients were given massive overdoses of radiation. Because of concurrent programming errors, it sometimes gave its patients radiation doses that were thousands of times greater than normal, resulting in death or serious injury.
 
