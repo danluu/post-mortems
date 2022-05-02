@@ -242,7 +242,7 @@
 
 [Instapaper](https://web.archive.org/web/20211124170124/https://medium.com/making-instapaper/instapaper-outage-cause-recovery-3c32a7e9cc5f). Also [this](https://blog.instapaper.com/post/157027537441). Limits were hit for a hosted database. It took many hours to migrate over to a new database.
 
-[Intel](https://42gems.com/blog/?p=735). A scripting bug caused the generation of the divider logic in the Pentium to very occasionally produce incorrect results. The bug wasn't caught in testing because of an incorrect assumption in a proof of correctness. (FDIV bug, 1994.)
+[Intel](https://42gems.com/blog/?p=735). A scripting bug caused the generation of the divider logic in the Pentium to very occasionally produce incorrect results. The bug wasn't caught in testing because of an incorrect assumption in a proof of correctness. (See [the Wikipedia article on 1994 FDIV bug](https://en.wikipedia.org/wiki/Pentium_FDIV_bug) for more information.)
 
 [Joyent](https://www.joyent.com/blog/manta-postmortem-7-27-2015). Operations on Manta were blocked because a lock couldn't be obtained on their PostgreSQL metadata servers. This was due to a combination of PostgreSQL's transaction wraparound maintenance taking a lock on something, and a Joyent query that unnecessarily tried to take a global lock.
 
