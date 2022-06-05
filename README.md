@@ -200,7 +200,7 @@
 
 [Duo](https://status.duo.com/incidents/4w07bmvnt359). Cascading failure due to a request queue overloading the existing, insufficient database capacity. Inadequate capacity planning and monitoring could be attributed as well.
 
-[Epic Games](https://www.epicgames.com/fortnite/en-US/news/postmortem-of-service-outage-at-3-4m-ccu). Extreme load (a new peak of 3.4 million concurrent users) resulted in a mix of partial and total service disruptions.
+[Epic Games](https://web.archive.org/web/20220430011642/https://www.epicgames.com/fortnite/en-US/news/postmortem-of-service-outage-at-3-4m-ccu). Extreme load (a new peak of 3.4 million concurrent users) resulted in a mix of partial and total service disruptions.
 
 [European Space Agency](https://en.wikipedia.org/wiki/Cluster_%28spacecraft%29?oldid=217305667). An overflow occurred when converting a 16-bit number to a 64-bit numer in the Ariane 5 intertial guidance system, causing the rocket to crash. The actual overflow occurred in code that wasn't necessary for operation but was running anyway. According to [one account](https://web.archive.org/web/20120829114850/https://www.around.com/ariane.html), this caused a diagnostic error message to get printed out, and the diagnostic error message was somehow interpreted as actual valid data. According to [another account](https://en.wikipedia.org/wiki/Cluster_%28spacecraft%29?oldid=217305667), no trap handler was installed for the overflow.
 
