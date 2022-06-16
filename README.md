@@ -70,7 +70,7 @@
 
 [Razorpay](https://razorpay.com/blog/day-of-rds-multi-az-failover/). A RDS hardware failure highlighted an incorrect MySQL configuration which resulted in major data loss in a financial system.
 
-[Stack Overflow](https://stackstatus.net/post/96025967369/outage-post-mortem-august-25th-2014). A bad firewall config blocked stackexchange/stackoverflow.
+[Stack Overflow](https://web.archive.org/web/20201020103424/https://stackstatus.net/post/96025967369/outage-post-mortem-august-25th-2014). A bad firewall config blocked stackexchange/stackoverflow.
 
 [Sentry](https://blog.sentry.io/2016/06/14/security-incident-june-12-2016). Wrong Amazon S3 settings on backups lead to data leak.
 
