@@ -72,7 +72,7 @@
 
 [Razorpay](https://razorpay.com/blog/day-of-rds-multi-az-failover/). A RDS hardware failure highlighted an incorrect MySQL configuration which resulted in major data loss in a financial system.
 
-[Stack Overflow](https://stackstatus.net/post/96025967369/outage-post-mortem-august-25th-2014). A bad firewall config blocked stackexchange/stackoverflow.
+[Stack Overflow](http://web.archive.org/web/20140831011650/https://stackstatus.net/post/96025967369/outage-post-mortem-august-25th-2014). A bad firewall config blocked stackexchange/stackoverflow.
 
 [Sentry](https://blog.sentry.io/2016/06/14/security-incident-june-12-2016). Wrong Amazon S3 settings on backups lead to data leak.
 
@@ -316,13 +316,13 @@
 
 [Stackdriver](https://www.stackdriver.com/post-mortem-october-23-stackdriver-outage/). In October 2013, [Stackdriver](https://www.stackdriver.com/), experienced an outage, when its Cassandra cluster crashed. Data published by various services into a message bus was being injested into the Cassandra cluster. When the cluster failed, the failure percolated to various producers, that ended up blocking on queue insert operations, eventually leading to the failure of the entire application.
 
-[Stack Exchange](https://stackstatus.net/post/115305251014/outage-postmortem-march-31-2015). Enabling StackEgg for all users resulted in heavy load on load balancers and consequently, a DDoS.
+[Stack Exchange](http://web.archive.org/web/20150404235419/https://stackstatus.net/post/115305251014/outage-postmortem-march-31-2015). Enabling StackEgg for all users resulted in heavy load on load balancers and consequently, a DDoS.
 
-[Stack Exchange](https://stackstatus.net/post/147710624694/outage-postmortem-july-20-2016). Backtracking implementation in the underlying regex engine turned out to be very expensive for a particular post leading to health-check failures and eventual outage.
+[Stack Exchange](http://web.archive.org/web/20160720200842/https://stackstatus.net/post/147710624694/outage-postmortem-july-20-2016). Backtracking implementation in the underlying regex engine turned out to be very expensive for a particular post leading to health-check failures and eventual outage.
 
 [Stack Exchange](https://meta.stackoverflow.com/q/340960/2422776). Porting old Careers 2.0 code to the new Developer Story caused a leak of users' information.
 
-[Stack Exchange](https://stackstatus.net/post/156407746074/outage-postmortem-january-24-2017). The primary SQL-Server triggered a bugcheck on the SQL Server process, causing the Stack Exchange sites to go into read only mode, and eventually a complete outage.
+[Stack Exchange](http://web.archive.org/web/20170130231315/https://stackstatus.net/post/156407746074/outage-postmortem-january-24-2017). The primary SQL-Server triggered a bugcheck on the SQL Server process, causing the Stack Exchange sites to go into read only mode, and eventually a complete outage.
 
 [Strava](https://engineering.strava.com/the-upload-outage-of-july-29-2014/). Hit the signed integer limit on a primary key, causing uploads to fail.
 
