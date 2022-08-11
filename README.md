@@ -56,6 +56,8 @@
 
 [Google](https://status.cloud.google.com/incidents/6PM5mNd43NbMqjCZ5REh). Google Cloud Networking experienced issues with Google Cloud Load Balancing (GCLB) service resulting in impact to several downstream Google Cloud services. Impacted customers observed Google 404 errors on their websites. From preliminary analysis, the root cause of the issue was a latent bug in a network configuration service which was triggered during routine system operation.
 
+[Google](https://status.cloud.google.com/incidents/vLsxuKoRvykNHW3nnhsJ). Google Cloud Networking experienced reduced capacity for lower priority traffic such as batch, streaming and transfer operations from 19:30 US/Pacific on Thursday, 14 July 2022, through 15:02 US/Pacific on Friday, 15 July 2022. High-priority user-facing traffic was not affected. This service disruption resulted from an issue encountered during a combination of repair work and a routine network software upgrade rollout. Due to the nature of the disruption and resilience capabilities of Google Cloud products, the impacted regions and individual impact windows varied substantially.
+
 [Heroku](https://status.heroku.com/incidents/1091). An automated remote configuration change did not propagate fully. Web dynos could not be started.
 
 [Heroku](https://blog.heroku.com/how-i-broke-git-push-heroku-main). An incorrect deployment process caused new config variables not to be used when the code required them.
