@@ -64,7 +64,7 @@
 
 [Heroku](https://blog.heroku.com/how-i-broke-git-push-heroku-main). An incorrect deployment process caused new config variables not to be used when the code required them.
 
-[Keepthescore](https://keepthescore.co/blog/posts/deleting_the_production_database/). Engineers deleted the production database by accident. Database is a managed database from DigitalOcean with backups once a day. 30 minutes after the disaster, it went back online, however 7 hours of scoreboard data was gone forever.
+[Keepthescore](https://web.archive.org/web/20201101133510/https://keepthescore.co/blog/posts/deleting_the_production_database/). Engineers deleted the production database by accident. Database is a managed database from DigitalOcean with backups once a day. 30 minutes after the disaster, it went back online, however 7 hours of scoreboard data was gone forever.
 
 [Microsoft](https://azure.microsoft.com/blog/2014/11/19/update-on-azure-storage-service-interruption/). A bad config took down Azure storage.
 
@@ -130,7 +130,7 @@
 
 [Knight Capital](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/). A combination of conflicting deployed versions and re-using a previously used bit caused a $460M loss.
 
-[WebKit code repository](https://digital.ai/catalyst-blog/subversion-sha1-collision-problem-statement-prevention-and-remediation-options). The WebKit repository, a Subversion repository configured to use deduplication, became unavailable after two files with the same SHA-1 hash were checked in as test data, with the intention of implementing a safety check for collisions. The two files had different md5 sums and so a checkout would fail a consistency check. For context, the first public SHA-1 hash collision had very recently been announced, with an example of two colliding files.
+[WebKit code repository](https://web.archive.org/web/20210306015541/https://digital.ai/catalyst-blog/subversion-sha1-collision-problem-statement-prevention-and-remediation-options). The WebKit repository, a Subversion repository configured to use deduplication, became unavailable after two files with the same SHA-1 hash were checked in as test data, with the intention of implementing a safety check for collisions. The two files had different md5 sums and so a checkout would fail a consistency check. For context, the first public SHA-1 hash collision had very recently been announced, with an example of two colliding files.
 
 ## Time
 
