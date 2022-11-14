@@ -238,6 +238,8 @@
 
 [Google](https://www.google.com/appsstatus/dashboard/incidents/k71P8nHp32hgcMSsC3mR). The Google Meet Livestream feature experienced disruptions that caused intermittent degraded quality of experience for a small subset of viewers, starting 25 October 2021 0400 PT and ending 26 October 2021 1000 PT. Quality was degraded for a total duration of 4 hours (3 hours on 25 October and 1 hour on 26 October). During this time, no more than 15% of livestream viewers experienced higher rebuffer rates and latency in livestream video playback. We sincerely apologize for the disruption that may have affected your business-critical events. We have identified the cause of the issue and have taken steps to improve our service.
 
+[Google](https://status.cloud.google.com/incidents/mREMLwZFe3FuLLn3zfTw). On 13 October 2022 23:30 US/Pacific, there was an unexpected increase of incoming and logging traffic combined with a bug in Google’s internal streaming RPC library that triggered a deadlock and caused the Write API Streaming frontend to be overloaded. And BigQuery Storage WriteAPI observed elevated error rates in the US Multi-Region for a period of 5 hours.
+
 [GPS/GLONASS](https://www.gps.gov/governance/advisory/meetings/2014-06/beutler1.pdf). A bad update that caused incorrect orbital mechanics calculations caused GPS satellites that use GLONASS to broadcast incorrect positions for 10 hours. The bug was noticed and rolled back almost immediately due to (?) this didn't fix the issue.
 
 [Healthcare.gov](https://www.bloomberg.com/opinion/articles/2015-09-16/how-healthcare-gov-went-so-so-wrong). A large organizational failure to build a website for United States healthcare.
