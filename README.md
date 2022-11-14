@@ -24,6 +24,8 @@
 
 [Cloudflare](https://web.archive.org/web/20220621124002/https://blog.cloudflare.com/cloudflare-outage-on-june-21-2022/). An incorrect ordering of the disabled BGP advertised prefixes caused malfunction on 19 datacenters.
 
+[Cloudflare](https://blog.cloudflare.com/partial-cloudflare-outage-on-october-25-2022/). A change to our Tiered Cache system caused some requests to fail for users with status code 530. The impact lasted for almost six hours in total. We estimate that about 5% of all requests failed at peak. Because of the complexity of our system and a blind spot in our tests, we did not spot this when the change was released to our test environment.
+
 [DataDog](https://www.datadoghq.com/blog/2020-09-25-infrastructure-connectivity-issue/). A bad service discovery config in one of the clients brought down service discovery globally when a dependent client went down.
 
 [Enom](https://enomstatus.com/incidents/03q064h6rb7x). On January 15, 2022, at 9:00 AM ET, Tucows’ engineering team began planned maintenance work to migrate the Enom platform to a new cloud infrastructure. Due to the complexity of the cutover, the team encountered many issues resulting in continuous delays. The maintenance window was extended multiple times to address issues related to data replication, network routing, and DNS resolution issues impacting website accessibility and email delivery.
@@ -236,7 +238,11 @@
 
 [Google](https://gist.github.com/jomo/2bae3821acb433d0446d). A mail system emailed people more than 20 times. This happened because mail was sent with a batch cron job that sent mail to everyone who was marked as waiting for mail. This was a non-atomic operation and the batch job didn't mark people as not waiting until all messages were sent.
 
+[Google](https://status.cloud.google.com/incidents/X8SNkK2BPyCrc1sveeiu). Filestore enforces a global limit on API requests to limit impact in overload scenarios. The outage was triggered when an internal Google service managing a large number of GCP projects malfunctioned and overloaded the Filestore API with requests, causing global throttling of the Filestore API. This continued until the internal service was manually paused. As a result of this throttling, read-only API access was unavailable for all customers. This affected customers in all locations, due to a global quota that applies to Filestore. Console, gcloud and API access (List, GetOperation, etc.) calls all failed for a duration of 3 hours, 12 minutes. Mutate operations (CreateInstance, UpdateInstance, CreateBackup, etc.) still succeeded, but customers were unable to check on operation progress.
+
 [Google](https://www.google.com/appsstatus/dashboard/incidents/k71P8nHp32hgcMSsC3mR). The Google Meet Livestream feature experienced disruptions that caused intermittent degraded quality of experience for a small subset of viewers, starting 25 October 2021 0400 PT and ending 26 October 2021 1000 PT. Quality was degraded for a total duration of 4 hours (3 hours on 25 October and 1 hour on 26 October). During this time, no more than 15% of livestream viewers experienced higher rebuffer rates and latency in livestream video playback. We sincerely apologize for the disruption that may have affected your business-critical events. We have identified the cause of the issue and have taken steps to improve our service.
+
+[Google](https://status.cloud.google.com/incidents/mREMLwZFe3FuLLn3zfTw). On 13 October 2022 23:30 US/Pacific, there was an unexpected increase of incoming and logging traffic combined with a bug in Google’s internal streaming RPC library that triggered a deadlock and caused the Write API Streaming frontend to be overloaded. And BigQuery Storage WriteAPI observed elevated error rates in the US Multi-Region for a period of 5 hours.
 
 [GPS/GLONASS](https://www.gps.gov/governance/advisory/meetings/2014-06/beutler1.pdf). A bad update that caused incorrect orbital mechanics calculations caused GPS satellites that use GLONASS to broadcast incorrect positions for 10 hours. The bug was noticed and rolled back almost immediately due to (?) this didn't fix the issue.
 
@@ -253,6 +259,8 @@
 [Homebrew](https://web.archive.org/web/20210813020247/https://brew.sh/2018/08/05/security-incident-disclosure/). A GitHub personal access token with recently elevated scopes was leaked from Homebrew’s Jenkins that allowed access to `git push` on several Homebrew repositories.
 
 [Honeycomb](https://www.honeycomb.io/blog/incident-resolution-september-retrospective/). A tale of multiple incidents, happening mostly due to fast growth.
+
+[Honeycomb](https://www.honeycomb.io/blog/incident-review-shepherd-cache-delays/). It cover the outage from September 8th, 2022, where our ingest system went down repeatedly and caused interruptions for over eight hours. We will first cover the background behind the incident with a high-level view of the relevant architecture, how we tried to investigate and fix the system, and finally, we’ll go over some meaningful elements that surfaced from our incident review process.
 
 [Indian Electricity Grid](https://web.archive.org/web/20220124104632/https://cercind.gov.in/2012/orders/Final_Report_Grid_Disturbance.pdf). One night in July 2012, a skewed electricity supply-demand profile developed when the northern grid drew a tremendous amount of power from the western and eastern grids. Following a series of circuit breakers tripping by virtue of under-frequency protection, the entire NEW (northern-eastern-western) grid collapsed due to the absence of islanding mechanisms. While the grid was reactivated after over 8 hours, similar conditions in the following day caused the grid to fail again. However, the restoration effort concluded almost 24 hours after the occurrence of the latter incident.
 
@@ -275,6 +283,8 @@
 [Mandrill](https://mailchimp.com/what-we-learned-from-the-recent-mandrill-outage/). Transaction ID wraparound in Postgres caused a partial outage lasting a day and a half.
 
 [Medium](https://web.archive.org/web/20160426163728/https://medium.com/medium-eng/the-curious-case-of-disappearing-polish-s-fa398313d4df). Polish users were unable to use their "Ś" key on Medium.
+
+[Metrist](https://metrist.io/blog/how-we-found-azures-unannounced-breaking-change/). Azure published a breaking change that affected downstream systems like Metrist's service without warning them, the post covers how to identify the issue and how to recover from it.
 
 [NASA](https://www.doneyles.com/LM/Tales.html). A design flaw in the Apollo 11 rendezvous radar produced excess CPU load, causing the spacecraft computer to restart during lunar landing.
 
