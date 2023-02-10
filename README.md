@@ -266,6 +266,8 @@
 
 [Honeycomb](https://www.honeycomb.io/blog/incident-resolution-september-retrospective/). A tale of multiple incidents, happening mostly due to fast growth.
 
+[Honeycomb](https://www.honeycomb.io/blog/incident-review-designed-failing/). Another story of multiple incidents that ended up impacting [query performance](https://status.honeycomb.io/incidents/fzw6hqjx5t4f) and [alerting via triggers and SLOs](https://status.honeycomb.io/incidents/jwhrxcs5zr06). These incidents were notable because of how challenging their investigation turned out to be.
+
 [Honeycomb](https://www.honeycomb.io/blog/incident-review-shepherd-cache-delays/). On September 8th, 2022, our ingest system went down repeatedly and caused interruptions for over eight hours. We will first cover the background behind the incident with a high-level view of the relevant architecture, how we tried to investigate and fix the system, and finally, we’ll go over some meaningful elements that surfaced from our incident review process.
 
 [Indian Electricity Grid](https://web.archive.org/web/20220124104632/https://cercind.gov.in/2012/orders/Final_Report_Grid_Disturbance.pdf). One night in July 2012, a skewed electricity supply-demand profile developed when the northern grid drew a tremendous amount of power from the western and eastern grids. Following a series of circuit breakers tripping by virtue of under-frequency protection, the entire NEW (northern-eastern-western) grid collapsed due to the absence of islanding mechanisms. While the grid was reactivated after over 8 hours, similar conditions in the following day caused the grid to fail again. However, the restoration effort concluded almost 24 hours after the occurrence of the latter incident.
