@@ -198,6 +198,8 @@
 
 [CircleCI](https://circleci.statuspage.io/incidents/hr0mm9xmm3x6). A GitHub outage and recovery caused an unexpectedly large incoming load. For reasons that aren't specified, a large load causes CircleCI's queue system to slow down, in this case to handling one transaction per minute.
 
+[CircleCI](https://circleci.com/blog/jan-4-2023-incident-report/). By January 4, 2023, our internal investigation had determined the scope of the intrusion by the unauthorized third party and the entry path of the attack. To date, we have learned that an unauthorized third party leveraged malware deployed to a CircleCI engineer’s laptop in order to steal a valid, 2FA-backed SSO session. This machine was compromised on December 16, 2022. The malware was not detected by our antivirus software. Our investigation indicates that the malware was able to execute session cookie theft, enabling them to impersonate the targeted employee in a remote location and then escalate access to a subset of our production systems.
+
 [Cloudflare](https://web.archive.org/web/20211029020126/https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/). A parser bug caused Cloudflare edge servers to return memory that contained private information such as HTTP cookies, authentication tokens, HTTP POST bodies, and other sensitive data.
 
 [Cloudflare](https://web.archive.org/web/20211006055154/https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/). A CPU exhaustion was caused by a single WAF rule that contained a poorly written regular expression that ended up creating excessive backtracking. This rule was deployed quickly to production and a series of events lead to a global 27 minutes downtime of the Cloudflare services.
