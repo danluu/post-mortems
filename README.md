@@ -376,6 +376,8 @@
 
 [Zerodha](https://zerodha.com/marketintel/bulletin/105569/postmortem-trading-and-hanging-orders-on-12th-april-2018). A failure of the primary leased line to a CTCL between a stock broker and a stock exchange led to the activation of a backup leased line that was operating sporadically over the following hour, affecting bracket and cover orders. Subsequently, the process of placing and validating orders had been modified to incorporate the unreliability of the CTCL's leased lines, but the reliability of the primary and the backup leased lines was not fundamentally improved by the providers.
 
+[Datadog](https://www.datadoghq.com/blog/2023-03-08-multiregion-infrastructure-connectivity-issue/). After an automatic upgrade, all network rules were removed and caused a 24h duration outage of all their Cilium protected Kubernetes clusters in all their regions & cloud providers.
+
 *Unfortunately, most of the interesting post-mortems I know about are locked inside confidential pages at Google and Microsoft. Please add more links if you know of any interesting public post mortems!  is a pretty good resource; other links to collections of post mortems are also appreciated.*
 
 ## Other lists of postmortems
