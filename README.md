@@ -132,7 +132,7 @@
 
 [Google](https://status.cloud.google.com/incidents/eo76pxZiDgWVz4z3kmUv). A failure of a component on a fiber path from one of the central US gateway campuses in Google’s production backbone led to a decrease in available network bandwidth between the gateway and multiple edge locations, causing packet loss while the backbone automatically moved traffic onto remaining paths.
 
-[Knight Capital](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/). A combination of conflicting deployed versions and re-using a previously used bit caused a $460M loss.
+[Knight Capital](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/). A combination of conflicting deployed versions and re-using a previously used bit caused a $460M loss. [Longer Write-up](https://www.henricodolfing.com/2019/06/project-failure-case-study-knight-capital.html)
 
 [WebKit code repository](https://web.archive.org/web/20210306015541/https://digital.ai/catalyst-blog/subversion-sha1-collision-problem-statement-prevention-and-remediation-options). The WebKit repository, a Subversion repository configured to use deduplication, became unavailable after two files with the same SHA-1 hash were checked in as test data, with the intention of implementing a safety check for collisions. The two files had different md5 sums and so a checkout would fail a consistency check. For context, the first public SHA-1 hash collision had very recently been announced, with an example of two colliding files.
 
