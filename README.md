@@ -68,7 +68,7 @@
 
 [Keepthescore](https://web.archive.org/web/20201101133510/https://keepthescore.co/blog/posts/deleting_the_production_database/). Engineers deleted the production database by accident. Database is a managed database from DigitalOcean with backups once a day. 30 minutes after the disaster, it went back online, however 7 hours of scoreboard data was gone forever.
 
-[Microsoft](https://azure.microsoft.com/blog/2014/11/19/update-on-azure-storage-service-interruption/). A bad config took down Azure storage.
+[Microsoft](https://azure.microsoft.com/en-us/blog/update-on-azure-storage-service-interruption/). A bad config took down Azure storage.
 
 [NPM](https://blog.npmjs.org/post/74949623024/2014-01-28-outage-postmortem.html). Fastly configuration change caused backend routing issue. To be exact, the issue is that we were setting the req.backend in a vcl_fetch function, and then calling restart to re-parse the rules. However, calling restart will reset the req.backend to the first backed in the list, which in this case happened to be Manta, rather than the load balanced CouchDB servers.
 
