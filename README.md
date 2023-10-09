@@ -394,7 +394,7 @@
 
 [Availability Digest website](https://web.archive.org/web/20190914025003/http://www.availabilitydigest.com:80/articles.htm).
 
-[Postmortems community](https://postmortems.info) (with imported archive from the now-dead G+ community).
+[Postmortems community](https://web.archive.org/web/20230329091806/https://postmortems.info/) (with imported archive from the now-dead G+ community).
 
 [John Daily's list of postmortems (in json)](https://github.com/macintux/Service-postmortems).
 
