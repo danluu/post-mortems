@@ -278,7 +278,7 @@
 
 [Honeycomb](https://www.honeycomb.io/blog/incident-review-shepherd-cache-delays/). On September 8th, 2022, our ingest system went down repeatedly and caused interruptions for over eight hours. We will first cover the background behind the incident with a high-level view of the relevant architecture, how we tried to investigate and fix the system, and finally, we’ll go over some meaningful elements that surfaced from our incident review process.
 
-[Honeycomb](https://www.honeycomb.io/blog/incident-review-what-comes-up-must-first-go-down/). On July 25th, 2023, we experienced a total Honeycomb outage. It impacted all user-facing components from 1:40 p.m. UTC to 2:48 p.m. UTC, during which no data could be processed or accessed.
+[Honeycomb](https://www.honeycomb.io/blog/incident-review-what-comes-up-must-first-go-down/). On July 25th, 2023, we experienced a total Honeycomb outage. It impacted all user-facing components from 1:40 p.m. UTC to 2:48 p.m. UTC, during which no data could be processed or accessed. The full details of incident triage process is covered in [here](https://www.honeycomb.io/wp-content/uploads/2023/08/Incident-Review-What-Comes-Up-Must-First-Go-Down.pdf).
 
 [incident.io](https://incident.io/blog/intermittent-downtime). A bad event (poison pill) in the async workers queue triggered unhandled panics that repeatedly crashed the app. This combined poorly with Heroku infrastructure, making it difficult to find the source of the problem. Applied mitigations that are generally interesting to people running web services, such as catching corner cases of Go panic recovery and splitting work by type/class to improve reliability.
 
