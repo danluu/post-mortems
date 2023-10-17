@@ -334,6 +334,8 @@
 
 [Salesforce](https://help.salesforce.com/apex/HTViewSolution?urlname=Root-Cause-Message-for-Disruption-of-Service-on-NA14-May-2016&language=en_US). Initial disruption due to power failure in one datacenter led to cascading failures with a database cluster and file discrepancies resulting in cross data center failover issues.
 
+[Salesforce](https://help.salesforce.com/s/articleView?id=000396429&type=1). On September 20, 2023, a service disruption affected a subset of customers across multiple services beginning at 14:48 Coordinated Universal Time (UTC). As a result, some customers were unable to login and access their services. A policy change executed as a part of our standard security controls review and update cycle to be the trigger of this incident. This change inadvertently blocked access to resources beyond its intended scope.
+
 [Sentry](https://blog.sentry.io/2015/07/23/transaction-id-wraparound-in-postgres). Transaction ID Wraparound in Postgres caused Sentry to go down for most of a working day.
 
 [Shapeshift](http://web.archive.org/web/20160610080136/https://www.scribd.com/doc/309574927/ShapeShift-Post-Mortem-Public). Poor security practices enabled an employee to steal $200,000 in cryptocurrency in 3 separate hacks over a 1 month period. The company's CEO expanded upon the story in a [blog post](https://web.archive.org/web/20190811214903/http://moneyandstate.com:80/looting-of-the-fox/).
