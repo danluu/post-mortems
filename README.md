@@ -198,7 +198,7 @@
 
 [Buildkite](https://building.buildkite.com/outage-post-mortem-for-august-23rd-82b619a3679b). Database capacity downgrade in an attempt to minimise AWS spend resulted in lack of capacity to support Buildkite customers at peak, leading to cascading collapse of dependent servers.
 
-[Bungie](https://www.bungie.net/en/News/Article/48723). Side effects of a bug fix for wrong timestamps causes data loss; server misconfiguration for the hotfix causes the data loss to reappear in several servers in a following update.
+[Bungie](https://web.archive.org/web/20230504222953/https://www.bungie.net/en/News/Article/48723). Side effects of a bug fix for wrong timestamps causes data loss; server misconfiguration for the hotfix causes the data loss to reappear in several servers in a following update.
 
 [CCP Games](https://community.eveonline.com/news/dev-blogs/behind-the-scenes-of-a-long-eve-online-downtime/). A problematic logging channel caused cluster nodes dying off during the cluster start sequence after rolling out a new game patch.
 
