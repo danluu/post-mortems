@@ -306,7 +306,7 @@
 
 [Medium](https://web.archive.org/web/20160426163728/https://medium.com/medium-eng/the-curious-case-of-disappearing-polish-s-fa398313d4df). Polish users were unable to use their "Ś" key on Medium.
 
-[Metrist](https://metrist.io/blog/how-we-found-azures-unannounced-breaking-change/). Azure published a breaking change that affected downstream systems like Metrist's service without warning them, the post covers how to identify the issue and how to recover from it.
+[Metrist](https://web.archive.org/web/20230927050430/https://metrist.io/blog/how-we-found-azures-unannounced-breaking-change/). Azure published a breaking change that affected downstream systems like Metrist's service without warning them, the post covers how to identify the issue and how to recover from it.
 
 [NASA](https://www.doneyles.com/LM/Tales.html). A design flaw in the Apollo 11 rendezvous radar produced excess CPU load, causing the spacecraft computer to restart during lunar landing.
 
@@ -332,7 +332,7 @@
 
 [Reddit](https://web.archive.org/web/20221029203405/https://www.reddit.com/r/announcements/comments/4y0m56/why_reddit_was_down_on_aug_11/). Experienced an outage for 1.5 hours, followed by another 1.5 hours of degraded performance on Thursday August 11 2016. This was due to an error during a migration of a critical backend system.
 
-[Reddit](https://www.reddit.com/r/RedditEng/comments/11xx5o0/you_broke_reddit_the_piday_outage/). Outage for over 5 hours when a critical Kubernetes cluster upgrade failed. The failure was caused by node metadata that changed between versions which brought down workload networking.
+[Reddit](https://web.archive.org/web/20230727225235/https://www.reddit.com/r/RedditEng/comments/11xx5o0/you_broke_reddit_the_piday_outage/). Outage for over 5 hours when a critical Kubernetes cluster upgrade failed. The failure was caused by node metadata that changed between versions which brought down workload networking.
 
 [Roblox](https://blog.roblox.com/2022/01/roblox-return-to-service-10-28-10-31-2021/). Roblox end Oct 2021 73 hours outage. Issues with Consul streaming and BoltDB.
 
