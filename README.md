@@ -93,11 +93,11 @@
 
 [TravisCI](https://www.traviscistatus.com/incidents/khzk8bg4p9sy). A configuration issue (incomplete password rotation) led to "leaking" VMs, leading to elevated build queue times.
 
-[TravisCI](https://blog.travis-ci.com/2016-09-30-the-day-we-deleted-our-vm-images/). A configuration issue (automated age-based Google Compute Engine VM image cleanup job) caused stable base VM images to be deleted.
+[TravisCI](https://web.archive.org/web/20221220114914/https://blog.travis-ci.com/2016-09-30-the-day-we-deleted-our-vm-images/). A configuration issue (automated age-based Google Compute Engine VM image cleanup job) caused stable base VM images to be deleted.
 
 [TravisCI](https://www.traviscistatus.com/incidents/sxrh0l46czqn). A configuration change made builds start to fail. Manual rollback broke.
 
-[TravisCI](https://blog.travis-ci.com/2018-04-03-incident-post-mortem). Accidental environment variable made tests truncate production database.
+[TravisCI](https://www.traviscistatus.com/incidents/z2b3lz2kwcfp). Accidental environment variable made tests truncate production database.
 
 [TUI](https://assets.publishing.service.gov.uk/media/604f423be90e077fdf88493f/Boeing_737-8K5_G-TAWG_04-21.pdf). Prior to the incident flight the reservation system from which the load sheet was produced had been upgraded. A fault in the system caused female passengers checked in with title ‘Miss’ to be counted as children. The system allocated them a child’s standard weight of 35 kg as opposed to the correct female standard weight of 69 kg. Consequently, with 38 females checked in incorrectly and misidentified as children, the G-TAWG takeoff mass from the load sheet was 1,244 kg below the actual mass of the aircraft.
 
