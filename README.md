@@ -221,6 +221,8 @@
 
 [Cloudflare](https://web.archive.org/web/20211006055154/https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/). A CPU exhaustion was caused by a single WAF rule that contained a poorly written regular expression that ended up creating excessive backtracking. This rule was deployed quickly to production and a series of events lead to a global 27 minutes downtime of the Cloudflare services.
 
+[CrowdStrike](https://www.crowdstrike.com/falcon-content-update-remediation-and-guidance-hub/). A Content update containing undetected errors was deployed due to a bug in the Content Validator in the deployment stage. This problematic content caused an out-of-bounds memory read, resulting in a Windows operating system crash (BSOD) on 8.5 million Windows machines. The update was reverted within 78 minutes, but the incident highlighted the need for improved validation and testing processes.
+
 [Datadog](https://www.datadoghq.com/blog/2023-03-08-multiregion-infrastructure-connectivity-issue/). After an automatic upgrade, all network rules were removed and caused a 24h duration outage of all their Cilium protected Kubernetes clusters in all their regions and cloud providers.
 
 [Discord](https://status.discordapp.com/incidents/dj3l6lw926kl). A flapping service lead to a thundering herd reconnecting to it once it came up. This lead to a cascading error where frontend services ran out of memory due to internal queues filling up.
@@ -506,6 +508,7 @@
 * Tamir Dresher
 * Tim Freeman
 * Tom Crayford
+* Valdeci Gomes
 * Vaibhav Bhembre
 * Veit Heller
 * Vincent Ambo
