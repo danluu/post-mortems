@@ -80,7 +80,7 @@
 
 [PagerDuty](https://status.pagerduty.com/incidents/vbp7ht2647l8). On December 15th, 2021 at 00:17 UTC, we deployed a DNS configuration change in PagerDuty’s infrastructure that impacted our container orchestration cluster. The change contained a defect, that we did not detect in our testing environments, which immediately caused all services running in the container orchestration cluster to be unable to resolve DNS.
 
-[Razorpay](https://razorpay.com/blog/day-of-rds-multi-az-failover/). A RDS hardware failure highlighted an incorrect MySQL configuration which resulted in major data loss in a financial system.
+[Razorpay](https://web.archive.org/web/20250207075402/https://razorpay.com/blog/day-of-rds-multi-az-failover/). A RDS hardware failure highlighted an incorrect MySQL configuration which resulted in major data loss in a financial system.
 
 [rust-lang](https://blog.rust-lang.org/inside-rust/2023/02/08/dns-outage-portmortem.html). On Wednesday, 2023-01-25 at 09:15 UTC, we deployed changes to the production infrastructure for crates.io. During the deployment, the DNS record for static.crates.io failed to resolve for an estimated time of 10-15 minutes. It was due to the fact that both certificates and DNS records were re-created during the downtime.
 
