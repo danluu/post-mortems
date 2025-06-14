@@ -266,6 +266,8 @@
 
 [Google](https://status.cloud.google.com/incidents/mREMLwZFe3FuLLn3zfTw). On 13 October 2022 23:30 US/Pacific, there was an unexpected increase of incoming and logging traffic combined with a bug in Google’s internal streaming RPC library that triggered a deadlock and caused the Write API Streaming frontend to be overloaded. And BigQuery Storage WriteAPI observed elevated error rates in the US Multi-Region for a period of 5 hours.
 
+[Google](https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW). A policy change containing blank fields triggered a null pointer exception in Service Control, Google's API management and control plane system. The code path that failed was not feature flag protected and lacked proper error handling. When the policy data replicated globally, it caused Service Control binaries to crash loop across all regions. While a red-button fix was deployed within 40 minutes, larger regions like us-central-1 experienced extended recovery times (up to 2h 40m) due to a thundering herd problem when Service Control tasks restarted, overloading the underlying Spanner infrastructure. The incident affected Google and Google Cloud APIs globally, with recovery times varying by product architecture.
+
 [GPS/GLONASS](https://www.gps.gov/governance/advisory/meetings/2014-06/beutler1.pdf). A bad update that caused incorrect orbital mechanics calculations caused GPS satellites that use GLONASS to broadcast incorrect positions for 10 hours. The bug was noticed and rolled back almost immediately due to (?) this didn't fix the issue.
 
 [Healthcare.gov](https://web.archive.org/web/20201108122248/https://www.bloomberg.com/opinion/articles/2015-09-16/how-healthcare-gov-went-so-so-wrong). A large organizational failure to build a website for United States healthcare.
@@ -475,6 +477,7 @@
 * Jens Rantil
 * John Daily
 * jomo
+* Jonathan Black
 * Julia Hansbrough
 * Julian Szulc
 * Justin Montgomery
