@@ -30,6 +30,10 @@
 
 [Cloudflare](https://blog.cloudflare.com/1-1-1-1-lookup-failures-on-october-4th-2023/). On 4 October 2023, Cloudflare experienced DNS resolution problems starting at 07:00 UTC and ending at 11:00 UTC. Some users of 1.1.1.1 or products like WARP, Zero Trust, or third party DNS resolvers which use 1.1.1.1 may have received SERVFAIL DNS responses to valid queries. We’re very sorry for this outage. This outage was an internal software error and not the result of an attack. In this blog, we’re going to talk about what the failure was, why it occurred, and what we’re doing to make sure this doesn’t happen again.
 
+[Cloudflare](https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/)
+tl;dr: Cloudflare took down themselves with a common react hook pitfall.
+There was an outage in the Tenant Service API which led to a broad outage of many of their APIs and the Cloudflare Dashboard
+
 [DataDog](https://www.datadoghq.com/blog/2020-09-25-infrastructure-connectivity-issue/). A bad service discovery config in one of the clients brought down service discovery globally when a dependent client went down.
 
 [Enom](https://enomstatus.com/incidents/03q064h6rb7x). On January 15, 2022, at 9:00 AM ET, Tucows’ engineering team began planned maintenance work to migrate the Enom platform to a new cloud infrastructure. Due to the complexity of the cutover, the team encountered many issues resulting in continuous delays. The maintenance window was extended multiple times to address issues related to data replication, network routing, and DNS resolution issues impacting website accessibility and email delivery.
