@@ -30,6 +30,8 @@
 
 [Cloudflare](https://blog.cloudflare.com/1-1-1-1-lookup-failures-on-october-4th-2023/). On 4 October 2023, Cloudflare experienced DNS resolution problems starting at 07:00 UTC and ending at 11:00 UTC. Some users of 1.1.1.1 or products like WARP, Zero Trust, or third party DNS resolvers which use 1.1.1.1 may have received SERVFAIL DNS responses to valid queries. We’re very sorry for this outage. This outage was an internal software error and not the result of an attack. In this blog, we’re going to talk about what the failure was, why it occurred, and what we’re doing to make sure this doesn’t happen again.
 
+[Cloudflare](https://blog.cloudflare.com/18-november-2025-outage/). On 18 Nov. 2025, a change in permissions in a database in Cloudflare's bot-detection systems caused a file to be output that exceeded the limits of the software that runs that system. That file was propagated througout Cloudflare's network, causing a systemwide outage.
+
 [DataDog](https://www.datadoghq.com/blog/2020-09-25-infrastructure-connectivity-issue/). A bad service discovery config in one of the clients brought down service discovery globally when a dependent client went down.
 
 [Enom](https://enomstatus.com/incidents/03q064h6rb7x). On January 15, 2022, at 9:00 AM ET, Tucows’ engineering team began planned maintenance work to migrate the Enom platform to a new cloud infrastructure. Due to the complexity of the cutover, the team encountered many issues resulting in continuous delays. The maintenance window was extended multiple times to address issues related to data replication, network routing, and DNS resolution issues impacting website accessibility and email delivery.
@@ -393,6 +395,8 @@
 [Twilio](https://status.twilio.com/incidents/wdrlk4qps0z1). Twilio's incident of having high filtering on SMS towards AT&T Network In United States.
 
 [Valve](https://github.com/valvesoftware/steam-for-linux/issues/3671). Steam's desktop client deleted all local files and directories. The thing I find most interesting about this is that, after this blew up on social media, there were widespread reports that this was reported to Valve months earlier. But Valve doesn't triage most bugs, resulting in an extremely long time-to-mitigate, despite having multiple bug reports on this issue.
+
+[Xubuntu](https://lists.ubuntu.com/archives/xubuntu-users/2025-November/012210.html). The website for Xubuntu, a derivative of Ubuntu Linux that uses Xfce as its desktop environment, was compromised by an attacker who changed download links to a malicious zip file. 
 
 [Yeller](https://web.archive.org/web/20201018145502/http://yellerapp.com/posts/2014-08-04-postmortem1.html). A network partition in a cluster caused some messages to get delayed, up to 6-7 hours. For reasons that aren't clear, a rolling restart of the cluster healed the partition. There's some suspicious that it was due to cached routes, but there wasn't enough logging information to tell for sure.
 
