@@ -258,7 +258,7 @@
 
 [Gitlab](https://docs.google.com/document/d/1ScqXAdb6BjhsDzCo3qdPYbt1uULzgZqPO8zHeHHarS0/preview?sle=true&hl=en&forcehl=1#heading=h.dfbilqgnc5sf). After the primary locked up and was restarted, it was brought back up with the wrong filesystem, causing a global outage. See also [HN discussion](https://web.archive.org/web/20220127094354/https://news.ycombinator.com/item?id=8003601).
 
-[Gitlab](https://about.gitlab.com/2017/02/10/postmortem-of-database-outage-of-january-31/). Influx of requests overloaded the database, caused replication to lag, tired admin deleted the wrong directory, six hours of data lost. See also [earlier report](https://about.gitlab.com/2017/02/01/gitlab-dot-com-database-incident) and [HN discussion](https://news.ycombinator.com/item?id=13537052).
+[Gitlab](https://about.gitlab.com/2017/02/10/postmortem-of-database-outage-of-january-31/). Influx of requests overloaded the database, caused replication to lag, tired admin deleted the wrong directory, six hours of data lost. See also [earlier report](https://about.gitlab.com/2017/02/01/gitlab-dot-com-database-incident) and [HN discussion](https://web.archive.org/web/20240918153505/https://news.ycombinator.com/item?id=13537052).
 
 [Google](https://gist.github.com/jomo/2bae3821acb433d0446d). A mail system emailed people more than 20 times. This happened because mail was sent with a batch cron job that sent mail to everyone who was marked as waiting for mail. This was a non-atomic operation and the batch job didn't mark people as not waiting until all messages were sent.
 
