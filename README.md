@@ -270,7 +270,7 @@
 
 [Google](https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW). A policy change containing blank fields triggered a null pointer exception in Service Control, Google's API management and control plane system. The code path that failed was not feature flag protected and lacked proper error handling. When the policy data replicated globally, it caused Service Control binaries to crash loop across all regions. While a red-button fix was deployed within 40 minutes, larger regions like us-central-1 experienced extended recovery times (up to 2h 40m) due to a thundering herd problem when Service Control tasks restarted, overloading the underlying Spanner infrastructure. The incident affected Google and Google Cloud APIs globally, with recovery times varying by product architecture.
 
-[GPS/GLONASS](https://www.gps.gov/governance/advisory/meetings/2014-06/beutler1.pdf). A bad update that caused incorrect orbital mechanics calculations caused GPS satellites that use GLONASS to broadcast incorrect positions for 10 hours. The bug was noticed and rolled back almost immediately due to (?) this didn't fix the issue.
+[GPS/GLONASS](https://web.archive.org/web/20250903124227/https://www.gps.gov/governance/advisory/meetings/2014-06/beutler1.pdf). A bad update that caused incorrect orbital mechanics calculations caused GPS satellites that use GLONASS to broadcast incorrect positions for 10 hours. The bug was noticed and rolled back almost immediately due to (?) this didn't fix the issue.
 
 [Healthcare.gov](https://web.archive.org/web/20201108122248/https://www.bloomberg.com/opinion/articles/2015-09-16/how-healthcare-gov-went-so-so-wrong). A large organizational failure to build a website for United States healthcare.
 
@@ -356,7 +356,7 @@
 
 [Shapeshift](http://web.archive.org/web/20160610080136/https://www.scribd.com/doc/309574927/ShapeShift-Post-Mortem-Public). Poor security practices enabled an employee to steal $200,000 in cryptocurrency in 3 separate hacks over a 1 month period. The company's CEO expanded upon the story in a [blog post](https://web.archive.org/web/20190811214903/http://moneyandstate.com:80/looting-of-the-fox/).
 
-[Skyliner](https://blog.skyliner.io/post-mortem-outages-on-1-19-17-and-1-23-17-3f65cc6f693e). A memory leak in a third party library lead to Skyliner being unavailable on two occasions.
+[Skyliner](https://web.archive.org/web/20251230063242/https://blog.skyliner.io/post-mortem-outages-on-1-19-17-and-1-23-17-3f65cc6f693e). A memory leak in a third party library lead to Skyliner being unavailable on two occasions.
 
 [Slack](https://web.archive.org/web/20181208123409/https://slackhq.com/this-was-not-normal-really). A combination of factor results in a large number of Slack's users being disconnected to the server. The subsequent massive disconnection-reconnection process exceeded the database capacity and caused cascading connection failures, leading to 5% of Slack's users not being able to connect to the server for up to 2 hours.
 
