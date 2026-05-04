@@ -244,9 +244,9 @@
 
 [Atlassian](https://www.atlassian.com/engineering/post-incident-review-april-2022-outage). On Tuesday, April 5th, 2022, starting at 7:38 UTC, 775 Atlassian customers lost access to their Atlassian products. The outage spanned up to 14 days for a subset of these customers, with the first set of customers being restored on April 8th and all customer sites progressively restored by April 18th.
 
-[Basecamp](https://signalvnoise.com/posts/3729-basecamp-network-attack-postmortem), [see also](https://signalvnoise.com/posts/3728-basecamp-was-under-network-attack-this-morning). Basecamp's network was under a DDoS attack during a 100-minute window on March 24, 2014.
+[Basecamp](https://signalvnoise.com/posts/3729-basecamp-network-attack-postmortem). Basecamp's network was under a DDoS attack during a 100-minute window on March 24, 2014. Same-day announcement that the attack was in progress: [signalvnoise.com](https://signalvnoise.com/posts/3728-basecamp-was-under-network-attack-this-morning).
 
-[Basecamp](https://web.archive.org/web/20220529044310/https://m.signalvnoise.com/postmortem-on-the-read-only-outage-of-basecamp-on-november-9th-2018/), [see also](https://web.archive.org/web/20220530044506/https://m.signalvnoise.com/update-on-basecamp-3-being-stuck-in-read-only-as-of-nov-8-922am-cst/). In November 2018 a database hit the integer limit, leaving the service in read-only mode.
+[Basecamp](https://web.archive.org/web/20220529044310/https://m.signalvnoise.com/postmortem-on-the-read-only-outage-of-basecamp-on-november-9th-2018/). In November 2018 a database hit the integer limit, leaving the service in read-only mode. Same-day status update during the incident: [signalvnoise.com](https://web.archive.org/web/20220530044506/https://m.signalvnoise.com/update-on-basecamp-3-being-stuck-in-read-only-as-of-nov-8-922am-cst/).
 
 [BBC Online](https://www.bbc.co.uk/blogs/internet/entries/a37b0470-47d4-3991-82bb-a7d5b8803771). In July 2014, BBC Online experienced a very long outage of several of its popular online services including the BBC iPlayer. When the database backend was overloaded, it had started to throttle requests from various services. Services that hadn't cached the database responses locally began timing out and eventually failed completely.
 
