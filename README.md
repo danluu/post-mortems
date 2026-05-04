@@ -166,7 +166,7 @@
 
 [Google](https://status.cloud.google.com/incidents/eo76pxZiDgWVz4z3kmUv). A failure of a component on a fiber path from one of the central US gateway campuses in Google’s production backbone led to a decrease in available network bandwidth between the gateway and multiple edge locations, causing packet loss while the backbone automatically moved traffic onto remaining paths.
 
-[incident.io](https://incident.io/blog/one-two-skip-a-few). Customers noticed their per-organisation `INC-N` IDs jumping by exactly 32 (e.g. `#INC-7` directly to `#INC-39`) after a Postgres HA upgrade that promoted a follower to primary. Postgres's `nextval` pre-allocates `SEQ_LOG_VALS = 32` sequence values on the WAL to avoid logging every `nextval`; a follower sees the post-crash state, so when promoted the sequence jumps forward by up to 32. Fix was to replace `nextval` with a `SELECT MAX(external_id)+1` trigger.
+[incident.io](https://incident.io/blog/one-two-skip-a-few). Customers noticed their per-organization `INC-N` IDs jumping by exactly 32 (e.g. `#INC-7` directly to `#INC-39`) after a Postgres HA upgrade that promoted a follower to primary. Postgres's `nextval` pre-allocates `SEQ_LOG_VALS = 32` sequence values on the WAL to avoid logging every `nextval`; a follower sees the post-crash state, so when promoted the sequence jumps forward by up to 32. Fix was to replace `nextval` with a `SELECT MAX(external_id)+1` trigger.
 
 [Knight Capital](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/). A combination of conflicting deployed versions and re-using a previously used bit caused a $460M loss. See also a [longer write-up](https://www.henricodolfing.com/2019/06/project-failure-case-study-knight-capital.html).
 
