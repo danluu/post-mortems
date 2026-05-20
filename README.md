@@ -38,6 +38,22 @@
 
 [Cloudflare](https://blog.cloudflare.com/18-november-2025-outage/). On 18 Nov. 2025, a change in permissions in a database in Cloudflare's bot-detection systems caused a file to be output that exceeded the limits of the software that runs that system. That file was propagated througout Cloudflare's network, causing a systemwide outage.
 
+[Cloudflare](https://blog.cloudflare.com/5-december-2025-outage/). A configuration change to disable an internal WAF testing tool propagated globally without a gradual rollout, triggering a Lua exception in the proxy's rulesets module that caused HTTP 500 errors for customers using the Cloudflare Managed Ruleset.
+
+[Cloudflare](https://blog.cloudflare.com/cloudflare-outage-february-20-2026/). A bug in an automated cleanup task queried the Addressing API incorrectly, causing the system to interpret all BYOIP prefixes as pending deletion and systematically remove them.
+
+[Cloudflare](https://blog.cloudflare.com/cloudflare-incident-on-february-6-2025/). Human error during abuse remediation inadvertently disabled the R2 Gateway service instead of a specific endpoint, due to insufficient validation safeguards in admin tooling.
+
+[Cloudflare](https://blog.cloudflare.com/cloudflare-incident-march-21-2025/). During credential rotation, the R2 engineering team accidentally deployed new storage credentials to the default environment instead of production by omitting the --env production flag, causing the R2 Gateway to fail authentication once old credentials were removed.
+
+[Cloudflare](https://blog.cloudflare.com/cloudflare-incident-on-june-20-2024/). A newly deployed DDoS mitigation rule exposed a latent bug in the rate-limiting system where flawed cookie validation logic caused HTTP request handler processes to enter infinite loops consuming 100% CPU, propagating across data centers.
+
+[Cloudflare](https://blog.cloudflare.com/cloudflare-incident-on-october-30-2023/). A deployment tool bug caused the production environment to reference a staging build version, routing traffic to an unauthorized endpoint returning HTTP 401 errors, cascading failures across Workers KV, Pages, Access, and Turnstile.
+
+[Cloudflare](https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/). A React component bug in the dashboard caused excessive API calls to the Tenant Service due to an improperly configured dependency array, overwhelming the system and cascading into broader API and dashboard failures.
+
+[Cloudflare](https://blog.cloudflare.com/route-leak-incident-january-22-2026/). An automated routing policy configuration error removed prefix list filters from BGP export policies in Cloudflare's Miami router, causing it to advertise internal IPv6 prefixes to external peers and resulting in a route leak lasting 25 minutes.
+
 [Datadog](https://www.datadoghq.com/blog/2020-09-25-infrastructure-connectivity-issue/). A bad service discovery config in one of the clients brought down service discovery globally when a dependent client went down.
 
 [Enom](https://enomstatus.com/incidents/03q064h6rb7x). On January 15, 2022, at 9:00 AM ET, Tucows’ engineering team began planned maintenance work to migrate the Enom platform to a new cloud infrastructure. Due to the complexity of the cutover, the team encountered many issues resulting in continuous delays. The maintenance window was extended multiple times to address issues related to data replication, network routing, and DNS resolution issues impacting website accessibility and email delivery.
@@ -135,6 +151,8 @@
 [Cloudflare](https://web.archive.org/web/20211015231917/https://blog.cloudflare.com/a-byzantine-failure-in-the-real-world/). A partial switch misbehavior caused a cascading Byzantine failure which impacted the availability of the API and dashboard for six hours and 33 minutes.
 
 [Cloudflare](https://blog.cloudflare.com/post-mortem-on-cloudflare-control-plane-and-analytics-outage/). Flexential Data Center Power Failure. This post outlines the events that caused this incident.
+
+[Cloudflare](https://blog.cloudflare.com/major-data-center-power-failure-again-cloudflare-code-orange-tested/). Incorrectly set breaker coordination settings within the cascade safety breakers at Cloudflare's Portland data center caused a complete power loss that bypassed all redundant power paths.
 
 [FirstEnergy / General Electric](https://en.wikipedia.org/wiki/Northeast_blackout_of_2003). FirstEnergy had a local failure when some transmission lines hit untrimmed foliage. The normal process is to have an alarm go off, which causes human operators to re-distribute power. But the GE system that was monitoring this had a bug which prevented the alarm from getting triggered, which eventually caused a cascading failure that eventually affected 55 million people.
 
@@ -281,6 +299,14 @@
 [Cloudflare](https://web.archive.org/web/20211029020126/https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/). A parser bug caused Cloudflare edge servers to return memory that contained private information such as HTTP cookies, authentication tokens, HTTP POST bodies, and other sensitive data.
 
 [Cloudflare](https://web.archive.org/web/20211006055154/https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/). A CPU exhaustion was caused by a single WAF rule that contained a poorly written regular expression that ended up creating excessive backtracking. This rule was deployed quickly to production and a series of events lead to a global 27 minutes downtime of the Cloudflare services.
+
+[Cloudflare](https://blog.cloudflare.com/cloudflare-incident-on-august-21-2025/). A single customer's traffic surge from AWS us-east-1 saturated Cloudflare's peering links; AWS's BGP prefix withdrawals to mitigate congestion paradoxically rerouted traffic to already-strained alternate paths, compounded by a pre-existing half-capacity link failure and insufficient DCI capacity.
+
+[Cloudflare](https://blog.cloudflare.com/cloudflare-service-outage-june-12-2025/). Workers KV relies on a central data store for its source of truth; a failure of the third-party cloud provider backing that store caused a complete outage for cold reads and writes.
+
+[Cloudflare](https://blog.cloudflare.com/how-cloudflare-mitigated-yet-another-okta-compromise/). Threat actors compromised an authentication token at Okta's support system and used it to access Cloudflare's Okta instance with administrative privileges, though Cloudflare's Zero Trust architecture prevented impact to customer systems and data.
+
+[Cloudflare](https://blog.cloudflare.com/response-to-salesloft-drift-incident/). A supply chain attack in which threat actors obtained OAuth credentials from Salesloft Drift's Salesforce integration, exploiting this access to exfiltrate support case data from Cloudflare's Salesforce instance.
 
 [CrowdStrike](https://www.crowdstrike.com/falcon-content-update-remediation-and-guidance-hub/). A Content update containing undetected errors was deployed due to a bug in the Content Validator in the deployment stage. This problematic content caused an out-of-bounds memory read, resulting in a Windows operating system crash (BSOD) on 8.5 million Windows machines. The update was reverted within 78 minutes, but the incident highlighted the need for improved validation and testing processes.
 
