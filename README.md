@@ -118,7 +118,7 @@
 
 [Stack Overflow](https://web.archive.org/web/20201020103424/https://stackstatus.net/post/96025967369/outage-post-mortem-august-25th-2014). A bad firewall config blocked stackexchange/stackoverflow.
 
-[Sentry](https://blog.sentry.io/2016/06/14/security-incident-june-12-2016). Wrong Amazon S3 settings on backups lead to data leak.
+[Sentry](https://blog.sentry.io/security-incident-june-12-2016/). Wrong Amazon S3 settings on backups lead to data leak.
 
 [TravisCI](https://www.traviscistatus.com/incidents/khzk8bg4p9sy). A configuration issue (incomplete password rotation) led to "leaking" VMs, leading to elevated build queue times.
 
@@ -316,13 +316,13 @@
 
 [Discord](https://status.discordapp.com/incidents/qk9cdgnqnhcn). "At approximately 14:01, a Redis instance acting as the primary for a highly-available cluster used by Discord's API services was migrated automatically by Google’s Cloud Platform. This migration caused the node to incorrectly drop offline, forcing the cluster to rebalance and trigger known issues with the way Discord API instances handle Redis failover. After resolving this partial outage, unnoticed issues on other services caused a cascading failure through Discord’s real time system. These issues caused enough critical impact that Discord’s engineering team was forced to fully restart the service, reconnecting millions of clients over a period of 20 minutes."
 
-[Dropbox](https://blogs.dropbox.com/tech/2014/01/outage-post-mortem/). This postmortem is pretty thin and I'm not sure what happened. It sounds like, maybe, a scheduled OS upgrade somehow caused some machines to get wiped out, which took out some databases.
+[Dropbox](https://dropbox.tech/infrastructure/outage-post-mortem). This postmortem is pretty thin and I'm not sure what happened. It sounds like, maybe, a scheduled OS upgrade somehow caused some machines to get wiped out, which took out some databases.
 
 [Duo](https://status.duo.com/incidents/4w07bmvnt359). Cascading failure due to a request queue overloading the existing, insufficient database capacity. Inadequate capacity planning and monitoring could be attributed as well.
 
 [Epic Games](https://web.archive.org/web/20220430011642/https://www.epicgames.com/fortnite/en-US/news/postmortem-of-service-outage-at-3-4m-ccu). Extreme load (a new peak of 3.4 million concurrent users) resulted in a mix of partial and total service disruptions.
 
-[European Space Agency](https://en.wikipedia.org/wiki/Cluster_%28spacecraft%29?oldid=217305667). An overflow occurred when converting a 16-bit number to a 64-bit numer in the Ariane 5 intertial guidance system, causing the rocket to crash. The actual overflow occurred in code that wasn't necessary for operation but was running anyway. According to [one account](https://web.archive.org/web/20120829114850/https://www.around.com/ariane.html), this caused a diagnostic error message to get printed out, and the diagnostic error message was somehow interpreted as actual valid data. According to [another account](https://en.wikipedia.org/wiki/Cluster_%28spacecraft%29?oldid=217305667), no trap handler was installed for the overflow.
+[European Space Agency](https://en.wikipedia.org/wiki/Cluster_%28spacecraft%29?oldid=217305667). An overflow occurred when converting a 64-bit floating-point number to a 16-bit signed integer in the Ariane 5 intertial guidance system, causing the rocket to crash. The actual overflow occurred in code that wasn't necessary for operation but was running anyway. According to [one account](https://web.archive.org/web/20120829114850/https://www.around.com/ariane.html), this caused a diagnostic error message to get printed out, and the diagnostic error message was somehow interpreted as actual valid data. According to [another account](https://en.wikipedia.org/wiki/Cluster_%28spacecraft%29?oldid=217305667), no trap handler was installed for the overflow.
 
 [Elastic](https://www.elastic.co/blog/elastic-cloud-january-18-2019-incident-report). Elastic Cloud customers with deployments in the AWS eu-west-1 (Ireland) region experienced severely degraded access to their clusters for roughly 3 hours. During this same timeframe, there was an approximately 20 minute period during which all deployments in this region were completely unavailable.
 
@@ -370,7 +370,7 @@
 
 [Heroku](https://status.heroku.com/incidents/642?postmortem). Having a system that requires scheduled manual updates resulted in an error which caused US customers to be unable to scale, stop or restart dynos, or route HTTP traffic, and also prevented all customers from being able to deploy.
 
-[Heroku](https://engineering.heroku.com/blogs/2017-02-15-filesystem-corruption-on-heroku-dynos/). An upgrade silently disabled a check that was meant to prevent filesystem corruption in running containers. A subsequent deploy caused filesystem corruption in running containers.
+[Heroku](https://www.heroku.com/blog/filesystem-corruption-on-heroku-dynos/). An upgrade silently disabled a check that was meant to prevent filesystem corruption in running containers. A subsequent deploy caused filesystem corruption in running containers.
 
 [Heroku](https://status.heroku.com/incidents/1042). An upstream `apt` update broke pinned packages which lead to customers experiencing write permission failures to `/dev`.
 
@@ -452,7 +452,7 @@
 
 [Salesforce](https://help.salesforce.com/s/articleView?id=000396429&type=1). On September 20, 2023, a service disruption affected a subset of customers across multiple services beginning at 14:48 Coordinated Universal Time (UTC). As a result, some customers were unable to login and access their services. A policy change executed as a part of our standard security controls review and update cycle to be the trigger of this incident. This change inadvertently blocked access to resources beyond its intended scope.
 
-[Sentry](https://blog.sentry.io/2015/07/23/transaction-id-wraparound-in-postgres). Transaction ID Wraparound in Postgres caused Sentry to go down for most of a working day.
+[Sentry](https://blog.sentry.io/transaction-id-wraparound-in-postgres/). Transaction ID Wraparound in Postgres caused Sentry to go down for most of a working day.
 
 [Shapeshift](http://web.archive.org/web/20160610080136/https://www.scribd.com/doc/309574927/ShapeShift-Post-Mortem-Public). Poor security practices enabled an employee to steal $200,000 in cryptocurrency in 3 separate hacks over a 1 month period. The company's CEO expanded upon the story in a [blog post](https://web.archive.org/web/20190811214903/http://moneyandstate.com:80/looting-of-the-fox/).
 
