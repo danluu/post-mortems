@@ -538,6 +538,8 @@
 
 [Postmortem Templates](https://github.com/dastergon/postmortem-templates) is a collection of postmortem templates from various sources.
 
+[Incident Library](https://benchlet.com/incidentlib/) writes up public post-incident reports as structured cases (symptoms, trigger, root cause, fix, source link) that can be searched by symptom.
+
 ## Analysis
 
 [How Complex Systems Fail](https://stuff.mit.edu/afs/athena/course/2/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)
